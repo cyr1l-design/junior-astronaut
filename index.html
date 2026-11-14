@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Europa: Junior Astronaut</title>
+  <meta name="description" content="A NASA Space Apps 2026 game: dig through Europa's ice to find out if we are alone.">
+  <link rel="stylesheet" href="src/intro.css">
+</head>
+<body>
+  <div id="stage">
+    <canvas id="stars" width="2000" height="1160"></canvas>
+
+    <div class="shot" id="s-jupiter"><img src="assets/intro/jupiter.jpg" alt="Jupiter, photographed by the Hubble Space Telescope"></div>
+    <div class="shot" id="s-europa"><img class="cover" src="assets/intro/europa.jpg" alt="Europa, half in shadow, photographed by NASA's Galileo spacecraft"></div>
+    <div class="shot" id="s-ice"><img class="cover" src="assets/intro/ice.jpg" alt="Close-up of Europa's cracked, criss-crossing ice bands"></div>
+    <div class="shot" id="s-launch"><img class="cover" src="assets/intro/launch.jpg" alt="Europa Clipper launching on a rocket, 14 October 2024"></div>
+    <div class="shot" id="s-earth"><img src="assets/intro/earth.jpg" alt="Earth seen from space by the Apollo 17 crew"></div>
+    <div class="shot" id="s-clipper"><img class="cover" src="assets/intro/clipper-europa.jpg" alt="Illustration of Europa Clipper flying over Europa"></div>
+    <div class="shot" id="s-lander"><img class="cover" src="assets/intro/lander.jpg" alt="Illustration of a lander on Europa's icy surface with Jupiter in the sky"></div>
+    <div class="shot" id="s-title"><img src="assets/intro/title-europa.jpg" alt="Europa photographed by NASA's Juno spacecraft"></div>
+
+    <svg id="flyby" viewBox="0 0 1920 1080" aria-hidden="true">
+      <defs>
+        <radialGradient id="glow"><stop offset="0" stop-color="#fff"/><stop offset="0.35" stop-color="#8fd3ff"/><stop offset="1" stop-color="#8fd3ff" stop-opacity="0"/></radialGradient>
+      </defs>
+      <path id="flypath" d="M -60 820 C 400 860, 800 1010, 1150 990 S 1650 860, 1990 240" fill="none" stroke="#8fd3ff" stroke-width="4" stroke-linecap="round" stroke-dasharray="14 12"/>
+      <circle id="flydot" r="34" fill="url(#glow)"/>
+      <text id="flylabel" font-family="Inter" font-weight="600" font-size="30" fill="#f4f7fb">Europa Clipper</text>
+      <text id="tojupiter" x="1600" y="200" font-family="Barlow Condensed" font-weight="700" font-size="40" letter-spacing="5" fill="#8fd3ff">TO JUPITER →</text>
+    </svg>
+
+    <div id="scrim"></div>
+    <div id="imagine">Now, imagine…</div>
+    <div id="bigword">EUROPA</div>
+    <div id="tag"></div>
+    <div id="caption"><div id="date"></div><div id="line"></div></div>
+    <div id="title"><span>Are</span><span>we</span><span>alone?</span></div>
+    <div id="credit"></div>
+    <div id="ai-mark">Made with AI help · AI narrator voice</div>
+    <div id="fade"></div>
+
+    <!-- Game-only screens -->
+    <div class="ui" id="start">
+      <div class="kicker">NASA Space Apps 2026 · Junior Astronaut</div>
+      <h1>Europa</h1>
+      <button class="btn" id="play">▶&nbsp; Start</button>
+      <p>Sound on! The story takes 30 seconds.</p>
+    </div>
+    <button class="ui btn ghost hidden" id="skip">Skip ›</button>
+    <div class="ui" id="end">
+      <button class="btn" id="begin">Begin mission</button>
+      <button class="btn ghost" id="again">Watch again</button>
+      <button class="btn ghost" id="real">What's real?</button>
+    </div>
+    <div class="ui" id="whatsreal" role="dialog" aria-label="What's real in this story">
+      <h2>What's real?</h2>
+      <ul id="facts"></ul>
+      <h3>Pictures, sound and voice</h3>
+      <ul class="credits" id="credits"></ul>
+      <button class="btn" id="closereal">Got it</button>
+    </div>
+    <div class="ui" id="mission">
+      <h2>Mission starts here</h2>
+      <p>The base and the dig are being built right now.</p>
+      <button class="btn ghost" id="back">Back to the story</button>
+    </div>
+  </div>
+  <audio id="audio" src="assets/intro/intro-audio.mp3" preload="auto"></audio>
+  <script type="module" src="src/intro.js"></script>
+</body>
+</html>

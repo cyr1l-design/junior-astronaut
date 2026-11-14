@@ -1,0 +1,143 @@
+/* Intro scene styles. Everything is laid out on a fixed 1920×1080 stage
+   that is scaled to fit the window, so the game and the recorded video
+   look exactly the same. */
+
+@font-face { font-family: "Barlow Condensed"; font-weight: 700; src: url("../assets/fonts/barlow-condensed-latin-700-normal.woff2") format("woff2"); font-display: block; }
+@font-face { font-family: "Barlow Condensed"; font-weight: 800; src: url("../assets/fonts/barlow-condensed-latin-800-normal.woff2") format("woff2"); font-display: block; }
+@font-face { font-family: "Inter"; font-weight: 400; src: url("../assets/fonts/inter-latin-400-normal.woff2") format("woff2"); font-display: block; }
+@font-face { font-family: "Inter"; font-weight: 600; src: url("../assets/fonts/inter-latin-600-normal.woff2") format("woff2"); font-display: block; }
+@font-face { font-family: "Inter"; font-weight: 700; src: url("../assets/fonts/inter-latin-700-normal.woff2") format("woff2"); font-display: block; }
+
+:root {
+  --ink: #f4f7fb;
+  --ink-dim: rgba(244, 247, 251, 0.62);
+  --real: #8fd3ff;      /* ice blue: things that really happened */
+  --imagined: #ffb547;  /* amber: our prediction / story */
+  --bg: #000;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; background: var(--bg); color: var(--ink); overflow: hidden; }
+body { font-family: "Inter", system-ui, sans-serif; }
+
+/* The fixed-size stage, scaled by JS to fit any screen */
+#stage {
+  position: absolute; left: 50%; top: 50%;
+  width: 1920px; height: 1080px;
+  transform-origin: 0 0;
+  overflow: hidden; background: #000;
+}
+
+#stars { position: absolute; inset: -40px; width: 2000px; height: 1160px; }
+
+.shot { position: absolute; inset: 0; opacity: 0; will-change: opacity, transform; }
+.shot img { position: absolute; display: block; will-change: transform; }
+.shot img.cover { width: 100%; height: 100%; object-fit: cover; }
+
+/* Readability scrim behind the words */
+#scrim {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    linear-gradient(to top, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.35) 32%, rgba(0,0,0,0) 55%),
+    linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0) 18%);
+}
+
+/* REAL / IMAGINED tag, top left */
+#tag {
+  position: absolute; left: 120px; top: 92px;
+  font: 700 26px/1 "Inter", sans-serif; letter-spacing: 0.18em;
+  padding: 14px 22px 13px; border-radius: 999px;
+  border: 2px solid currentColor; opacity: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+#tag.real { color: var(--real); }
+#tag.imagined { color: var(--imagined); }
+
+/* Date + sentence, bottom left */
+#caption { position: absolute; left: 120px; bottom: 150px; width: 1250px; }
+#date {
+  font: 700 64px/1 "Barlow Condensed", sans-serif; letter-spacing: 0.12em;
+  text-transform: uppercase; margin-bottom: 22px; opacity: 0;
+}
+#line {
+  font: 600 50px/1.22 "Inter", sans-serif; letter-spacing: -0.01em;
+  text-shadow: 0 2px 24px rgba(0,0,0,0.6); opacity: 0;
+}
+
+/* One big word ("EUROPA") */
+#bigword {
+  position: absolute; left: 112px; bottom: 140px;
+  font: 800 230px/0.9 "Barlow Condensed", sans-serif; letter-spacing: 0.06em;
+  text-shadow: 0 6px 60px rgba(0,0,0,0.55); opacity: 0;
+}
+
+/* "Now, imagine…" interlude */
+#imagine {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  font: 700 96px/1 "Barlow Condensed", sans-serif; letter-spacing: 0.3em;
+  color: var(--imagined); opacity: 0; text-transform: uppercase;
+}
+
+/* The title */
+#title {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  gap: 0.28em; font: 800 250px/1 "Barlow Condensed", sans-serif; letter-spacing: 0.04em;
+  text-transform: uppercase; white-space: nowrap;
+}
+#title span { display: inline-block; opacity: 0; text-shadow: 0 0 60px rgba(143, 211, 255, 0.45), 0 8px 40px rgba(0,0,0,0.7); }
+
+/* Small print */
+#credit {
+  position: absolute; right: 60px; bottom: 40px; max-width: 1000px; text-align: right;
+  font: 400 19px/1.35 "Inter", sans-serif; color: var(--ink-dim); opacity: 0;
+}
+#ai-mark {
+  position: absolute; left: 60px; bottom: 40px;
+  font: 400 19px/1.35 "Inter", sans-serif; color: var(--ink-dim);
+}
+
+/* Fly-by diagram over Earth */
+#flyby { position: absolute; inset: 0; width: 1920px; height: 1080px; opacity: 0; overflow: visible; }
+
+#fade { position: absolute; inset: 0; background: #000; pointer-events: none; opacity: 0; }
+
+/* ---------- Game-only UI (hidden while recording the video) ---------- */
+.ui { position: absolute; z-index: 10; }
+#start {
+  inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 40px; background: radial-gradient(ellipse at center, rgba(10,20,40,0.6), rgba(0,0,0,0.95));
+}
+#start .kicker { font: 700 34px/1 "Barlow Condensed", sans-serif; letter-spacing: 0.4em; color: var(--real); text-transform: uppercase; }
+#start h1 { font: 800 200px/0.9 "Barlow Condensed", sans-serif; letter-spacing: 0.08em; text-transform: uppercase; }
+#start p { font: 400 30px/1.4 "Inter", sans-serif; color: var(--ink-dim); }
+.btn {
+  font: 700 40px/1 "Inter", sans-serif; letter-spacing: 0.04em; color: #001018;
+  background: var(--ink); border: 0; border-radius: 999px; padding: 30px 64px; cursor: pointer;
+  box-shadow: 0 0 60px rgba(143, 211, 255, 0.35);
+}
+.btn:hover, .btn:focus-visible { background: var(--real); outline: none; }
+.btn.ghost { background: transparent; color: var(--ink); border: 2px solid var(--ink-dim); box-shadow: none; }
+.btn.ghost:hover, .btn.ghost:focus-visible { border-color: var(--real); color: var(--real); background: transparent; }
+#skip { right: 60px; top: 60px; font-size: 26px; padding: 18px 34px; }
+#end {
+  left: 0; right: 0; bottom: 170px; display: flex; gap: 28px; justify-content: center;
+  opacity: 0; pointer-events: none; transition: opacity 0.8s;
+}
+#end.show { opacity: 1; pointer-events: auto; }
+#whatsreal {
+  inset: 0; background: rgba(0, 4, 12, 0.94); padding: 90px 140px; overflow: auto; display: none;
+}
+#whatsreal.show { display: block; }
+#whatsreal h2 { font: 800 96px/1 "Barlow Condensed", sans-serif; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 36px; }
+#whatsreal ul { list-style: none; display: grid; gap: 18px; margin-bottom: 40px; }
+#whatsreal li { font: 400 28px/1.4 "Inter", sans-serif; }
+#whatsreal li b { font-weight: 700; letter-spacing: 0.12em; font-size: 22px; margin-right: 14px; }
+#whatsreal .r { color: var(--real); }
+#whatsreal .i { color: var(--imagined); }
+#whatsreal h3 { font: 700 40px/1 "Barlow Condensed", sans-serif; letter-spacing: 0.12em; text-transform: uppercase; margin: 10px 0 18px; color: var(--ink-dim); }
+#whatsreal .credits li { font-size: 22px; color: var(--ink-dim); }
+#mission { inset: 0; display: none; align-items: center; justify-content: center; flex-direction: column; gap: 30px; background: #000; }
+#mission.show { display: flex; }
+#mission h2 { font: 800 120px/1 "Barlow Condensed", sans-serif; letter-spacing: 0.06em; text-transform: uppercase; }
+#mission p { font: 400 32px/1.4 "Inter", sans-serif; color: var(--ink-dim); }
+.hidden { display: none !important; }
