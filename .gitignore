@@ -3,3 +3,6 @@ dist/
 .env
 .env.local
 .DS_Store
+
+# Style reference screenshots from published games: copyrighted, local only
+design/style-refs-local/

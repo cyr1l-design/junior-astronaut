@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: #000; color: #f4f1ea; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; overflow: hidden; }
+#app, canvas { position: fixed; inset: 0; display: block; }
+
+#start {
+  position: fixed; inset: 0; display: grid; place-items: center; text-align: center;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.8));
+  cursor: pointer; transition: opacity 0.6s; z-index: 2; padding: 16px;
+}
+#start.hidden { opacity: 0; pointer-events: none; }
+#start h1 { font-size: clamp(32px, 6vw, 64px); margin: 0 0 8px; letter-spacing: 0.06em; font-weight: 700; }
+#start p { margin: 6px 0; opacity: 0.85; }
+#start .cta { margin-top: 20px; font-size: 18px; padding: 10px 22px; border: 1px solid rgba(255, 255, 255, 0.6); border-radius: 999px; display: inline-block; }
+#start .keys { font-size: 14px; opacity: 0.7; }
+
+#caption {
+  position: fixed; left: 50%; bottom: 12vh; transform: translateX(-50%);
+  max-width: min(720px, calc(100vw - 32px)); text-align: center; font-size: clamp(16px, 2.2vw, 22px);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9); opacity: 0; transition: opacity 0.8s; z-index: 1; pointer-events: none;
+}
+#caption.show { opacity: 1; }
+
+#credit {
+  position: fixed; right: 10px; bottom: 8px; font-size: 11px; opacity: 0.55; z-index: 1; pointer-events: none;
+  text-shadow: 0 1px 4px #000;
+}

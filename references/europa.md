@@ -319,3 +319,65 @@ regular ups and downs. A storm-style spike would teach something unproven.
 | **A red line is real.** Opportunity (a solar rover) lost power in the 2018 Mars dust storm when its batteries ran too low, and never woke up again | ✅ well-known NASA history; cite NASA's Opportunity page before showing |
 | **What really hits the red line is the battery, not the reactor.** A nuclear source keeps giving its steady flow; if the base spends faster than that, the battery drains, and below a safe level the spacecraft shuts systems off to protect itself ("safe mode") | ✅ how NASA spacecraft fault protection works (Curiosity, Opportunity); cite a NASA page before showing |
 | **Power and cold kill together.** Spirit (Mars, 2010) got stuck in sand, couldn't tilt its solar panels toward the winter Sun, had too little power for its heaters, and never woke up again | ✅ well-known NASA history; cite NASA's Spirit page before showing |
+
+## 16. Science check of Cyril's event list (2026-11-14)
+
+| Claim in the list | Verdict |
+|---|---|
+| Nature on Europa's surface gives heat or power (steam vents, warm plume edge, salts or minerals as fuel) | ❌ **False.** No warm vents are known; plumes are unconfirmed and would be cold vapour and ice grains in a vacuum; salts aren't fuel. On the surface, heat and power come only from the base |
+| Io, Europa and Ganymede line up in a "triple alignment" | ❌ **Impossible.** Their 1:2:4 orbital rhythm (the Laplace resonance) is exactly what stops all three from ever lining up together. True and fascinating instead: that rhythm keeps Europa's orbit slightly oval, which is *why* Europa has tides at all (✅ NASA Europa facts: tides from the elliptical orbit) |
+| Radiation turns surface ice into hydrogen peroxide | ✅ Galileo found it (~0.13% of the surface ice; Carlson et al. 1999, *Science*; [USGS record](https://pubs.usgs.gov/publication/70021754)). It breaks down again almost as fast as it forms |
+| …which falls as sticky "snow" and coats equipment | ❌ No air means no snowfall; the peroxide forms *inside* the ice. Gear being worn down by radiation is real (Juno's camera, section 13) |
+| A magnetic "deflector" that shatters falling ice | ❌ Ice isn't magnetic |
+| A "bubble shield" against radiation, "tidal-flex generators" | ⚠️ Imagined technology. Active radiation shields exist only as research ideas; label as invented, or leave out |
+| Brine pocket inside the ice shell | ✅ Possible pockets of water in the ice (NASA Europa facts); NASA lists water bodies as a cryobot hazard needing sensing and steering (section 13) |
+| …blasting slush back up the borehole to the surface | ❌ Meltwater **refreezes behind** a cryobot (NASA), so there's no open shaft to the surface. The trouble happens down at the probe |
+| Chaos ice sinking into slush below | ⚠️ A leading idea for how chaos terrain forms (ice over shallow water lenses), not observed happening |
+| 15 m ice blades (penitentes) | ⚠️ A 2018 prediction; not seen, not reproduced in JPL's lab tests |
+| Tides crack the surface; red lineae; cables snapping when the ice shifts | ✅ Sections 2 and 13 |
+| Jupiter's eclipse; cryobot borehole refreezing if its heat is taken away | ✅ Sections 12 and 13 |
+| Io's plasma reaching Europa; aurora | ✅ with the caveats in section 14 (no proven dose spike; purple is false colour) |
+| Walking around outside in a suit | ⚠️ Imagined. Surface radiation would give a person a very serious dose within about a day (section 3), so every minute outside should cost radiation |
+
+## 17. Science check of Cyril's second event list (2026-11-14)
+
+**Correction to section 13:** Jupiter's tilted field makes a full cycle at Europa every ~11.2 hours, and Europa crosses the dense middle of the plasma sheet **twice** per cycle, so **about every 5.6 hours**. 🔢 (Jupiter spins in 9.93 h; Europa orbits in 85.2 h; field tilt ~10°.)
+
+| Claim | Verdict |
+|---|---|
+| Plasma sheet crossed roughly every 5.5 hours; tilt ~10°; spin 9.9 h | ✅ / 🔢 matches the arithmetic above |
+| Jupiter's plasma sweeps past Europa at ~90 km/s | ✅ roughly. Rigid spin would give ~104 km/s relative to Europa; real flow is somewhat slower. "About 100 km/s" is safe |
+| Fast electrons build up charge inside electronics until they spark ("internal electrostatic discharge") | ✅ a real, named spacecraft hazard that Juno and Clipper are built against; cite a NASA engineering page before showing |
+| The eclipse lasts nearly 3 hours | ✅ 🔢 section 12. During it, Jupiter's night side faces you, so it really is very dark |
+| …and the eclipse's cold cracks the ice open | ❌ Not established. Tides crack Europa's ice; eclipse cooling affects only a thin surface skin |
+| Ridged faults grind sideways with the daily tide ("strike-slip", "tidal walking") | ✅ Hoppa et al. 1999: 121 strike-slip faults mapped; Astypalaea Linea is ~810 km long, shifted 42 km ([Univ. of Arizona](https://pirlwww.lpl.arizona.edu/HIIPS/Publications/hoppa_shear/)). The motion builds slowly over hours, not as a sudden quake |
+| Europa's surface charges up under Jupiter's plasma | ✅ about −14 to −52 volts, depending on place and sunlight (Reddy, Nordheim & Harris 2024, *ApJ Letters*) |
+| …and that lifts ice dust that clings to visors (2024–2026 models) | ⚠️ No study found that shows dust lifting off Europa. "Step into shadow to ground your suit" isn't how charging works |
+| JWST shows a porous surface that sinters into a hard crust over hollow voids | ❌ Misread. JWST (2025) shows the top **~10 micrometres** of ice re-crystallising within ~15 days in places like Tara Regio. Microns, not a crust that can roof over a pit |
+| Plumes "strongly suggested" by Hubble and Galileo | ⚠️ Overstated. Hubble: tentative. Galileo: one magnetic hint (Jia et al. 2018). Keck: 1 night in 17. Webb: none |
+| Plume ice falls back silently, like hail, with no wind | ✅ the physics of a vacuum, if plumes exist |
+| Plume salts and oxidants as fuel for Power | ❌ Not fuel (section 16) |
+| Whipple shield, Kevlar layers against tiny impacts | ✅ real spacecraft shielding (the ISS uses it) |
+| Brine lenses 1–3 km down in the ice under chaos terrain (Schmidt 2011) and double ridges (Culberg 2022) | ✅ leading models built on real data. "Likely", not seen |
+| …slush surges up the borehole; heaters at the "collar" on top | ❌ The hole refreezes behind the probe. Trouble happens **at the probe**, and its heaters are on its own sides |
+| Jupiter's gravity speeds up dust so it hits Europa very fast | ✅ in principle |
+| …arriving as a "stream" or shower event | ⚠️ Not established; small impacts arrive as a steady, low trickle. Io's dust streams are nanometre-sized and fly *away* from Jupiter |
+
+**Solar panel sizes at Europa** (added 2026-11-14) 🔢 from sunlight 1,361 W/m² at Earth ÷ 5.2², assuming 30%-efficient cells facing the Sun straight on:
+
+| | Value |
+|---|---|
+| Sunlight reaching Europa | ~50 W per square metre (Earth: ~1,361) |
+| Electricity from panels | ~15 W per square metre |
+| Panels for 1 kW | ~66 m², about a quarter of a tennis court |
+| Panels for the cryobot's 10 kW | ~660 m², about 2.5 tennis courts, and **zero** for 42 hours every night and during the eclipse |
+
+## 18. How real missions end, per resource (added 2026-11-14)
+
+| Resource | What really ends a mission | Status |
+|---|---|---|
+| **Power** | Battery below the safe level → systems shut down to protect themselves; if it lasts too long, they may never wake (Opportunity, 2018) | ✅ section 15 |
+| **Heat** | Too little power for heaters → equipment freezes and breaks (Spirit, 2010) | ✅ section 15 |
+| **Radiation** | **NASA caps each astronaut's whole-career dose at 600 millisieverts.** Reach it and you don't fly again: a firm, non-violent rule | ✅ [NASA technical brief, Dec 2022](https://www.nasa.gov/wp-content/uploads/2023/03/radiation-protection-technical-brief-ochmo.pdf) (NASA-STD-3001) |
+| **Cryobot** | Locked in by refrozen ice, or the cable snaps when the ice shifts | ✅ section 13 |
+| Abort | Real crews are brought home when a limit is crossed; missions are designed to abort safely rather than to lose people | ✅ general NASA practice |
