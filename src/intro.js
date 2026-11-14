@@ -257,7 +257,10 @@ function game() {
   $("#play").addEventListener("click", play);
   $("#again").addEventListener("click", play);
   skip.addEventListener("click", () => { audio.pause(); render(END); finish(); });
-  $("#real").addEventListener("click", () => { realPanel.classList.add("show"); $("#closereal").focus(); });
+  $("#real").addEventListener("click", () => {
+    realPanel.classList.add("show"); realPanel.scrollTop = 0;
+    $("#closereal").focus({ preventScroll: true });
+  });
   $("#closereal").addEventListener("click", () => { realPanel.classList.remove("show"); $("#real").focus(); });
   $("#begin").addEventListener("click", () => mission.classList.add("show"));
   $("#back").addEventListener("click", () => mission.classList.remove("show"));
