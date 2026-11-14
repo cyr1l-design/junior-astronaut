@@ -81,16 +81,27 @@ closes the video.
 | 26.4–29.8 s | Europa's crescent going dark; **ARE WE ALONE?** word by word | "Are we alone?" |
 
 **Science checks.** "Almost certainly" keeps the ocean honest: NASA has not
-confirmed it. Every shot carries a small label, "Animation · NASA/JPL-Caltech"
-or "Real footage", and NASA's own animations also carry their "ANIMATION" tag.
+confirmed it. NASA's own animations carry their built-in "ANIMATION" tag.
 The ocean-floor vents in the cut-open shot are NASA's illustration of an idea,
 not something seen.
+
+**Credits (changed 2026-11-14, Cyril: no source label on every shot).** The
+rules don't ask for a label per shot: sources go in the project page's
+References field and in the game's credits; AI-made audio needs a note in text
+and metadata (`JUDGING.md`, hard rules). So the video has one small credits
+line in its last 1.5 s (footage, music, "Narrator: AI voice"), and the same
+note is written into the file's metadata.
 
 **Sound.** Narrator: AI voice "Nathaniel C." (ElevenLabs, eleven_v4), labelled
 "AI narrator voice" on screen. Music: "Superior" by Silver Maple, Epidemic
 Sound, from Cyril's licence (his Nila downloads), starting 1:12.04 so its swell
 lands on the launch. Every cut sits on a beat (117.5 bpm). The music dips about
-11 dB under the narrator, measured. Before uploading to YouTube, connect the
+11 dB under the narrator, measured. Dips less than 2 s apart are joined, so the
+music never jumps up between two lines (Cyril, 2026-11-14, on the first cut:
+"there is a gap between words, and it's like getting loud, and then it once
+again getting quieter. It feels really awkward"). `mix.py --ending drop` and
+`--roar` (the real rocket sound from NASA's launch footage) are options being
+compared. Before uploading to YouTube, connect the
 channel to Epidemic Sound so the music isn't flagged.
 
 **Footage** (NASA Image and Video Library, images.nasa.gov; shot list with
@@ -106,10 +117,10 @@ in-points in `tools/intro-v3/shots.tsv`):
 ```bash
 tools/intro-v3/fetch-footage.sh <footage_dir>
 tools/intro-v3/cut.sh <footage_dir> <work_dir>
-python3 tools/intro-v3/mix.py assets/intro/v3 <superior.wav> <work_dir>/soundtrack.wav
-node tools/intro-v3/render.cjs <work_dir>/picture.mp4 <work_dir>/soundtrack.wav assets/intro/europa-intro-v3.mp4
+python3 tools/intro-v3/mix.py assets/intro/v3 <superior.wav> 72.04 <work_dir>/soundtrack.wav [--ending smooth|drop] [--roar <footage_dir>/launch-large.mp4]
+node tools/intro-v3/render.cjs <work_dir>/picture.mp4 <work_dir>/soundtrack.wav assets/intro/europa-intro-v3.mp4 '"Superior", Silver Maple (Epidemic Sound)'
 ```
 
 The narrator's takes are kept in `assets/intro/v3/`. `tools/intro-v3/voice.py`
 records them again, which spends ElevenLabs credits. The words on screen
-(labels, title, credit) are `tools/intro-v3/overlay.html`.
+(title, credits line) are `tools/intro-v3/overlay.html`.
