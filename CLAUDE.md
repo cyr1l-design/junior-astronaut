@@ -184,19 +184,27 @@ Cyril's idea, in his words as given (2026-11-14):
   habitat left of centre with solar panels in front, reactor behind, spool
   and cryobot right, canyon and slabs far right). BEHIND THE BASE is a big
   veined ice mountain. Local copies: `design/reference/first-view-AI-reference-v3.webp`
-  and `behind-base-AI-reference-v3.webp` (AI-made, NOT pushed: the repo is
-  public and they carry no watermark; ask Cyril to re-attach them on a new PC).
+  and `behind-base-AI-reference-v3.webp` (AI-made; see the TEMPORARY note below).
 - **Texture style target: No Man's Sky screenshots** ("primary style
   reference, match the textures closely"): white frost on gentler parts, bare
   blue ice where steep, fine wrinkles and grooves running downslope, rounded
   frost-capped boulders. Copies in `design/style-refs-local/nms-ref-*`
-  (copyrighted, git-ignored, local only: ask Cyril to re-attach).
+  (copyrighted, git-ignored; see the TEMPORARY note below).
 - **He rejected:** the first soft/smooth pass ("flat, blurry"); an endless
   straight ridge; **polygon/cell patterns on mountains and cliffs** and
   noodle-like vein lines. He approved: the new layout, the cracked-plate
   ground with relief, the mountain direction.
 - **How to work with him here:** show ONE screenshot at a checkpoint before
   building on; he is watching token use.
+
+**TEMPORARY reference images are in this branch (Cyril's call, 2026-11-14):**
+the AI pictures in `design/reference/` and the No Man's Sky screenshots in
+`design/style-refs-local/` were pushed in ONE separate commit ("TEMP reference
+images") so he can work from another PC. **They must be removed before
+submission, and that commit must not reach `main`:** drop the commit (or
+rebuild the branch without it) rather than just deleting the files, because
+deleted files stay in git history. Rules at stake: no copyrighted material
+without permission; AI images need a visible watermark.
 
 **Where the code stands (all in `src/world/terrain.js` unless noted):**
 - Layout re-done in `layout.js` (spawn south of base, door faces SE, massif,
