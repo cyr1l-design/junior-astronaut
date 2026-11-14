@@ -1,0 +1,689 @@
+{
+ "source": "NASA DONKI via api.nasa.gov (CCMC Moon to Mars Space Weather Analysis Office)",
+ "retrieved": "2026-11-13",
+ "covers": "2025-11-13 to 2026-11-13",
+ "note": "Archived snapshot, not live.",
+ "counts": {
+  "CME": 1655,
+  "GST": 20,
+  "SEP": 42,
+  "FLR": 0,
+  "IPS": 117,
+  "RBE": 43,
+  "HSS": 75,
+  "notifications": 807
+ },
+ "geomagneticStorms": [
+  {
+   "start": "2025-12-03T18:00Z",
+   "maxKp": 6.67,
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/GST/43225/-1"
+  },
+  {
+   "start": "2025-12-10T21:00Z",
+   "maxKp": 6.33,
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/GST/43425/-1"
+  },
+  {
+   "start": "2026-01-10T18:00Z",
+   "maxKp": 6.0,
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/GST/43885/-1"
+  },
+  {
+   "start": "2026-01-19T18:00Z",
+   "maxKp": 8.67,
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/GST/44061/-1"
+  },
+  {
+   "start": "2026-02-16T18:00Z",
+   "maxKp": 6.0,
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/GST/44700/-1"
+  },
+  {
+   "start": "2026-03-13T21:00Z",
+   "maxKp": 6.0,
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/GST/45068/-1"
+  },
+  {
+   "start": "2026-03-20T18:00Z",
+   "maxKp": 7.0,
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/GST/45201/-1"
+  },
+  {
+   "start": "2026-03-22T09:00Z",
+   "maxKp": 6.67,
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/GST/45234/-1"
+  },
+  {
+   "start": "2026-04-02T15:00Z",
+   "maxKp": 5.67,
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/GST/45511/-1"
+  },
+  {
+   "start": "2026-04-03T15:00Z",
+   "maxKp": 6.67,
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/GST/45535/-1"
+  },
+  {
+   "start": "2026-04-18T06:00Z",
+   "maxKp": 5.67,
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/GST/45731/-1"
+  },
+  {
+   "start": "2026-05-04T18:00Z",
+   "maxKp": 6.33,
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/GST/45981/-1"
+  },
+  {
+   "start": "2026-05-15T21:00Z",
+   "maxKp": 6.33,
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/GST/46192/-1"
+  },
+  {
+   "start": "2026-06-05T15:00Z",
+   "maxKp": 6.33,
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/GST/46669/-1"
+  },
+  {
+   "start": "2026-07-04T00:00Z",
+   "maxKp": 7.33,
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/GST/47312/-1"
+  },
+  {
+   "start": "2026-08-02T15:00Z",
+   "maxKp": 5.67,
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/GST/47932/-1"
+  },
+  {
+   "start": "2026-08-08T18:00Z",
+   "maxKp": 5.67,
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/GST/48028/-1"
+  },
+  {
+   "start": "2026-10-04T18:00Z",
+   "maxKp": 5.67,
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/GST/48966/-1"
+  },
+  {
+   "start": "2026-10-10T15:00Z",
+   "maxKp": 7.0,
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/GST/49066/-1"
+  },
+  {
+   "start": "2026-10-31T18:00Z",
+   "maxKp": 6.0,
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/GST/49348/-1"
+  }
+ ],
+ "solarParticleEventDays": [
+  {
+   "date": "2025-11-14",
+   "instruments": [
+    "GOES-P: SEISS >10 MeV",
+    "MODEL: REleASE:ACE/EPAM 15.8-39.8 MeV",
+    "SOHO: COSTEP 15.8-39.8 MeV",
+    "STEREO A: IMPACT 13-100 MeV",
+    "MODEL: REleASE:SOHO/EPHIN 15.8-39.8 MeV"
+   ],
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/42704/-1"
+  },
+  {
+   "date": "2025-11-15",
+   "instruments": [
+    "STEREO A: IMPACT 13-100 MeV",
+    "STEREO A: IMPACT 13-100 MeV"
+   ],
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/42742/-1"
+  },
+  {
+   "date": "2026-01-18",
+   "instruments": [
+    "SOHO: COSTEP 15.8-39.8 MeV",
+    "GOES-P: SEISS >10 MeV"
+   ],
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/44039/-1"
+  },
+  {
+   "date": "2026-01-19",
+   "instruments": [
+    "SOHO: COSTEP 28.2-50.1 MeV",
+    "MODEL: REleASE:ACE/EPAM 15.8-39.8 MeV",
+    "MODEL: REleASE:SOHO/EPHIN 15.8-39.8 MeV",
+    "MODEL: REleASE:ACE/EPAM 28.2-50.1 MeV",
+    "MODEL: REleASE:SOHO/EPHIN 28.2-50.1 MeV",
+    "STEREO A: IMPACT 13-100 MeV"
+   ],
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/44047/-1"
+  },
+  {
+   "date": "2026-01-21",
+   "instruments": [
+    "STEREO A: IMPACT 13-100 MeV"
+   ],
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/44107/-1"
+  },
+  {
+   "date": "2026-05-25",
+   "instruments": [
+    "MODEL: REleASE:SOHO/EPHIN 15.8-39.8 MeV",
+    "MODEL: REleASE:SOHO/EPHIN 28.2-50.1 MeV",
+    "SOHO: COSTEP 15.8-39.8 MeV",
+    "MODEL: REleASE:ACE/EPAM 15.8-39.8 MeV",
+    "MODEL: REleASE:ACE/EPAM 28.2-50.1 MeV",
+    "SOHO: COSTEP 28.2-50.1 MeV"
+   ],
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/46362/-1"
+  },
+  {
+   "date": "2026-05-26",
+   "instruments": [
+    "GOES-P: SEISS >10 MeV",
+    "STEREO A: IMPACT 13-100 MeV"
+   ],
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/46373/-1"
+  },
+  {
+   "date": "2026-06-06",
+   "instruments": [
+    "MODEL: REleASE:SOHO/EPHIN 28.2-50.1 MeV"
+   ],
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/46702/-1"
+  },
+  {
+   "date": "2026-07-30",
+   "instruments": [
+    "MODEL: REleASE:ACE/EPAM 28.2-50.1 MeV",
+    "MODEL: REleASE:ACE/EPAM 15.8-39.8 MeV",
+    "GOES-P: SEISS >100 MeV",
+    "GOES-P: SEISS >10 MeV",
+    "SOHO: COSTEP 15.8-39.8 MeV",
+    "SOHO: COSTEP 28.2-50.1 MeV"
+   ],
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/47869/-1"
+  },
+  {
+   "date": "2026-08-20",
+   "instruments": [
+    "STEREO A: IMPACT 13-100 MeV"
+   ],
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/48176/-1"
+  },
+  {
+   "date": "2026-08-21",
+   "instruments": [
+    "STEREO A: IMPACT 13-100 MeV"
+   ],
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/48198/-1"
+  },
+  {
+   "date": "2026-08-22",
+   "instruments": [
+    "STEREO A: IMPACT 13-100 MeV"
+   ],
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/48231/-1"
+  },
+  {
+   "date": "2026-09-05",
+   "instruments": [
+    "GOES-P: SEISS >100 MeV",
+    "GOES-P: SEISS >10 MeV",
+    "SOHO: COSTEP 15.8-39.8 MeV",
+    "SOHO: COSTEP 28.2-50.1 MeV",
+    "MODEL: REleASE:ACE/EPAM 15.8-39.8 MeV",
+    "MODEL: REleASE:SOHO/EPHIN 15.8-39.8 MeV",
+    "MODEL: REleASE:SOHO/EPHIN 28.2-50.1 MeV",
+    "MODEL: REleASE:ACE/EPAM 28.2-50.1 MeV"
+   ],
+   "link": "https://ccmc.gsfc.nasa.gov/DONKI/view/SEP/48551/-1"
+  }
+ ],
+ "xClassFlareAlerts": [
+  {
+   "alertIssued": "2025-11-14T12:30Z",
+   "class": "X4.0",
+   "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/42706/1"
+  },
+  {
+   "alertIssued": "2025-12-01T03:06Z",
+   "class": "X1.9",
+   "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/43154/1"
+  },
+  {
+   "alertIssued": "2025-12-08T11:46Z",
+   "class": "X1.1",
+   "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/43335/1"
+  },
+  {
+   "alertIssued": "2026-01-18T18:27Z",
+   "class": "X1.9",
+   "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/44030/1"
+  },
+  {
+   "alertIssued": "2026-02-01T13:35Z",
+   "class": "X1.0",
+   "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/44332/1"
+  },
+  {
+   "alertIssued": "2026-02-02T00:11Z",
+   "class": "X8.1",
+   "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/44363/1"
+  },
+  {
+   "alertIssued": "2026-02-02T00:57Z",
+   "class": "X2.8",
+   "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/44366/1"
+  },
+  {
+   "alertIssued": "2026-02-02T12:20Z",
+   "class": "X1.6",
+   "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/44379/1"
+  },
+  {
+   "alertIssued": "2026-02-03T14:18Z",
+   "class": "X1.5",
+   "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/44417/1"
+  },
+  {
+   "alertIssued": "2026-02-04T12:28Z",
+   "class": "X4.2",
+   "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/44439/1"
+  },
+  {
+   "alertIssued": "2026-03-30T03:46Z",
+   "class": "X1.4",
+   "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/45394/1"
+  },
+  {
+   "alertIssued": "2026-04-24T01:25Z",
+   "class": "X2.4",
+   "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/45830/1"
+  },
+  {
+   "alertIssued": "2026-04-24T11:10Z",
+   "class": "X2.5",
+   "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/45838/1"
+  },
+  {
+   "alertIssued": "2026-06-03T11:49Z",
+   "class": "X1.0",
+   "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/46595/1"
+  },
+  {
+   "alertIssued": "2026-06-30T20:58Z",
+   "class": "X1.1",
+   "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/47198/1"
+  },
+  {
+   "alertIssued": "2026-07-04T20:50Z",
+   "class": "X1.3",
+   "url": "https://ccmc.gsfc.nasa.gov/DONKI/view/Alert/47333/1"
+  }
+ ],
+ "cmeTypeCounts": {
+  "C": 574,
+  "S": 1009,
+  "O": 72
+ },
+ "fastCMEs_over_1000_km_s": [
+  {
+   "start": "2025-11-14T01:25Z",
+   "speed_km_s": 1081.0,
+   "type": "O"
+  },
+  {
+   "start": "2025-11-14T08:00Z",
+   "speed_km_s": 1082.0,
+   "type": "O"
+  },
+  {
+   "start": "2025-11-15T22:36Z",
+   "speed_km_s": 1320.0,
+   "type": "O"
+  },
+  {
+   "start": "2025-11-17T15:15Z",
+   "speed_km_s": 1360.0,
+   "type": "O"
+  },
+  {
+   "start": "2025-11-21T19:24Z",
+   "speed_km_s": 1077.0,
+   "type": "O"
+  },
+  {
+   "start": "2025-11-24T02:36Z",
+   "speed_km_s": 1185.0,
+   "type": "O"
+  },
+  {
+   "start": "2025-11-25T02:48Z",
+   "speed_km_s": 1128.0,
+   "type": "O"
+  },
+  {
+   "start": "2025-11-25T17:00Z",
+   "speed_km_s": 1084.0,
+   "type": "O"
+  },
+  {
+   "start": "2025-11-28T16:36Z",
+   "speed_km_s": 1049.0,
+   "type": "O"
+  },
+  {
+   "start": "2025-11-29T05:48Z",
+   "speed_km_s": 1402.0,
+   "type": "O"
+  },
+  {
+   "start": "2025-11-29T09:00Z",
+   "speed_km_s": 1193.0,
+   "type": "O"
+  },
+  {
+   "start": "2025-11-29T17:00Z",
+   "speed_km_s": 1178.0,
+   "type": "O"
+  },
+  {
+   "start": "2025-12-01T02:48Z",
+   "speed_km_s": 1903.0,
+   "type": "O"
+  },
+  {
+   "start": "2025-12-01T03:36Z",
+   "speed_km_s": 1249.0,
+   "type": "O"
+  },
+  {
+   "start": "2025-12-07T06:24Z",
+   "speed_km_s": 1148.0,
+   "type": "O"
+  },
+  {
+   "start": "2025-12-07T08:36Z",
+   "speed_km_s": 1112.0,
+   "type": "O"
+  },
+  {
+   "start": "2025-12-14T07:24Z",
+   "speed_km_s": 1048.0,
+   "type": "O"
+  },
+  {
+   "start": "2025-12-20T16:48Z",
+   "speed_km_s": 1207.0,
+   "type": "O"
+  },
+  {
+   "start": "2025-12-27T14:48Z",
+   "speed_km_s": 1040.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-01-02T17:24Z",
+   "speed_km_s": 1341.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-01-08T05:53Z",
+   "speed_km_s": 1016.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-01-08T10:23Z",
+   "speed_km_s": 1284.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-01-08T17:00Z",
+   "speed_km_s": 1056.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-01-08T17:12Z",
+   "speed_km_s": 1084.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-01-10T02:24Z",
+   "speed_km_s": 1118.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-01-10T20:36Z",
+   "speed_km_s": 1045.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-01-11T22:45Z",
+   "speed_km_s": 1353.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-01-17T03:00Z",
+   "speed_km_s": 1273.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-01-18T08:36Z",
+   "speed_km_s": 1123.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-01-18T18:09Z",
+   "speed_km_s": 1820.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-01-23T15:38Z",
+   "speed_km_s": 1184.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-01-24T09:23Z",
+   "speed_km_s": 1243.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-01-29T15:00Z",
+   "speed_km_s": 1084.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-01-31T05:12Z",
+   "speed_km_s": 1027.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-02-01T05:53Z",
+   "speed_km_s": 1066.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-02-15T12:24Z",
+   "speed_km_s": 1056.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-02-16T04:24Z",
+   "speed_km_s": 1447.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-02-16T13:23Z",
+   "speed_km_s": 1029.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-02-18T20:36Z",
+   "speed_km_s": 1033.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-03-03T11:01Z",
+   "speed_km_s": 1294.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-03-20T12:38Z",
+   "speed_km_s": 1095.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-03-25T00:45Z",
+   "speed_km_s": 1208.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-03-30T03:24Z",
+   "speed_km_s": 1689.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-03-30T10:53Z",
+   "speed_km_s": 1180.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-04-01T23:45Z",
+   "speed_km_s": 1220.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-04-13T04:00Z",
+   "speed_km_s": 1065.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-04-24T08:24Z",
+   "speed_km_s": 1237.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-05-10T13:48Z",
+   "speed_km_s": 1347.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-05-16T16:36Z",
+   "speed_km_s": 1201.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-05-25T22:12Z",
+   "speed_km_s": 1174.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-05-25T23:24Z",
+   "speed_km_s": 1096.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-06-01T19:09Z",
+   "speed_km_s": 1031.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-06-03T01:53Z",
+   "speed_km_s": 1220.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-06-03T07:23Z",
+   "speed_km_s": 1474.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-06-03T11:48Z",
+   "speed_km_s": 1433.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-06-04T17:23Z",
+   "speed_km_s": 1009.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-06-06T14:11Z",
+   "speed_km_s": 1396.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-06-08T08:00Z",
+   "speed_km_s": 1068.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-06-30T21:45Z",
+   "speed_km_s": 1236.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-07-30T16:53Z",
+   "speed_km_s": 1549.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-08-20T18:48Z",
+   "speed_km_s": 1040.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-08-21T09:36Z",
+   "speed_km_s": 1329.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-08-27T18:00Z",
+   "speed_km_s": 1095.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-09-02T19:36Z",
+   "speed_km_s": 1038.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-09-03T10:15Z",
+   "speed_km_s": 1320.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-09-03T16:36Z",
+   "speed_km_s": 1321.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-09-03T22:36Z",
+   "speed_km_s": 1020.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-09-05T15:36Z",
+   "speed_km_s": 1111.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-09-05T18:09Z",
+   "speed_km_s": 1110.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-09-06T10:53Z",
+   "speed_km_s": 1085.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-09-13T19:48Z",
+   "speed_km_s": 1305.0,
+   "type": "O"
+  },
+  {
+   "start": "2026-10-17T02:48Z",
+   "speed_km_s": 1048.0,
+   "type": "O"
+  }
+ ]
+}

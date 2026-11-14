@@ -1,0 +1,4392 @@
+{
+ "source": "NASA JPL Horizons System (ssd.jpl.nasa.gov/horizons), target 502 Europa, observer Earth geocenter",
+ "retrieved": "2026-11-14",
+ "note": "Computed ephemeris (a prediction from orbits), not a measurement. Archived snapshot. Light time is one-way, Europa to Earth.",
+ "fields": {
+  "distanceAU": "Earth-Europa distance, astronomical units (1 AU = Earth-Sun distance)",
+  "oneWayLightMinutes": "minutes a radio signal takes from Europa to Earth",
+  "sunElongationDeg": "angle between the Sun and Europa as seen from Earth; small = Europa is behind/near the Sun, radio contact is hard"
+ },
+ "daily": [
+  {
+   "date": "2026-01-01",
+   "distanceAU": 4.2383,
+   "oneWayLightMinutes": 35.2,
+   "sunElongationDeg": 169.2
+  },
+  {
+   "date": "2026-01-02",
+   "distanceAU": 4.2398,
+   "oneWayLightMinutes": 35.3,
+   "sunElongationDeg": 170.4
+  },
+  {
+   "date": "2026-01-03",
+   "distanceAU": 4.2425,
+   "oneWayLightMinutes": 35.3,
+   "sunElongationDeg": 171.5
+  },
+  {
+   "date": "2026-01-04",
+   "distanceAU": 4.2347,
+   "oneWayLightMinutes": 35.2,
+   "sunElongationDeg": 172.6
+  },
+  {
+   "date": "2026-01-05",
+   "distanceAU": 4.2308,
+   "oneWayLightMinutes": 35.2,
+   "sunElongationDeg": 173.8
+  },
+  {
+   "date": "2026-01-06",
+   "distanceAU": 4.2365,
+   "oneWayLightMinutes": 35.2,
+   "sunElongationDeg": 175.0
+  },
+  {
+   "date": "2026-01-07",
+   "distanceAU": 4.2352,
+   "oneWayLightMinutes": 35.2,
+   "sunElongationDeg": 176.1
+  },
+  {
+   "date": "2026-01-08",
+   "distanceAU": 4.2279,
+   "oneWayLightMinutes": 35.2,
+   "sunElongationDeg": 177.2
+  },
+  {
+   "date": "2026-01-09",
+   "distanceAU": 4.2306,
+   "oneWayLightMinutes": 35.2,
+   "sunElongationDeg": 178.5
+  },
+  {
+   "date": "2026-01-10",
+   "distanceAU": 4.2362,
+   "oneWayLightMinutes": 35.2,
+   "sunElongationDeg": 179.5
+  },
+  {
+   "date": "2026-01-11",
+   "distanceAU": 4.2314,
+   "oneWayLightMinutes": 35.2,
+   "sunElongationDeg": 179.3
+  },
+  {
+   "date": "2026-01-12",
+   "distanceAU": 4.2286,
+   "oneWayLightMinutes": 35.2,
+   "sunElongationDeg": 178.1
+  },
+  {
+   "date": "2026-01-13",
+   "distanceAU": 4.2362,
+   "oneWayLightMinutes": 35.2,
+   "sunElongationDeg": 176.9
+  },
+  {
+   "date": "2026-01-14",
+   "distanceAU": 4.2383,
+   "oneWayLightMinutes": 35.2,
+   "sunElongationDeg": 175.8
+  },
+  {
+   "date": "2026-01-15",
+   "distanceAU": 4.2331,
+   "oneWayLightMinutes": 35.2,
+   "sunElongationDeg": 174.7
+  },
+  {
+   "date": "2026-01-16",
+   "distanceAU": 4.237,
+   "oneWayLightMinutes": 35.2,
+   "sunElongationDeg": 173.4
+  },
+  {
+   "date": "2026-01-17",
+   "distanceAU": 4.2454,
+   "oneWayLightMinutes": 35.3,
+   "sunElongationDeg": 172.3
+  },
+  {
+   "date": "2026-01-18",
+   "distanceAU": 4.2436,
+   "oneWayLightMinutes": 35.3,
+   "sunElongationDeg": 171.3
+  },
+  {
+   "date": "2026-01-19",
+   "distanceAU": 4.2421,
+   "oneWayLightMinutes": 35.3,
+   "sunElongationDeg": 170.0
+  },
+  {
+   "date": "2026-01-20",
+   "distanceAU": 4.2515,
+   "oneWayLightMinutes": 35.4,
+   "sunElongationDeg": 168.8
+  },
+  {
+   "date": "2026-01-21",
+   "distanceAU": 4.257,
+   "oneWayLightMinutes": 35.4,
+   "sunElongationDeg": 167.8
+  },
+  {
+   "date": "2026-01-22",
+   "distanceAU": 4.2539,
+   "oneWayLightMinutes": 35.4,
+   "sunElongationDeg": 166.6
+  },
+  {
+   "date": "2026-01-23",
+   "distanceAU": 4.2589,
+   "oneWayLightMinutes": 35.4,
+   "sunElongationDeg": 165.4
+  },
+  {
+   "date": "2026-01-24",
+   "distanceAU": 4.27,
+   "oneWayLightMinutes": 35.5,
+   "sunElongationDeg": 164.3
+  },
+  {
+   "date": "2026-01-25",
+   "distanceAU": 4.2713,
+   "oneWayLightMinutes": 35.5,
+   "sunElongationDeg": 163.2
+  },
+  {
+   "date": "2026-01-26",
+   "distanceAU": 4.2711,
+   "oneWayLightMinutes": 35.5,
+   "sunElongationDeg": 162.0
+  },
+  {
+   "date": "2026-01-27",
+   "distanceAU": 4.282,
+   "oneWayLightMinutes": 35.6,
+   "sunElongationDeg": 160.8
+  },
+  {
+   "date": "2026-01-28",
+   "distanceAU": 4.2907,
+   "oneWayLightMinutes": 35.7,
+   "sunElongationDeg": 159.8
+  },
+  {
+   "date": "2026-01-29",
+   "distanceAU": 4.2899,
+   "oneWayLightMinutes": 35.7,
+   "sunElongationDeg": 158.7
+  },
+  {
+   "date": "2026-01-30",
+   "distanceAU": 4.2958,
+   "oneWayLightMinutes": 35.7,
+   "sunElongationDeg": 157.4
+  },
+  {
+   "date": "2026-01-31",
+   "distanceAU": 4.3092,
+   "oneWayLightMinutes": 35.8,
+   "sunElongationDeg": 156.3
+  },
+  {
+   "date": "2026-02-01",
+   "distanceAU": 4.3136,
+   "oneWayLightMinutes": 35.9,
+   "sunElongationDeg": 155.3
+  },
+  {
+   "date": "2026-02-02",
+   "distanceAU": 4.3148,
+   "oneWayLightMinutes": 35.9,
+   "sunElongationDeg": 154.1
+  },
+  {
+   "date": "2026-02-03",
+   "distanceAU": 4.327,
+   "oneWayLightMinutes": 36.0,
+   "sunElongationDeg": 152.9
+  },
+  {
+   "date": "2026-02-04",
+   "distanceAU": 4.3386,
+   "oneWayLightMinutes": 36.1,
+   "sunElongationDeg": 151.9
+  },
+  {
+   "date": "2026-02-05",
+   "distanceAU": 4.3402,
+   "oneWayLightMinutes": 36.1,
+   "sunElongationDeg": 150.8
+  },
+  {
+   "date": "2026-02-06",
+   "distanceAU": 4.3469,
+   "oneWayLightMinutes": 36.2,
+   "sunElongationDeg": 149.6
+  },
+  {
+   "date": "2026-02-07",
+   "distanceAU": 4.3623,
+   "oneWayLightMinutes": 36.3,
+   "sunElongationDeg": 148.5
+  },
+  {
+   "date": "2026-02-08",
+   "distanceAU": 4.3697,
+   "oneWayLightMinutes": 36.3,
+   "sunElongationDeg": 147.5
+  },
+  {
+   "date": "2026-02-09",
+   "distanceAU": 4.3723,
+   "oneWayLightMinutes": 36.4,
+   "sunElongationDeg": 146.3
+  },
+  {
+   "date": "2026-02-10",
+   "distanceAU": 4.3853,
+   "oneWayLightMinutes": 36.5,
+   "sunElongationDeg": 145.1
+  },
+  {
+   "date": "2026-02-11",
+   "distanceAU": 4.3997,
+   "oneWayLightMinutes": 36.6,
+   "sunElongationDeg": 144.1
+  },
+  {
+   "date": "2026-02-12",
+   "distanceAU": 4.4037,
+   "oneWayLightMinutes": 36.6,
+   "sunElongationDeg": 143.1
+  },
+  {
+   "date": "2026-02-13",
+   "distanceAU": 4.411,
+   "oneWayLightMinutes": 36.7,
+   "sunElongationDeg": 141.9
+  },
+  {
+   "date": "2026-02-14",
+   "distanceAU": 4.428,
+   "oneWayLightMinutes": 36.8,
+   "sunElongationDeg": 140.8
+  },
+  {
+   "date": "2026-02-15",
+   "distanceAU": 4.4383,
+   "oneWayLightMinutes": 36.9,
+   "sunElongationDeg": 139.8
+  },
+  {
+   "date": "2026-02-16",
+   "distanceAU": 4.4423,
+   "oneWayLightMinutes": 36.9,
+   "sunElongationDeg": 138.7
+  },
+  {
+   "date": "2026-02-17",
+   "distanceAU": 4.4559,
+   "oneWayLightMinutes": 37.1,
+   "sunElongationDeg": 137.5
+  },
+  {
+   "date": "2026-02-18",
+   "distanceAU": 4.4727,
+   "oneWayLightMinutes": 37.2,
+   "sunElongationDeg": 136.5
+  },
+  {
+   "date": "2026-02-19",
+   "distanceAU": 4.479,
+   "oneWayLightMinutes": 37.3,
+   "sunElongationDeg": 135.5
+  },
+  {
+   "date": "2026-02-20",
+   "distanceAU": 4.4869,
+   "oneWayLightMinutes": 37.3,
+   "sunElongationDeg": 134.3
+  },
+  {
+   "date": "2026-02-21",
+   "distanceAU": 4.5051,
+   "oneWayLightMinutes": 37.5,
+   "sunElongationDeg": 133.2
+  },
+  {
+   "date": "2026-02-22",
+   "distanceAU": 4.5182,
+   "oneWayLightMinutes": 37.6,
+   "sunElongationDeg": 132.2
+  },
+  {
+   "date": "2026-02-23",
+   "distanceAU": 4.5234,
+   "oneWayLightMinutes": 37.6,
+   "sunElongationDeg": 131.2
+  },
+  {
+   "date": "2026-02-24",
+   "distanceAU": 4.5374,
+   "oneWayLightMinutes": 37.7,
+   "sunElongationDeg": 130.0
+  },
+  {
+   "date": "2026-02-25",
+   "distanceAU": 4.5562,
+   "oneWayLightMinutes": 37.9,
+   "sunElongationDeg": 129.0
+  },
+  {
+   "date": "2026-02-26",
+   "distanceAU": 4.5648,
+   "oneWayLightMinutes": 38.0,
+   "sunElongationDeg": 128.0
+  },
+  {
+   "date": "2026-02-27",
+   "distanceAU": 4.573,
+   "oneWayLightMinutes": 38.0,
+   "sunElongationDeg": 126.9
+  },
+  {
+   "date": "2026-02-28",
+   "distanceAU": 4.592,
+   "oneWayLightMinutes": 38.2,
+   "sunElongationDeg": 125.8
+  },
+  {
+   "date": "2026-03-01",
+   "distanceAU": 4.6075,
+   "oneWayLightMinutes": 38.3,
+   "sunElongationDeg": 124.9
+  },
+  {
+   "date": "2026-03-02",
+   "distanceAU": 4.614,
+   "oneWayLightMinutes": 38.4,
+   "sunElongationDeg": 123.9
+  },
+  {
+   "date": "2026-03-03",
+   "distanceAU": 4.628,
+   "oneWayLightMinutes": 38.5,
+   "sunElongationDeg": 122.7
+  },
+  {
+   "date": "2026-03-04",
+   "distanceAU": 4.6484,
+   "oneWayLightMinutes": 38.7,
+   "sunElongationDeg": 121.7
+  },
+  {
+   "date": "2026-03-05",
+   "distanceAU": 4.6591,
+   "oneWayLightMinutes": 38.7,
+   "sunElongationDeg": 120.8
+  },
+  {
+   "date": "2026-03-06",
+   "distanceAU": 4.6676,
+   "oneWayLightMinutes": 38.8,
+   "sunElongationDeg": 119.7
+  },
+  {
+   "date": "2026-03-07",
+   "distanceAU": 4.687,
+   "oneWayLightMinutes": 39.0,
+   "sunElongationDeg": 118.6
+  },
+  {
+   "date": "2026-03-08",
+   "distanceAU": 4.7047,
+   "oneWayLightMinutes": 39.1,
+   "sunElongationDeg": 117.7
+  },
+  {
+   "date": "2026-03-09",
+   "distanceAU": 4.7125,
+   "oneWayLightMinutes": 39.2,
+   "sunElongationDeg": 116.7
+  },
+  {
+   "date": "2026-03-10",
+   "distanceAU": 4.7261,
+   "oneWayLightMinutes": 39.3,
+   "sunElongationDeg": 115.6
+  },
+  {
+   "date": "2026-03-11",
+   "distanceAU": 4.7477,
+   "oneWayLightMinutes": 39.5,
+   "sunElongationDeg": 114.6
+  },
+  {
+   "date": "2026-03-12",
+   "distanceAU": 4.7605,
+   "oneWayLightMinutes": 39.6,
+   "sunElongationDeg": 113.7
+  },
+  {
+   "date": "2026-03-13",
+   "distanceAU": 4.7692,
+   "oneWayLightMinutes": 39.7,
+   "sunElongationDeg": 112.7
+  },
+  {
+   "date": "2026-03-14",
+   "distanceAU": 4.7885,
+   "oneWayLightMinutes": 39.8,
+   "sunElongationDeg": 111.6
+  },
+  {
+   "date": "2026-03-15",
+   "distanceAU": 4.808,
+   "oneWayLightMinutes": 40.0,
+   "sunElongationDeg": 110.7
+  },
+  {
+   "date": "2026-03-16",
+   "distanceAU": 4.8171,
+   "oneWayLightMinutes": 40.1,
+   "sunElongationDeg": 109.8
+  },
+  {
+   "date": "2026-03-17",
+   "distanceAU": 4.8303,
+   "oneWayLightMinutes": 40.2,
+   "sunElongationDeg": 108.7
+  },
+  {
+   "date": "2026-03-18",
+   "distanceAU": 4.8526,
+   "oneWayLightMinutes": 40.4,
+   "sunElongationDeg": 107.7
+  },
+  {
+   "date": "2026-03-19",
+   "distanceAU": 4.8673,
+   "oneWayLightMinutes": 40.5,
+   "sunElongationDeg": 106.8
+  },
+  {
+   "date": "2026-03-20",
+   "distanceAU": 4.8762,
+   "oneWayLightMinutes": 40.6,
+   "sunElongationDeg": 105.8
+  },
+  {
+   "date": "2026-03-21",
+   "distanceAU": 4.895,
+   "oneWayLightMinutes": 40.7,
+   "sunElongationDeg": 104.8
+  },
+  {
+   "date": "2026-03-22",
+   "distanceAU": 4.916,
+   "oneWayLightMinutes": 40.9,
+   "sunElongationDeg": 103.9
+  },
+  {
+   "date": "2026-03-23",
+   "distanceAU": 4.9263,
+   "oneWayLightMinutes": 41.0,
+   "sunElongationDeg": 103.0
+  },
+  {
+   "date": "2026-03-24",
+   "distanceAU": 4.9388,
+   "oneWayLightMinutes": 41.1,
+   "sunElongationDeg": 102.0
+  },
+  {
+   "date": "2026-03-25",
+   "distanceAU": 4.9613,
+   "oneWayLightMinutes": 41.3,
+   "sunElongationDeg": 101.0
+  },
+  {
+   "date": "2026-03-26",
+   "distanceAU": 4.9778,
+   "oneWayLightMinutes": 41.4,
+   "sunElongationDeg": 100.1
+  },
+  {
+   "date": "2026-03-27",
+   "distanceAU": 4.9868,
+   "oneWayLightMinutes": 41.5,
+   "sunElongationDeg": 99.2
+  },
+  {
+   "date": "2026-03-28",
+   "distanceAU": 5.0048,
+   "oneWayLightMinutes": 41.6,
+   "sunElongationDeg": 98.2
+  },
+  {
+   "date": "2026-03-29",
+   "distanceAU": 5.0268,
+   "oneWayLightMinutes": 41.8,
+   "sunElongationDeg": 97.3
+  },
+  {
+   "date": "2026-03-30",
+   "distanceAU": 5.0384,
+   "oneWayLightMinutes": 41.9,
+   "sunElongationDeg": 96.4
+  },
+  {
+   "date": "2026-03-31",
+   "distanceAU": 5.0501,
+   "oneWayLightMinutes": 42.0,
+   "sunElongationDeg": 95.4
+  },
+  {
+   "date": "2026-04-01",
+   "distanceAU": 5.0723,
+   "oneWayLightMinutes": 42.2,
+   "sunElongationDeg": 94.5
+  },
+  {
+   "date": "2026-04-02",
+   "distanceAU": 5.0903,
+   "oneWayLightMinutes": 42.3,
+   "sunElongationDeg": 93.6
+  },
+  {
+   "date": "2026-04-03",
+   "distanceAU": 5.0995,
+   "oneWayLightMinutes": 42.4,
+   "sunElongationDeg": 92.7
+  },
+  {
+   "date": "2026-04-04",
+   "distanceAU": 5.1163,
+   "oneWayLightMinutes": 42.6,
+   "sunElongationDeg": 91.7
+  },
+  {
+   "date": "2026-04-05",
+   "distanceAU": 5.1391,
+   "oneWayLightMinutes": 42.7,
+   "sunElongationDeg": 90.8
+  },
+  {
+   "date": "2026-04-06",
+   "distanceAU": 5.1518,
+   "oneWayLightMinutes": 42.8,
+   "sunElongationDeg": 90.0
+  },
+  {
+   "date": "2026-04-07",
+   "distanceAU": 5.1626,
+   "oneWayLightMinutes": 42.9,
+   "sunElongationDeg": 89.0
+  },
+  {
+   "date": "2026-04-08",
+   "distanceAU": 5.1842,
+   "oneWayLightMinutes": 43.1,
+   "sunElongationDeg": 88.1
+  },
+  {
+   "date": "2026-04-09",
+   "distanceAU": 5.2034,
+   "oneWayLightMinutes": 43.3,
+   "sunElongationDeg": 87.3
+  },
+  {
+   "date": "2026-04-10",
+   "distanceAU": 5.2129,
+   "oneWayLightMinutes": 43.4,
+   "sunElongationDeg": 86.4
+  },
+  {
+   "date": "2026-04-11",
+   "distanceAU": 5.2284,
+   "oneWayLightMinutes": 43.5,
+   "sunElongationDeg": 85.4
+  },
+  {
+   "date": "2026-04-12",
+   "distanceAU": 5.2513,
+   "oneWayLightMinutes": 43.7,
+   "sunElongationDeg": 84.5
+  },
+  {
+   "date": "2026-04-13",
+   "distanceAU": 5.2652,
+   "oneWayLightMinutes": 43.8,
+   "sunElongationDeg": 83.7
+  },
+  {
+   "date": "2026-04-14",
+   "distanceAU": 5.2751,
+   "oneWayLightMinutes": 43.9,
+   "sunElongationDeg": 82.8
+  },
+  {
+   "date": "2026-04-15",
+   "distanceAU": 5.2956,
+   "oneWayLightMinutes": 44.0,
+   "sunElongationDeg": 81.9
+  },
+  {
+   "date": "2026-04-16",
+   "distanceAU": 5.3158,
+   "oneWayLightMinutes": 44.2,
+   "sunElongationDeg": 81.1
+  },
+  {
+   "date": "2026-04-17",
+   "distanceAU": 5.3256,
+   "oneWayLightMinutes": 44.3,
+   "sunElongationDeg": 80.2
+  },
+  {
+   "date": "2026-04-18",
+   "distanceAU": 5.3395,
+   "oneWayLightMinutes": 44.4,
+   "sunElongationDeg": 79.3
+  },
+  {
+   "date": "2026-04-19",
+   "distanceAU": 5.3623,
+   "oneWayLightMinutes": 44.6,
+   "sunElongationDeg": 78.4
+  },
+  {
+   "date": "2026-04-20",
+   "distanceAU": 5.3772,
+   "oneWayLightMinutes": 44.7,
+   "sunElongationDeg": 77.6
+  },
+  {
+   "date": "2026-04-21",
+   "distanceAU": 5.3864,
+   "oneWayLightMinutes": 44.8,
+   "sunElongationDeg": 76.7
+  },
+  {
+   "date": "2026-04-22",
+   "distanceAU": 5.4054,
+   "oneWayLightMinutes": 45.0,
+   "sunElongationDeg": 75.8
+  },
+  {
+   "date": "2026-04-23",
+   "distanceAU": 5.4263,
+   "oneWayLightMinutes": 45.1,
+   "sunElongationDeg": 75.0
+  },
+  {
+   "date": "2026-04-24",
+   "distanceAU": 5.4364,
+   "oneWayLightMinutes": 45.2,
+   "sunElongationDeg": 74.2
+  },
+  {
+   "date": "2026-04-25",
+   "distanceAU": 5.4487,
+   "oneWayLightMinutes": 45.3,
+   "sunElongationDeg": 73.3
+  },
+  {
+   "date": "2026-04-26",
+   "distanceAU": 5.4708,
+   "oneWayLightMinutes": 45.5,
+   "sunElongationDeg": 72.4
+  },
+  {
+   "date": "2026-04-27",
+   "distanceAU": 5.4866,
+   "oneWayLightMinutes": 45.6,
+   "sunElongationDeg": 71.7
+  },
+  {
+   "date": "2026-04-28",
+   "distanceAU": 5.495,
+   "oneWayLightMinutes": 45.7,
+   "sunElongationDeg": 70.8
+  },
+  {
+   "date": "2026-04-29",
+   "distanceAU": 5.5123,
+   "oneWayLightMinutes": 45.8,
+   "sunElongationDeg": 69.9
+  },
+  {
+   "date": "2026-04-30",
+   "distanceAU": 5.5334,
+   "oneWayLightMinutes": 46.0,
+   "sunElongationDeg": 69.1
+  },
+  {
+   "date": "2026-05-01",
+   "distanceAU": 5.544,
+   "oneWayLightMinutes": 46.1,
+   "sunElongationDeg": 68.3
+  },
+  {
+   "date": "2026-05-02",
+   "distanceAU": 5.5545,
+   "oneWayLightMinutes": 46.2,
+   "sunElongationDeg": 67.4
+  },
+  {
+   "date": "2026-05-03",
+   "distanceAU": 5.5756,
+   "oneWayLightMinutes": 46.4,
+   "sunElongationDeg": 66.6
+  },
+  {
+   "date": "2026-05-04",
+   "distanceAU": 5.5922,
+   "oneWayLightMinutes": 46.5,
+   "sunElongationDeg": 65.8
+  },
+  {
+   "date": "2026-05-05",
+   "distanceAU": 5.6,
+   "oneWayLightMinutes": 46.6,
+   "sunElongationDeg": 65.0
+  },
+  {
+   "date": "2026-05-06",
+   "distanceAU": 5.6153,
+   "oneWayLightMinutes": 46.7,
+   "sunElongationDeg": 64.1
+  },
+  {
+   "date": "2026-05-07",
+   "distanceAU": 5.6363,
+   "oneWayLightMinutes": 46.9,
+   "sunElongationDeg": 63.3
+  },
+  {
+   "date": "2026-05-08",
+   "distanceAU": 5.6474,
+   "oneWayLightMinutes": 47.0,
+   "sunElongationDeg": 62.6
+  },
+  {
+   "date": "2026-05-09",
+   "distanceAU": 5.6563,
+   "oneWayLightMinutes": 47.0,
+   "sunElongationDeg": 61.7
+  },
+  {
+   "date": "2026-05-10",
+   "distanceAU": 5.6759,
+   "oneWayLightMinutes": 47.2,
+   "sunElongationDeg": 60.8
+  },
+  {
+   "date": "2026-05-11",
+   "distanceAU": 5.6931,
+   "oneWayLightMinutes": 47.3,
+   "sunElongationDeg": 60.1
+  },
+  {
+   "date": "2026-05-12",
+   "distanceAU": 5.7004,
+   "oneWayLightMinutes": 47.4,
+   "sunElongationDeg": 59.3
+  },
+  {
+   "date": "2026-05-13",
+   "distanceAU": 5.7136,
+   "oneWayLightMinutes": 47.5,
+   "sunElongationDeg": 58.4
+  },
+  {
+   "date": "2026-05-14",
+   "distanceAU": 5.7342,
+   "oneWayLightMinutes": 47.7,
+   "sunElongationDeg": 57.6
+  },
+  {
+   "date": "2026-05-15",
+   "distanceAU": 5.7457,
+   "oneWayLightMinutes": 47.8,
+   "sunElongationDeg": 56.9
+  },
+  {
+   "date": "2026-05-16",
+   "distanceAU": 5.7531,
+   "oneWayLightMinutes": 47.8,
+   "sunElongationDeg": 56.1
+  },
+  {
+   "date": "2026-05-17",
+   "distanceAU": 5.7709,
+   "oneWayLightMinutes": 48.0,
+   "sunElongationDeg": 55.2
+  },
+  {
+   "date": "2026-05-18",
+   "distanceAU": 5.7884,
+   "oneWayLightMinutes": 48.1,
+   "sunElongationDeg": 54.5
+  },
+  {
+   "date": "2026-05-19",
+   "distanceAU": 5.7954,
+   "oneWayLightMinutes": 48.2,
+   "sunElongationDeg": 53.7
+  },
+  {
+   "date": "2026-05-20",
+   "distanceAU": 5.8063,
+   "oneWayLightMinutes": 48.3,
+   "sunElongationDeg": 52.9
+  },
+  {
+   "date": "2026-05-21",
+   "distanceAU": 5.826,
+   "oneWayLightMinutes": 48.5,
+   "sunElongationDeg": 52.1
+  },
+  {
+   "date": "2026-05-22",
+   "distanceAU": 5.838,
+   "oneWayLightMinutes": 48.6,
+   "sunElongationDeg": 51.3
+  },
+  {
+   "date": "2026-05-23",
+   "distanceAU": 5.8439,
+   "oneWayLightMinutes": 48.6,
+   "sunElongationDeg": 50.5
+  },
+  {
+   "date": "2026-05-24",
+   "distanceAU": 5.8596,
+   "oneWayLightMinutes": 48.7,
+   "sunElongationDeg": 49.7
+  },
+  {
+   "date": "2026-05-25",
+   "distanceAU": 5.8772,
+   "oneWayLightMinutes": 48.9,
+   "sunElongationDeg": 49.0
+  },
+  {
+   "date": "2026-05-26",
+   "distanceAU": 5.884,
+   "oneWayLightMinutes": 48.9,
+   "sunElongationDeg": 48.2
+  },
+  {
+   "date": "2026-05-27",
+   "distanceAU": 5.8927,
+   "oneWayLightMinutes": 49.0,
+   "sunElongationDeg": 47.4
+  },
+  {
+   "date": "2026-05-28",
+   "distanceAU": 5.9111,
+   "oneWayLightMinutes": 49.2,
+   "sunElongationDeg": 46.6
+  },
+  {
+   "date": "2026-05-29",
+   "distanceAU": 5.9235,
+   "oneWayLightMinutes": 49.3,
+   "sunElongationDeg": 45.9
+  },
+  {
+   "date": "2026-05-30",
+   "distanceAU": 5.9281,
+   "oneWayLightMinutes": 49.3,
+   "sunElongationDeg": 45.1
+  },
+  {
+   "date": "2026-05-31",
+   "distanceAU": 5.9415,
+   "oneWayLightMinutes": 49.4,
+   "sunElongationDeg": 44.3
+  },
+  {
+   "date": "2026-06-01",
+   "distanceAU": 5.9588,
+   "oneWayLightMinutes": 49.6,
+   "sunElongationDeg": 43.5
+  },
+  {
+   "date": "2026-06-02",
+   "distanceAU": 5.9656,
+   "oneWayLightMinutes": 49.6,
+   "sunElongationDeg": 42.8
+  },
+  {
+   "date": "2026-06-03",
+   "distanceAU": 5.972,
+   "oneWayLightMinutes": 49.7,
+   "sunElongationDeg": 42.0
+  },
+  {
+   "date": "2026-06-04",
+   "distanceAU": 5.9889,
+   "oneWayLightMinutes": 49.8,
+   "sunElongationDeg": 41.2
+  },
+  {
+   "date": "2026-06-05",
+   "distanceAU": 6.0016,
+   "oneWayLightMinutes": 49.9,
+   "sunElongationDeg": 40.5
+  },
+  {
+   "date": "2026-06-06",
+   "distanceAU": 6.0051,
+   "oneWayLightMinutes": 49.9,
+   "sunElongationDeg": 39.7
+  },
+  {
+   "date": "2026-06-07",
+   "distanceAU": 6.016,
+   "oneWayLightMinutes": 50.0,
+   "sunElongationDeg": 38.9
+  },
+  {
+   "date": "2026-06-08",
+   "distanceAU": 6.0327,
+   "oneWayLightMinutes": 50.2,
+   "sunElongationDeg": 38.2
+  },
+  {
+   "date": "2026-06-09",
+   "distanceAU": 6.0396,
+   "oneWayLightMinutes": 50.2,
+   "sunElongationDeg": 37.5
+  },
+  {
+   "date": "2026-06-10",
+   "distanceAU": 6.0439,
+   "oneWayLightMinutes": 50.3,
+   "sunElongationDeg": 36.7
+  },
+  {
+   "date": "2026-06-11",
+   "distanceAU": 6.0588,
+   "oneWayLightMinutes": 50.4,
+   "sunElongationDeg": 35.9
+  },
+  {
+   "date": "2026-06-12",
+   "distanceAU": 6.0716,
+   "oneWayLightMinutes": 50.5,
+   "sunElongationDeg": 35.2
+  },
+  {
+   "date": "2026-06-13",
+   "distanceAU": 6.0743,
+   "oneWayLightMinutes": 50.5,
+   "sunElongationDeg": 34.4
+  },
+  {
+   "date": "2026-06-14",
+   "distanceAU": 6.0826,
+   "oneWayLightMinutes": 50.6,
+   "sunElongationDeg": 33.6
+  },
+  {
+   "date": "2026-06-15",
+   "distanceAU": 6.0984,
+   "oneWayLightMinutes": 50.7,
+   "sunElongationDeg": 32.9
+  },
+  {
+   "date": "2026-06-16",
+   "distanceAU": 6.1054,
+   "oneWayLightMinutes": 50.8,
+   "sunElongationDeg": 32.2
+  },
+  {
+   "date": "2026-06-17",
+   "distanceAU": 6.1077,
+   "oneWayLightMinutes": 50.8,
+   "sunElongationDeg": 31.4
+  },
+  {
+   "date": "2026-06-18",
+   "distanceAU": 6.1204,
+   "oneWayLightMinutes": 50.9,
+   "sunElongationDeg": 30.6
+  },
+  {
+   "date": "2026-06-19",
+   "distanceAU": 6.1331,
+   "oneWayLightMinutes": 51.0,
+   "sunElongationDeg": 29.9
+  },
+  {
+   "date": "2026-06-20",
+   "distanceAU": 6.1352,
+   "oneWayLightMinutes": 51.0,
+   "sunElongationDeg": 29.2
+  },
+  {
+   "date": "2026-06-21",
+   "distanceAU": 6.1408,
+   "oneWayLightMinutes": 51.1,
+   "sunElongationDeg": 28.4
+  },
+  {
+   "date": "2026-06-22",
+   "distanceAU": 6.1553,
+   "oneWayLightMinutes": 51.2,
+   "sunElongationDeg": 27.6
+  },
+  {
+   "date": "2026-06-23",
+   "distanceAU": 6.1624,
+   "oneWayLightMinutes": 51.3,
+   "sunElongationDeg": 26.9
+  },
+  {
+   "date": "2026-06-24",
+   "distanceAU": 6.163,
+   "oneWayLightMinutes": 51.3,
+   "sunElongationDeg": 26.2
+  },
+  {
+   "date": "2026-06-25",
+   "distanceAU": 6.1731,
+   "oneWayLightMinutes": 51.3,
+   "sunElongationDeg": 25.4
+  },
+  {
+   "date": "2026-06-26",
+   "distanceAU": 6.1856,
+   "oneWayLightMinutes": 51.4,
+   "sunElongationDeg": 24.7
+  },
+  {
+   "date": "2026-06-27",
+   "distanceAU": 6.1872,
+   "oneWayLightMinutes": 51.5,
+   "sunElongationDeg": 24.0
+  },
+  {
+   "date": "2026-06-28",
+   "distanceAU": 6.1902,
+   "oneWayLightMinutes": 51.5,
+   "sunElongationDeg": 23.2
+  },
+  {
+   "date": "2026-06-29",
+   "distanceAU": 6.2031,
+   "oneWayLightMinutes": 51.6,
+   "sunElongationDeg": 22.4
+  },
+  {
+   "date": "2026-06-30",
+   "distanceAU": 6.2103,
+   "oneWayLightMinutes": 51.6,
+   "sunElongationDeg": 21.7
+  },
+  {
+   "date": "2026-07-01",
+   "distanceAU": 6.2094,
+   "oneWayLightMinutes": 51.6,
+   "sunElongationDeg": 21.0
+  },
+  {
+   "date": "2026-07-02",
+   "distanceAU": 6.2169,
+   "oneWayLightMinutes": 51.7,
+   "sunElongationDeg": 20.2
+  },
+  {
+   "date": "2026-07-03",
+   "distanceAU": 6.2287,
+   "oneWayLightMinutes": 51.8,
+   "sunElongationDeg": 19.5
+  },
+  {
+   "date": "2026-07-04",
+   "distanceAU": 6.2301,
+   "oneWayLightMinutes": 51.8,
+   "sunElongationDeg": 18.8
+  },
+  {
+   "date": "2026-07-05",
+   "distanceAU": 6.2306,
+   "oneWayLightMinutes": 51.8,
+   "sunElongationDeg": 18.0
+  },
+  {
+   "date": "2026-07-06",
+   "distanceAU": 6.2415,
+   "oneWayLightMinutes": 51.9,
+   "sunElongationDeg": 17.2
+  },
+  {
+   "date": "2026-07-07",
+   "distanceAU": 6.2488,
+   "oneWayLightMinutes": 52.0,
+   "sunElongationDeg": 16.6
+  },
+  {
+   "date": "2026-07-08",
+   "distanceAU": 6.2466,
+   "oneWayLightMinutes": 52.0,
+   "sunElongationDeg": 15.8
+  },
+  {
+   "date": "2026-07-09",
+   "distanceAU": 6.2513,
+   "oneWayLightMinutes": 52.0,
+   "sunElongationDeg": 15.0
+  },
+  {
+   "date": "2026-07-10",
+   "distanceAU": 6.2623,
+   "oneWayLightMinutes": 52.1,
+   "sunElongationDeg": 14.3
+  },
+  {
+   "date": "2026-07-11",
+   "distanceAU": 6.2635,
+   "oneWayLightMinutes": 52.1,
+   "sunElongationDeg": 13.6
+  },
+  {
+   "date": "2026-07-12",
+   "distanceAU": 6.2617,
+   "oneWayLightMinutes": 52.1,
+   "sunElongationDeg": 12.9
+  },
+  {
+   "date": "2026-07-13",
+   "distanceAU": 6.2704,
+   "oneWayLightMinutes": 52.1,
+   "sunElongationDeg": 12.1
+  },
+  {
+   "date": "2026-07-14",
+   "distanceAU": 6.2776,
+   "oneWayLightMinutes": 52.2,
+   "sunElongationDeg": 11.4
+  },
+  {
+   "date": "2026-07-15",
+   "distanceAU": 6.2744,
+   "oneWayLightMinutes": 52.2,
+   "sunElongationDeg": 10.7
+  },
+  {
+   "date": "2026-07-16",
+   "distanceAU": 6.2762,
+   "oneWayLightMinutes": 52.2,
+   "sunElongationDeg": 9.9
+  },
+  {
+   "date": "2026-07-17",
+   "distanceAU": 6.286,
+   "oneWayLightMinutes": 52.3,
+   "sunElongationDeg": 9.2
+  },
+  {
+   "date": "2026-07-18",
+   "distanceAU": 6.2872,
+   "oneWayLightMinutes": 52.3,
+   "sunElongationDeg": 8.5
+  },
+  {
+   "date": "2026-07-19",
+   "distanceAU": 6.2833,
+   "oneWayLightMinutes": 52.3,
+   "sunElongationDeg": 7.7
+  },
+  {
+   "date": "2026-07-20",
+   "distanceAU": 6.2895,
+   "oneWayLightMinutes": 52.3,
+   "sunElongationDeg": 7.0
+  },
+  {
+   "date": "2026-07-21",
+   "distanceAU": 6.2963,
+   "oneWayLightMinutes": 52.4,
+   "sunElongationDeg": 6.3
+  },
+  {
+   "date": "2026-07-22",
+   "distanceAU": 6.2924,
+   "oneWayLightMinutes": 52.3,
+   "sunElongationDeg": 5.6
+  },
+  {
+   "date": "2026-07-23",
+   "distanceAU": 6.2914,
+   "oneWayLightMinutes": 52.3,
+   "sunElongationDeg": 4.8
+  },
+  {
+   "date": "2026-07-24",
+   "distanceAU": 6.2997,
+   "oneWayLightMinutes": 52.4,
+   "sunElongationDeg": 4.0
+  },
+  {
+   "date": "2026-07-25",
+   "distanceAU": 6.3009,
+   "oneWayLightMinutes": 52.4,
+   "sunElongationDeg": 3.4
+  },
+  {
+   "date": "2026-07-26",
+   "distanceAU": 6.2951,
+   "oneWayLightMinutes": 52.4,
+   "sunElongationDeg": 2.6
+  },
+  {
+   "date": "2026-07-27",
+   "distanceAU": 6.2987,
+   "oneWayLightMinutes": 52.4,
+   "sunElongationDeg": 1.9
+  },
+  {
+   "date": "2026-07-28",
+   "distanceAU": 6.305,
+   "oneWayLightMinutes": 52.4,
+   "sunElongationDeg": 1.2
+  },
+  {
+   "date": "2026-07-29",
+   "distanceAU": 6.3006,
+   "oneWayLightMinutes": 52.4,
+   "sunElongationDeg": 0.6
+  },
+  {
+   "date": "2026-07-30",
+   "distanceAU": 6.2969,
+   "oneWayLightMinutes": 52.4,
+   "sunElongationDeg": 0.6
+  },
+  {
+   "date": "2026-07-31",
+   "distanceAU": 6.3033,
+   "oneWayLightMinutes": 52.4,
+   "sunElongationDeg": 1.2
+  },
+  {
+   "date": "2026-08-01",
+   "distanceAU": 6.3046,
+   "oneWayLightMinutes": 52.4,
+   "sunElongationDeg": 1.9
+  },
+  {
+   "date": "2026-08-02",
+   "distanceAU": 6.2972,
+   "oneWayLightMinutes": 52.4,
+   "sunElongationDeg": 2.6
+  },
+  {
+   "date": "2026-08-03",
+   "distanceAU": 6.298,
+   "oneWayLightMinutes": 52.4,
+   "sunElongationDeg": 3.4
+  },
+  {
+   "date": "2026-08-04",
+   "distanceAU": 6.3036,
+   "oneWayLightMinutes": 52.4,
+   "sunElongationDeg": 4.1
+  },
+  {
+   "date": "2026-08-05",
+   "distanceAU": 6.2989,
+   "oneWayLightMinutes": 52.4,
+   "sunElongationDeg": 4.8
+  },
+  {
+   "date": "2026-08-06",
+   "distanceAU": 6.2927,
+   "oneWayLightMinutes": 52.3,
+   "sunElongationDeg": 5.5
+  },
+  {
+   "date": "2026-08-07",
+   "distanceAU": 6.297,
+   "oneWayLightMinutes": 52.4,
+   "sunElongationDeg": 6.3
+  },
+  {
+   "date": "2026-08-08",
+   "distanceAU": 6.2982,
+   "oneWayLightMinutes": 52.4,
+   "sunElongationDeg": 7.0
+  },
+  {
+   "date": "2026-08-09",
+   "distanceAU": 6.2896,
+   "oneWayLightMinutes": 52.3,
+   "sunElongationDeg": 7.7
+  },
+  {
+   "date": "2026-08-10",
+   "distanceAU": 6.2874,
+   "oneWayLightMinutes": 52.3,
+   "sunElongationDeg": 8.5
+  },
+  {
+   "date": "2026-08-11",
+   "distanceAU": 6.292,
+   "oneWayLightMinutes": 52.3,
+   "sunElongationDeg": 9.2
+  },
+  {
+   "date": "2026-08-12",
+   "distanceAU": 6.2872,
+   "oneWayLightMinutes": 52.3,
+   "sunElongationDeg": 9.9
+  },
+  {
+   "date": "2026-08-13",
+   "distanceAU": 6.2786,
+   "oneWayLightMinutes": 52.2,
+   "sunElongationDeg": 10.7
+  },
+  {
+   "date": "2026-08-14",
+   "distanceAU": 6.2806,
+   "oneWayLightMinutes": 52.2,
+   "sunElongationDeg": 11.5
+  },
+  {
+   "date": "2026-08-15",
+   "distanceAU": 6.2816,
+   "oneWayLightMinutes": 52.2,
+   "sunElongationDeg": 12.2
+  },
+  {
+   "date": "2026-08-16",
+   "distanceAU": 6.272,
+   "oneWayLightMinutes": 52.2,
+   "sunElongationDeg": 12.9
+  },
+  {
+   "date": "2026-08-17",
+   "distanceAU": 6.2671,
+   "oneWayLightMinutes": 52.1,
+   "sunElongationDeg": 13.7
+  },
+  {
+   "date": "2026-08-18",
+   "distanceAU": 6.2703,
+   "oneWayLightMinutes": 52.1,
+   "sunElongationDeg": 14.4
+  },
+  {
+   "date": "2026-08-19",
+   "distanceAU": 6.2654,
+   "oneWayLightMinutes": 52.1,
+   "sunElongationDeg": 15.1
+  },
+  {
+   "date": "2026-08-20",
+   "distanceAU": 6.2549,
+   "oneWayLightMinutes": 52.0,
+   "sunElongationDeg": 15.9
+  },
+  {
+   "date": "2026-08-21",
+   "distanceAU": 6.2543,
+   "oneWayLightMinutes": 52.0,
+   "sunElongationDeg": 16.7
+  },
+  {
+   "date": "2026-08-22",
+   "distanceAU": 6.2549,
+   "oneWayLightMinutes": 52.0,
+   "sunElongationDeg": 17.4
+  },
+  {
+   "date": "2026-08-23",
+   "distanceAU": 6.2447,
+   "oneWayLightMinutes": 51.9,
+   "sunElongationDeg": 18.1
+  },
+  {
+   "date": "2026-08-24",
+   "distanceAU": 6.237,
+   "oneWayLightMinutes": 51.9,
+   "sunElongationDeg": 18.9
+  },
+  {
+   "date": "2026-08-25",
+   "distanceAU": 6.2387,
+   "oneWayLightMinutes": 51.9,
+   "sunElongationDeg": 19.7
+  },
+  {
+   "date": "2026-08-26",
+   "distanceAU": 6.2338,
+   "oneWayLightMinutes": 51.8,
+   "sunElongationDeg": 20.3
+  },
+  {
+   "date": "2026-08-27",
+   "distanceAU": 6.2215,
+   "oneWayLightMinutes": 51.7,
+   "sunElongationDeg": 21.1
+  },
+  {
+   "date": "2026-08-28",
+   "distanceAU": 6.2183,
+   "oneWayLightMinutes": 51.7,
+   "sunElongationDeg": 21.9
+  },
+  {
+   "date": "2026-08-29",
+   "distanceAU": 6.2184,
+   "oneWayLightMinutes": 51.7,
+   "sunElongationDeg": 22.6
+  },
+  {
+   "date": "2026-08-30",
+   "distanceAU": 6.2078,
+   "oneWayLightMinutes": 51.6,
+   "sunElongationDeg": 23.3
+  },
+  {
+   "date": "2026-08-31",
+   "distanceAU": 6.1975,
+   "oneWayLightMinutes": 51.5,
+   "sunElongationDeg": 24.2
+  },
+  {
+   "date": "2026-09-01",
+   "distanceAU": 6.1974,
+   "oneWayLightMinutes": 51.5,
+   "sunElongationDeg": 24.9
+  },
+  {
+   "date": "2026-09-02",
+   "distanceAU": 6.1926,
+   "oneWayLightMinutes": 51.5,
+   "sunElongationDeg": 25.6
+  },
+  {
+   "date": "2026-09-03",
+   "distanceAU": 6.1789,
+   "oneWayLightMinutes": 51.4,
+   "sunElongationDeg": 26.4
+  },
+  {
+   "date": "2026-09-04",
+   "distanceAU": 6.173,
+   "oneWayLightMinutes": 51.3,
+   "sunElongationDeg": 27.2
+  },
+  {
+   "date": "2026-09-05",
+   "distanceAU": 6.1724,
+   "oneWayLightMinutes": 51.3,
+   "sunElongationDeg": 28.0
+  },
+  {
+   "date": "2026-09-06",
+   "distanceAU": 6.1616,
+   "oneWayLightMinutes": 51.2,
+   "sunElongationDeg": 28.7
+  },
+  {
+   "date": "2026-09-07",
+   "distanceAU": 6.1489,
+   "oneWayLightMinutes": 51.1,
+   "sunElongationDeg": 29.5
+  },
+  {
+   "date": "2026-09-08",
+   "distanceAU": 6.1467,
+   "oneWayLightMinutes": 51.1,
+   "sunElongationDeg": 30.3
+  },
+  {
+   "date": "2026-09-09",
+   "distanceAU": 6.1419,
+   "oneWayLightMinutes": 51.1,
+   "sunElongationDeg": 31.0
+  },
+  {
+   "date": "2026-09-10",
+   "distanceAU": 6.1271,
+   "oneWayLightMinutes": 51.0,
+   "sunElongationDeg": 31.7
+  },
+  {
+   "date": "2026-09-11",
+   "distanceAU": 6.1185,
+   "oneWayLightMinutes": 50.9,
+   "sunElongationDeg": 32.6
+  },
+  {
+   "date": "2026-09-12",
+   "distanceAU": 6.1169,
+   "oneWayLightMinutes": 50.9,
+   "sunElongationDeg": 33.3
+  },
+  {
+   "date": "2026-09-13",
+   "distanceAU": 6.1061,
+   "oneWayLightMinutes": 50.8,
+   "sunElongationDeg": 34.0
+  },
+  {
+   "date": "2026-09-14",
+   "distanceAU": 6.0913,
+   "oneWayLightMinutes": 50.7,
+   "sunElongationDeg": 34.8
+  },
+  {
+   "date": "2026-09-15",
+   "distanceAU": 6.0869,
+   "oneWayLightMinutes": 50.6,
+   "sunElongationDeg": 35.7
+  },
+  {
+   "date": "2026-09-16",
+   "distanceAU": 6.082,
+   "oneWayLightMinutes": 50.6,
+   "sunElongationDeg": 36.4
+  },
+  {
+   "date": "2026-09-17",
+   "distanceAU": 6.0665,
+   "oneWayLightMinutes": 50.5,
+   "sunElongationDeg": 37.1
+  },
+  {
+   "date": "2026-09-18",
+   "distanceAU": 6.0552,
+   "oneWayLightMinutes": 50.4,
+   "sunElongationDeg": 38.0
+  },
+  {
+   "date": "2026-09-19",
+   "distanceAU": 6.0524,
+   "oneWayLightMinutes": 50.3,
+   "sunElongationDeg": 38.8
+  },
+  {
+   "date": "2026-09-20",
+   "distanceAU": 6.0419,
+   "oneWayLightMinutes": 50.2,
+   "sunElongationDeg": 39.5
+  },
+  {
+   "date": "2026-09-21",
+   "distanceAU": 6.0253,
+   "oneWayLightMinutes": 50.1,
+   "sunElongationDeg": 40.3
+  },
+  {
+   "date": "2026-09-22",
+   "distanceAU": 6.0185,
+   "oneWayLightMinutes": 50.1,
+   "sunElongationDeg": 41.1
+  },
+  {
+   "date": "2026-09-23",
+   "distanceAU": 6.0135,
+   "oneWayLightMinutes": 50.0,
+   "sunElongationDeg": 41.9
+  },
+  {
+   "date": "2026-09-24",
+   "distanceAU": 5.9976,
+   "oneWayLightMinutes": 49.9,
+   "sunElongationDeg": 42.6
+  },
+  {
+   "date": "2026-09-25",
+   "distanceAU": 5.9838,
+   "oneWayLightMinutes": 49.8,
+   "sunElongationDeg": 43.5
+  },
+  {
+   "date": "2026-09-26",
+   "distanceAU": 5.9796,
+   "oneWayLightMinutes": 49.7,
+   "sunElongationDeg": 44.3
+  },
+  {
+   "date": "2026-09-27",
+   "distanceAU": 5.9693,
+   "oneWayLightMinutes": 49.6,
+   "sunElongationDeg": 45.0
+  },
+  {
+   "date": "2026-09-28",
+   "distanceAU": 5.9513,
+   "oneWayLightMinutes": 49.5,
+   "sunElongationDeg": 45.8
+  },
+  {
+   "date": "2026-09-29",
+   "distanceAU": 5.9421,
+   "oneWayLightMinutes": 49.4,
+   "sunElongationDeg": 46.7
+  },
+  {
+   "date": "2026-09-30",
+   "distanceAU": 5.9368,
+   "oneWayLightMinutes": 49.4,
+   "sunElongationDeg": 47.5
+  },
+  {
+   "date": "2026-10-01",
+   "distanceAU": 5.9208,
+   "oneWayLightMinutes": 49.2,
+   "sunElongationDeg": 48.2
+  },
+  {
+   "date": "2026-10-02",
+   "distanceAU": 5.9047,
+   "oneWayLightMinutes": 49.1,
+   "sunElongationDeg": 49.1
+  },
+  {
+   "date": "2026-10-03",
+   "distanceAU": 5.899,
+   "oneWayLightMinutes": 49.1,
+   "sunElongationDeg": 49.9
+  },
+  {
+   "date": "2026-10-04",
+   "distanceAU": 5.889,
+   "oneWayLightMinutes": 49.0,
+   "sunElongationDeg": 50.6
+  },
+  {
+   "date": "2026-10-05",
+   "distanceAU": 5.8699,
+   "oneWayLightMinutes": 48.8,
+   "sunElongationDeg": 51.5
+  },
+  {
+   "date": "2026-10-06",
+   "distanceAU": 5.8583,
+   "oneWayLightMinutes": 48.7,
+   "sunElongationDeg": 52.3
+  },
+  {
+   "date": "2026-10-07",
+   "distanceAU": 5.8525,
+   "oneWayLightMinutes": 48.7,
+   "sunElongationDeg": 53.1
+  },
+  {
+   "date": "2026-10-08",
+   "distanceAU": 5.8366,
+   "oneWayLightMinutes": 48.5,
+   "sunElongationDeg": 53.9
+  },
+  {
+   "date": "2026-10-09",
+   "distanceAU": 5.8186,
+   "oneWayLightMinutes": 48.4,
+   "sunElongationDeg": 54.7
+  },
+  {
+   "date": "2026-10-10",
+   "distanceAU": 5.8111,
+   "oneWayLightMinutes": 48.3,
+   "sunElongationDeg": 55.6
+  },
+  {
+   "date": "2026-10-11",
+   "distanceAU": 5.8014,
+   "oneWayLightMinutes": 48.2,
+   "sunElongationDeg": 56.4
+  },
+  {
+   "date": "2026-10-12",
+   "distanceAU": 5.7817,
+   "oneWayLightMinutes": 48.1,
+   "sunElongationDeg": 57.2
+  },
+  {
+   "date": "2026-10-13",
+   "distanceAU": 5.7678,
+   "oneWayLightMinutes": 48.0,
+   "sunElongationDeg": 58.1
+  },
+  {
+   "date": "2026-10-14",
+   "distanceAU": 5.7613,
+   "oneWayLightMinutes": 47.9,
+   "sunElongationDeg": 58.9
+  },
+  {
+   "date": "2026-10-15",
+   "distanceAU": 5.7458,
+   "oneWayLightMinutes": 47.8,
+   "sunElongationDeg": 59.7
+  },
+  {
+   "date": "2026-10-16",
+   "distanceAU": 5.7261,
+   "oneWayLightMinutes": 47.6,
+   "sunElongationDeg": 60.5
+  },
+  {
+   "date": "2026-10-17",
+   "distanceAU": 5.7168,
+   "oneWayLightMinutes": 47.5,
+   "sunElongationDeg": 61.4
+  },
+  {
+   "date": "2026-10-18",
+   "distanceAU": 5.7074,
+   "oneWayLightMinutes": 47.5,
+   "sunElongationDeg": 62.2
+  },
+  {
+   "date": "2026-10-19",
+   "distanceAU": 5.6874,
+   "oneWayLightMinutes": 47.3,
+   "sunElongationDeg": 63.0
+  },
+  {
+   "date": "2026-10-20",
+   "distanceAU": 5.6714,
+   "oneWayLightMinutes": 47.2,
+   "sunElongationDeg": 63.9
+  },
+  {
+   "date": "2026-10-21",
+   "distanceAU": 5.6641,
+   "oneWayLightMinutes": 47.1,
+   "sunElongationDeg": 64.8
+  },
+  {
+   "date": "2026-10-22",
+   "distanceAU": 5.6492,
+   "oneWayLightMinutes": 47.0,
+   "sunElongationDeg": 65.6
+  },
+  {
+   "date": "2026-10-23",
+   "distanceAU": 5.6283,
+   "oneWayLightMinutes": 46.8,
+   "sunElongationDeg": 66.4
+  },
+  {
+   "date": "2026-10-24",
+   "distanceAU": 5.6171,
+   "oneWayLightMinutes": 46.7,
+   "sunElongationDeg": 67.4
+  },
+  {
+   "date": "2026-10-25",
+   "distanceAU": 5.608,
+   "oneWayLightMinutes": 46.6,
+   "sunElongationDeg": 68.2
+  },
+  {
+   "date": "2026-10-26",
+   "distanceAU": 5.588,
+   "oneWayLightMinutes": 46.5,
+   "sunElongationDeg": 69.0
+  },
+  {
+   "date": "2026-10-27",
+   "distanceAU": 5.5701,
+   "oneWayLightMinutes": 46.3,
+   "sunElongationDeg": 69.9
+  },
+  {
+   "date": "2026-10-28",
+   "distanceAU": 5.5619,
+   "oneWayLightMinutes": 46.3,
+   "sunElongationDeg": 70.8
+  },
+  {
+   "date": "2026-10-29",
+   "distanceAU": 5.5478,
+   "oneWayLightMinutes": 46.1,
+   "sunElongationDeg": 71.6
+  },
+  {
+   "date": "2026-10-30",
+   "distanceAU": 5.5259,
+   "oneWayLightMinutes": 46.0,
+   "sunElongationDeg": 72.5
+  },
+  {
+   "date": "2026-10-31",
+   "distanceAU": 5.5129,
+   "oneWayLightMinutes": 45.8,
+   "sunElongationDeg": 73.4
+  },
+  {
+   "date": "2026-11-01",
+   "distanceAU": 5.504,
+   "oneWayLightMinutes": 45.8,
+   "sunElongationDeg": 74.3
+  },
+  {
+   "date": "2026-11-02",
+   "distanceAU": 5.4845,
+   "oneWayLightMinutes": 45.6,
+   "sunElongationDeg": 75.1
+  },
+  {
+   "date": "2026-11-03",
+   "distanceAU": 5.4649,
+   "oneWayLightMinutes": 45.4,
+   "sunElongationDeg": 76.0
+  },
+  {
+   "date": "2026-11-04",
+   "distanceAU": 5.4557,
+   "oneWayLightMinutes": 45.4,
+   "sunElongationDeg": 76.9
+  },
+  {
+   "date": "2026-11-05",
+   "distanceAU": 5.4424,
+   "oneWayLightMinutes": 45.3,
+   "sunElongationDeg": 77.8
+  },
+  {
+   "date": "2026-11-06",
+   "distanceAU": 5.4201,
+   "oneWayLightMinutes": 45.1,
+   "sunElongationDeg": 78.7
+  },
+  {
+   "date": "2026-11-07",
+   "distanceAU": 5.4054,
+   "oneWayLightMinutes": 45.0,
+   "sunElongationDeg": 79.6
+  },
+  {
+   "date": "2026-11-08",
+   "distanceAU": 5.3965,
+   "oneWayLightMinutes": 44.9,
+   "sunElongationDeg": 80.5
+  },
+  {
+   "date": "2026-11-09",
+   "distanceAU": 5.3777,
+   "oneWayLightMinutes": 44.7,
+   "sunElongationDeg": 81.3
+  },
+  {
+   "date": "2026-11-10",
+   "distanceAU": 5.3568,
+   "oneWayLightMinutes": 44.6,
+   "sunElongationDeg": 82.3
+  },
+  {
+   "date": "2026-11-11",
+   "distanceAU": 5.3466,
+   "oneWayLightMinutes": 44.5,
+   "sunElongationDeg": 83.2
+  },
+  {
+   "date": "2026-11-12",
+   "distanceAU": 5.3342,
+   "oneWayLightMinutes": 44.4,
+   "sunElongationDeg": 84.1
+  },
+  {
+   "date": "2026-11-13",
+   "distanceAU": 5.3119,
+   "oneWayLightMinutes": 44.2,
+   "sunElongationDeg": 85.0
+  },
+  {
+   "date": "2026-11-14",
+   "distanceAU": 5.2956,
+   "oneWayLightMinutes": 44.0,
+   "sunElongationDeg": 86.0
+  },
+  {
+   "date": "2026-11-15",
+   "distanceAU": 5.2868,
+   "oneWayLightMinutes": 44.0,
+   "sunElongationDeg": 86.9
+  },
+  {
+   "date": "2026-11-16",
+   "distanceAU": 5.269,
+   "oneWayLightMinutes": 43.8,
+   "sunElongationDeg": 87.7
+  },
+  {
+   "date": "2026-11-17",
+   "distanceAU": 5.2473,
+   "oneWayLightMinutes": 43.6,
+   "sunElongationDeg": 88.7
+  },
+  {
+   "date": "2026-11-18",
+   "distanceAU": 5.2359,
+   "oneWayLightMinutes": 43.5,
+   "sunElongationDeg": 89.7
+  },
+  {
+   "date": "2026-11-19",
+   "distanceAU": 5.2246,
+   "oneWayLightMinutes": 43.5,
+   "sunElongationDeg": 90.5
+  },
+  {
+   "date": "2026-11-20",
+   "distanceAU": 5.2027,
+   "oneWayLightMinutes": 43.3,
+   "sunElongationDeg": 91.4
+  },
+  {
+   "date": "2026-11-21",
+   "distanceAU": 5.1851,
+   "oneWayLightMinutes": 43.1,
+   "sunElongationDeg": 92.5
+  },
+  {
+   "date": "2026-11-22",
+   "distanceAU": 5.1763,
+   "oneWayLightMinutes": 43.0,
+   "sunElongationDeg": 93.4
+  },
+  {
+   "date": "2026-11-23",
+   "distanceAU": 5.1598,
+   "oneWayLightMinutes": 42.9,
+   "sunElongationDeg": 94.3
+  },
+  {
+   "date": "2026-11-24",
+   "distanceAU": 5.1376,
+   "oneWayLightMinutes": 42.7,
+   "sunElongationDeg": 95.2
+  },
+  {
+   "date": "2026-11-25",
+   "distanceAU": 5.1253,
+   "oneWayLightMinutes": 42.6,
+   "sunElongationDeg": 96.3
+  },
+  {
+   "date": "2026-11-26",
+   "distanceAU": 5.115,
+   "oneWayLightMinutes": 42.5,
+   "sunElongationDeg": 97.2
+  },
+  {
+   "date": "2026-11-27",
+   "distanceAU": 5.0939,
+   "oneWayLightMinutes": 42.4,
+   "sunElongationDeg": 98.1
+  },
+  {
+   "date": "2026-11-28",
+   "distanceAU": 5.0753,
+   "oneWayLightMinutes": 42.2,
+   "sunElongationDeg": 99.1
+  },
+  {
+   "date": "2026-11-29",
+   "distanceAU": 5.0664,
+   "oneWayLightMinutes": 42.1,
+   "sunElongationDeg": 100.1
+  },
+  {
+   "date": "2026-11-30",
+   "distanceAU": 5.0515,
+   "oneWayLightMinutes": 42.0,
+   "sunElongationDeg": 101.0
+  },
+  {
+   "date": "2026-12-01",
+   "distanceAU": 5.0292,
+   "oneWayLightMinutes": 41.8,
+   "sunElongationDeg": 102.0
+  },
+  {
+   "date": "2026-12-02",
+   "distanceAU": 5.016,
+   "oneWayLightMinutes": 41.7,
+   "sunElongationDeg": 103.0
+  },
+  {
+   "date": "2026-12-03",
+   "distanceAU": 5.0068,
+   "oneWayLightMinutes": 41.6,
+   "sunElongationDeg": 104.0
+  },
+  {
+   "date": "2026-12-04",
+   "distanceAU": 4.9869,
+   "oneWayLightMinutes": 41.5,
+   "sunElongationDeg": 104.9
+  },
+  {
+   "date": "2026-12-05",
+   "distanceAU": 4.9676,
+   "oneWayLightMinutes": 41.3,
+   "sunElongationDeg": 105.9
+  },
+  {
+   "date": "2026-12-06",
+   "distanceAU": 4.9587,
+   "oneWayLightMinutes": 41.2,
+   "sunElongationDeg": 107.0
+  },
+  {
+   "date": "2026-12-07",
+   "distanceAU": 4.9455,
+   "oneWayLightMinutes": 41.1,
+   "sunElongationDeg": 107.9
+  },
+  {
+   "date": "2026-12-08",
+   "distanceAU": 4.9236,
+   "oneWayLightMinutes": 40.9,
+   "sunElongationDeg": 108.9
+  },
+  {
+   "date": "2026-12-09",
+   "distanceAU": 4.9097,
+   "oneWayLightMinutes": 40.8,
+   "sunElongationDeg": 110.0
+  },
+  {
+   "date": "2026-12-10",
+   "distanceAU": 4.9015,
+   "oneWayLightMinutes": 40.8,
+   "sunElongationDeg": 110.9
+  },
+  {
+   "date": "2026-12-11",
+   "distanceAU": 4.8833,
+   "oneWayLightMinutes": 40.6,
+   "sunElongationDeg": 111.9
+  },
+  {
+   "date": "2026-12-12",
+   "distanceAU": 4.8636,
+   "oneWayLightMinutes": 40.4,
+   "sunElongationDeg": 112.9
+  },
+  {
+   "date": "2026-12-13",
+   "distanceAU": 4.8547,
+   "oneWayLightMinutes": 40.4,
+   "sunElongationDeg": 114.0
+  },
+  {
+   "date": "2026-12-14",
+   "distanceAU": 4.8434,
+   "oneWayLightMinutes": 40.3,
+   "sunElongationDeg": 114.9
+  },
+  {
+   "date": "2026-12-15",
+   "distanceAU": 4.8224,
+   "oneWayLightMinutes": 40.1,
+   "sunElongationDeg": 115.9
+  },
+  {
+   "date": "2026-12-16",
+   "distanceAU": 4.8081,
+   "oneWayLightMinutes": 40.0,
+   "sunElongationDeg": 117.1
+  },
+  {
+   "date": "2026-12-17",
+   "distanceAU": 4.801,
+   "oneWayLightMinutes": 39.9,
+   "sunElongationDeg": 118.1
+  },
+  {
+   "date": "2026-12-18",
+   "distanceAU": 4.7848,
+   "oneWayLightMinutes": 39.8,
+   "sunElongationDeg": 119.0
+  },
+  {
+   "date": "2026-12-19",
+   "distanceAU": 4.7652,
+   "oneWayLightMinutes": 39.6,
+   "sunElongationDeg": 120.1
+  },
+  {
+   "date": "2026-12-20",
+   "distanceAU": 4.7564,
+   "oneWayLightMinutes": 39.6,
+   "sunElongationDeg": 121.2
+  },
+  {
+   "date": "2026-12-21",
+   "distanceAU": 4.7471,
+   "oneWayLightMinutes": 39.5,
+   "sunElongationDeg": 122.2
+  },
+  {
+   "date": "2026-12-22",
+   "distanceAU": 4.7275,
+   "oneWayLightMinutes": 39.3,
+   "sunElongationDeg": 123.2
+  },
+  {
+   "date": "2026-12-23",
+   "distanceAU": 4.7129,
+   "oneWayLightMinutes": 39.2,
+   "sunElongationDeg": 124.3
+  },
+  {
+   "date": "2026-12-24",
+   "distanceAU": 4.707,
+   "oneWayLightMinutes": 39.1,
+   "sunElongationDeg": 125.4
+  },
+  {
+   "date": "2026-12-25",
+   "distanceAU": 4.693,
+   "oneWayLightMinutes": 39.0,
+   "sunElongationDeg": 126.3
+  },
+  {
+   "date": "2026-12-26",
+   "distanceAU": 4.674,
+   "oneWayLightMinutes": 38.9,
+   "sunElongationDeg": 127.4
+  },
+  {
+   "date": "2026-12-27",
+   "distanceAU": 4.6654,
+   "oneWayLightMinutes": 38.8,
+   "sunElongationDeg": 128.6
+  },
+  {
+   "date": "2026-12-28",
+   "distanceAU": 4.6582,
+   "oneWayLightMinutes": 38.7,
+   "sunElongationDeg": 129.6
+  },
+  {
+   "date": "2026-12-29",
+   "distanceAU": 4.6404,
+   "oneWayLightMinutes": 38.6,
+   "sunElongationDeg": 130.6
+  },
+  {
+   "date": "2026-12-30",
+   "distanceAU": 4.6259,
+   "oneWayLightMinutes": 38.5,
+   "sunElongationDeg": 131.7
+  },
+  {
+   "date": "2026-12-31",
+   "distanceAU": 4.6211,
+   "oneWayLightMinutes": 38.4,
+   "sunElongationDeg": 132.8
+  },
+  {
+   "date": "2027-01-01",
+   "distanceAU": 4.6096,
+   "oneWayLightMinutes": 38.3,
+   "sunElongationDeg": 133.8
+  },
+  {
+   "date": "2027-01-02",
+   "distanceAU": 4.5916,
+   "oneWayLightMinutes": 38.2,
+   "sunElongationDeg": 134.9
+  },
+  {
+   "date": "2027-01-03",
+   "distanceAU": 4.5833,
+   "oneWayLightMinutes": 38.1,
+   "sunElongationDeg": 136.1
+  },
+  {
+   "date": "2027-01-04",
+   "distanceAU": 4.5783,
+   "oneWayLightMinutes": 38.1,
+   "sunElongationDeg": 137.1
+  },
+  {
+   "date": "2027-01-05",
+   "distanceAU": 4.5627,
+   "oneWayLightMinutes": 37.9,
+   "sunElongationDeg": 138.2
+  },
+  {
+   "date": "2027-01-06",
+   "distanceAU": 4.5486,
+   "oneWayLightMinutes": 37.8,
+   "sunElongationDeg": 139.3
+  },
+  {
+   "date": "2027-01-07",
+   "distanceAU": 4.545,
+   "oneWayLightMinutes": 37.8,
+   "sunElongationDeg": 140.5
+  },
+  {
+   "date": "2027-01-08",
+   "distanceAU": 4.5363,
+   "oneWayLightMinutes": 37.7,
+   "sunElongationDeg": 141.5
+  },
+  {
+   "date": "2027-01-09",
+   "distanceAU": 4.5197,
+   "oneWayLightMinutes": 37.6,
+   "sunElongationDeg": 142.6
+  },
+  {
+   "date": "2027-01-10",
+   "distanceAU": 4.5119,
+   "oneWayLightMinutes": 37.5,
+   "sunElongationDeg": 143.8
+  },
+  {
+   "date": "2027-01-11",
+   "distanceAU": 4.5091,
+   "oneWayLightMinutes": 37.5,
+   "sunElongationDeg": 144.8
+  },
+  {
+   "date": "2027-01-12",
+   "distanceAU": 4.496,
+   "oneWayLightMinutes": 37.4,
+   "sunElongationDeg": 145.9
+  },
+  {
+   "date": "2027-01-13",
+   "distanceAU": 4.4827,
+   "oneWayLightMinutes": 37.3,
+   "sunElongationDeg": 147.0
+  },
+  {
+   "date": "2027-01-14",
+   "distanceAU": 4.4803,
+   "oneWayLightMinutes": 37.3,
+   "sunElongationDeg": 148.2
+  },
+  {
+   "date": "2027-01-15",
+   "distanceAU": 4.4745,
+   "oneWayLightMinutes": 37.2,
+   "sunElongationDeg": 149.2
+  },
+  {
+   "date": "2027-01-16",
+   "distanceAU": 4.4598,
+   "oneWayLightMinutes": 37.1,
+   "sunElongationDeg": 150.3
+  },
+  {
+   "date": "2027-01-17",
+   "distanceAU": 4.4526,
+   "oneWayLightMinutes": 37.0,
+   "sunElongationDeg": 151.5
+  },
+  {
+   "date": "2027-01-18",
+   "distanceAU": 4.452,
+   "oneWayLightMinutes": 37.0,
+   "sunElongationDeg": 152.6
+  },
+  {
+   "date": "2027-01-19",
+   "distanceAU": 4.4418,
+   "oneWayLightMinutes": 36.9,
+   "sunElongationDeg": 153.7
+  },
+  {
+   "date": "2027-01-20",
+   "distanceAU": 4.4297,
+   "oneWayLightMinutes": 36.8,
+   "sunElongationDeg": 154.9
+  },
+  {
+   "date": "2027-01-21",
+   "distanceAU": 4.4285,
+   "oneWayLightMinutes": 36.8,
+   "sunElongationDeg": 156.1
+  },
+  {
+   "date": "2027-01-22",
+   "distanceAU": 4.4256,
+   "oneWayLightMinutes": 36.8,
+   "sunElongationDeg": 157.1
+  },
+  {
+   "date": "2027-01-23",
+   "distanceAU": 4.4131,
+   "oneWayLightMinutes": 36.7,
+   "sunElongationDeg": 158.2
+  },
+  {
+   "date": "2027-01-24",
+   "distanceAU": 4.4068,
+   "oneWayLightMinutes": 36.7,
+   "sunElongationDeg": 159.4
+  },
+  {
+   "date": "2027-01-25",
+   "distanceAU": 4.4084,
+   "oneWayLightMinutes": 36.7,
+   "sunElongationDeg": 160.6
+  },
+  {
+   "date": "2027-01-26",
+   "distanceAU": 4.4013,
+   "oneWayLightMinutes": 36.6,
+   "sunElongationDeg": 161.6
+  },
+  {
+   "date": "2027-01-27",
+   "distanceAU": 4.3905,
+   "oneWayLightMinutes": 36.5,
+   "sunElongationDeg": 162.8
+  },
+  {
+   "date": "2027-01-28",
+   "distanceAU": 4.3905,
+   "oneWayLightMinutes": 36.5,
+   "sunElongationDeg": 164.0
+  },
+  {
+   "date": "2027-01-29",
+   "distanceAU": 4.3908,
+   "oneWayLightMinutes": 36.5,
+   "sunElongationDeg": 165.1
+  },
+  {
+   "date": "2027-01-30",
+   "distanceAU": 4.3807,
+   "oneWayLightMinutes": 36.4,
+   "sunElongationDeg": 166.2
+  },
+  {
+   "date": "2027-01-31",
+   "distanceAU": 4.3754,
+   "oneWayLightMinutes": 36.4,
+   "sunElongationDeg": 167.4
+  },
+  {
+   "date": "2027-02-01",
+   "distanceAU": 4.3791,
+   "oneWayLightMinutes": 36.4,
+   "sunElongationDeg": 168.5
+  },
+  {
+   "date": "2027-02-02",
+   "distanceAU": 4.3753,
+   "oneWayLightMinutes": 36.4,
+   "sunElongationDeg": 169.6
+  },
+  {
+   "date": "2027-02-03",
+   "distanceAU": 4.3662,
+   "oneWayLightMinutes": 36.3,
+   "sunElongationDeg": 170.7
+  },
+  {
+   "date": "2027-02-04",
+   "distanceAU": 4.3674,
+   "oneWayLightMinutes": 36.3,
+   "sunElongationDeg": 171.9
+  },
+  {
+   "date": "2027-02-05",
+   "distanceAU": 4.3706,
+   "oneWayLightMinutes": 36.3,
+   "sunElongationDeg": 173.0
+  },
+  {
+   "date": "2027-02-06",
+   "distanceAU": 4.3634,
+   "oneWayLightMinutes": 36.3,
+   "sunElongationDeg": 174.1
+  },
+  {
+   "date": "2027-02-07",
+   "distanceAU": 4.3592,
+   "oneWayLightMinutes": 36.3,
+   "sunElongationDeg": 175.3
+  },
+  {
+   "date": "2027-02-08",
+   "distanceAU": 4.3649,
+   "oneWayLightMinutes": 36.3,
+   "sunElongationDeg": 176.4
+  },
+  {
+   "date": "2027-02-09",
+   "distanceAU": 4.3644,
+   "oneWayLightMinutes": 36.3,
+   "sunElongationDeg": 177.4
+  },
+  {
+   "date": "2027-02-10",
+   "distanceAU": 4.3573,
+   "oneWayLightMinutes": 36.2,
+   "sunElongationDeg": 178.4
+  },
+  {
+   "date": "2027-02-11",
+   "distanceAU": 4.3597,
+   "oneWayLightMinutes": 36.3,
+   "sunElongationDeg": 178.9
+  },
+  {
+   "date": "2027-02-12",
+   "distanceAU": 4.3658,
+   "oneWayLightMinutes": 36.3,
+   "sunElongationDeg": 178.5
+  },
+  {
+   "date": "2027-02-13",
+   "distanceAU": 4.3616,
+   "oneWayLightMinutes": 36.3,
+   "sunElongationDeg": 177.6
+  },
+  {
+   "date": "2027-02-14",
+   "distanceAU": 4.3586,
+   "oneWayLightMinutes": 36.2,
+   "sunElongationDeg": 176.4
+  },
+  {
+   "date": "2027-02-15",
+   "distanceAU": 4.3662,
+   "oneWayLightMinutes": 36.3,
+   "sunElongationDeg": 175.3
+  },
+  {
+   "date": "2027-02-16",
+   "distanceAU": 4.3691,
+   "oneWayLightMinutes": 36.3,
+   "sunElongationDeg": 174.2
+  },
+  {
+   "date": "2027-02-17",
+   "distanceAU": 4.364,
+   "oneWayLightMinutes": 36.3,
+   "sunElongationDeg": 173.1
+  },
+  {
+   "date": "2027-02-18",
+   "distanceAU": 4.3675,
+   "oneWayLightMinutes": 36.3,
+   "sunElongationDeg": 171.9
+  },
+  {
+   "date": "2027-02-19",
+   "distanceAU": 4.3764,
+   "oneWayLightMinutes": 36.4,
+   "sunElongationDeg": 170.8
+  },
+  {
+   "date": "2027-02-20",
+   "distanceAU": 4.3752,
+   "oneWayLightMinutes": 36.4,
+   "sunElongationDeg": 169.8
+  },
+  {
+   "date": "2027-02-21",
+   "distanceAU": 4.3735,
+   "oneWayLightMinutes": 36.4,
+   "sunElongationDeg": 168.6
+  },
+  {
+   "date": "2027-02-22",
+   "distanceAU": 4.3828,
+   "oneWayLightMinutes": 36.5,
+   "sunElongationDeg": 167.4
+  },
+  {
+   "date": "2027-02-23",
+   "distanceAU": 4.3889,
+   "oneWayLightMinutes": 36.5,
+   "sunElongationDeg": 166.3
+  },
+  {
+   "date": "2027-02-24",
+   "distanceAU": 4.3861,
+   "oneWayLightMinutes": 36.5,
+   "sunElongationDeg": 165.2
+  },
+  {
+   "date": "2027-02-25",
+   "distanceAU": 4.3907,
+   "oneWayLightMinutes": 36.5,
+   "sunElongationDeg": 164.0
+  },
+  {
+   "date": "2027-02-26",
+   "distanceAU": 4.402,
+   "oneWayLightMinutes": 36.6,
+   "sunElongationDeg": 162.9
+  },
+  {
+   "date": "2027-02-27",
+   "distanceAU": 4.404,
+   "oneWayLightMinutes": 36.6,
+   "sunElongationDeg": 161.9
+  },
+  {
+   "date": "2027-02-28",
+   "distanceAU": 4.4036,
+   "oneWayLightMinutes": 36.6,
+   "sunElongationDeg": 160.7
+  },
+  {
+   "date": "2027-03-01",
+   "distanceAU": 4.4143,
+   "oneWayLightMinutes": 36.7,
+   "sunElongationDeg": 159.5
+  },
+  {
+   "date": "2027-03-02",
+   "distanceAU": 4.4236,
+   "oneWayLightMinutes": 36.8,
+   "sunElongationDeg": 158.5
+  },
+  {
+   "date": "2027-03-03",
+   "distanceAU": 4.4231,
+   "oneWayLightMinutes": 36.8,
+   "sunElongationDeg": 157.4
+  },
+  {
+   "date": "2027-03-04",
+   "distanceAU": 4.4285,
+   "oneWayLightMinutes": 36.8,
+   "sunElongationDeg": 156.2
+  },
+  {
+   "date": "2027-03-05",
+   "distanceAU": 4.4421,
+   "oneWayLightMinutes": 36.9,
+   "sunElongationDeg": 155.1
+  },
+  {
+   "date": "2027-03-06",
+   "distanceAU": 4.4471,
+   "oneWayLightMinutes": 37.0,
+   "sunElongationDeg": 154.0
+  },
+  {
+   "date": "2027-03-07",
+   "distanceAU": 4.4482,
+   "oneWayLightMinutes": 37.0,
+   "sunElongationDeg": 152.9
+  },
+  {
+   "date": "2027-03-08",
+   "distanceAU": 4.46,
+   "oneWayLightMinutes": 37.1,
+   "sunElongationDeg": 151.7
+  },
+  {
+   "date": "2027-03-09",
+   "distanceAU": 4.4722,
+   "oneWayLightMinutes": 37.2,
+   "sunElongationDeg": 150.7
+  },
+  {
+   "date": "2027-03-10",
+   "distanceAU": 4.4741,
+   "oneWayLightMinutes": 37.2,
+   "sunElongationDeg": 149.6
+  },
+  {
+   "date": "2027-03-11",
+   "distanceAU": 4.4803,
+   "oneWayLightMinutes": 37.3,
+   "sunElongationDeg": 148.4
+  },
+  {
+   "date": "2027-03-12",
+   "distanceAU": 4.4958,
+   "oneWayLightMinutes": 37.4,
+   "sunElongationDeg": 147.3
+  },
+  {
+   "date": "2027-03-13",
+   "distanceAU": 4.5038,
+   "oneWayLightMinutes": 37.5,
+   "sunElongationDeg": 146.3
+  },
+  {
+   "date": "2027-03-14",
+   "distanceAU": 4.5063,
+   "oneWayLightMinutes": 37.5,
+   "sunElongationDeg": 145.2
+  },
+  {
+   "date": "2027-03-15",
+   "distanceAU": 4.5189,
+   "oneWayLightMinutes": 37.6,
+   "sunElongationDeg": 144.1
+  },
+  {
+   "date": "2027-03-16",
+   "distanceAU": 4.5337,
+   "oneWayLightMinutes": 37.7,
+   "sunElongationDeg": 143.0
+  },
+  {
+   "date": "2027-03-17",
+   "distanceAU": 4.538,
+   "oneWayLightMinutes": 37.7,
+   "sunElongationDeg": 142.0
+  },
+  {
+   "date": "2027-03-18",
+   "distanceAU": 4.5449,
+   "oneWayLightMinutes": 37.8,
+   "sunElongationDeg": 140.9
+  },
+  {
+   "date": "2027-03-19",
+   "distanceAU": 4.5618,
+   "oneWayLightMinutes": 37.9,
+   "sunElongationDeg": 139.8
+  },
+  {
+   "date": "2027-03-20",
+   "distanceAU": 4.5727,
+   "oneWayLightMinutes": 38.0,
+   "sunElongationDeg": 138.8
+  },
+  {
+   "date": "2027-03-21",
+   "distanceAU": 4.5765,
+   "oneWayLightMinutes": 38.1,
+   "sunElongationDeg": 137.7
+  },
+  {
+   "date": "2027-03-22",
+   "distanceAU": 4.5896,
+   "oneWayLightMinutes": 38.2,
+   "sunElongationDeg": 136.6
+  },
+  {
+   "date": "2027-03-23",
+   "distanceAU": 4.6068,
+   "oneWayLightMinutes": 38.3,
+   "sunElongationDeg": 135.5
+  },
+  {
+   "date": "2027-03-24",
+   "distanceAU": 4.6134,
+   "oneWayLightMinutes": 38.4,
+   "sunElongationDeg": 134.6
+  },
+  {
+   "date": "2027-03-25",
+   "distanceAU": 4.6208,
+   "oneWayLightMinutes": 38.4,
+   "sunElongationDeg": 133.4
+  },
+  {
+   "date": "2027-03-26",
+   "distanceAU": 4.6388,
+   "oneWayLightMinutes": 38.6,
+   "sunElongationDeg": 132.3
+  },
+  {
+   "date": "2027-03-27",
+   "distanceAU": 4.6523,
+   "oneWayLightMinutes": 38.7,
+   "sunElongationDeg": 131.4
+  },
+  {
+   "date": "2027-03-28",
+   "distanceAU": 4.6575,
+   "oneWayLightMinutes": 38.7,
+   "sunElongationDeg": 130.3
+  },
+  {
+   "date": "2027-03-29",
+   "distanceAU": 4.6708,
+   "oneWayLightMinutes": 38.8,
+   "sunElongationDeg": 129.2
+  },
+  {
+   "date": "2027-03-30",
+   "distanceAU": 4.6898,
+   "oneWayLightMinutes": 39.0,
+   "sunElongationDeg": 128.2
+  },
+  {
+   "date": "2027-03-31",
+   "distanceAU": 4.6988,
+   "oneWayLightMinutes": 39.1,
+   "sunElongationDeg": 127.3
+  },
+  {
+   "date": "2027-04-01",
+   "distanceAU": 4.7065,
+   "oneWayLightMinutes": 39.1,
+   "sunElongationDeg": 126.2
+  },
+  {
+   "date": "2027-04-02",
+   "distanceAU": 4.7252,
+   "oneWayLightMinutes": 39.3,
+   "sunElongationDeg": 125.1
+  },
+  {
+   "date": "2027-04-03",
+   "distanceAU": 4.7411,
+   "oneWayLightMinutes": 39.4,
+   "sunElongationDeg": 124.2
+  },
+  {
+   "date": "2027-04-04",
+   "distanceAU": 4.7477,
+   "oneWayLightMinutes": 39.5,
+   "sunElongationDeg": 123.2
+  },
+  {
+   "date": "2027-04-05",
+   "distanceAU": 4.761,
+   "oneWayLightMinutes": 39.6,
+   "sunElongationDeg": 122.1
+  },
+  {
+   "date": "2027-04-06",
+   "distanceAU": 4.7814,
+   "oneWayLightMinutes": 39.8,
+   "sunElongationDeg": 121.1
+  },
+  {
+   "date": "2027-04-07",
+   "distanceAU": 4.7926,
+   "oneWayLightMinutes": 39.9,
+   "sunElongationDeg": 120.1
+  },
+  {
+   "date": "2027-04-08",
+   "distanceAU": 4.8007,
+   "oneWayLightMinutes": 39.9,
+   "sunElongationDeg": 119.1
+  },
+  {
+   "date": "2027-04-09",
+   "distanceAU": 4.8196,
+   "oneWayLightMinutes": 40.1,
+   "sunElongationDeg": 118.0
+  },
+  {
+   "date": "2027-04-10",
+   "distanceAU": 4.8376,
+   "oneWayLightMinutes": 40.2,
+   "sunElongationDeg": 117.1
+  },
+  {
+   "date": "2027-04-11",
+   "distanceAU": 4.8455,
+   "oneWayLightMinutes": 40.3,
+   "sunElongationDeg": 116.2
+  },
+  {
+   "date": "2027-04-12",
+   "distanceAU": 4.8585,
+   "oneWayLightMinutes": 40.4,
+   "sunElongationDeg": 115.1
+  },
+  {
+   "date": "2027-04-13",
+   "distanceAU": 4.88,
+   "oneWayLightMinutes": 40.6,
+   "sunElongationDeg": 114.1
+  },
+  {
+   "date": "2027-04-14",
+   "distanceAU": 4.8932,
+   "oneWayLightMinutes": 40.7,
+   "sunElongationDeg": 113.2
+  },
+  {
+   "date": "2027-04-15",
+   "distanceAU": 4.9015,
+   "oneWayLightMinutes": 40.8,
+   "sunElongationDeg": 112.2
+  },
+  {
+   "date": "2027-04-16",
+   "distanceAU": 4.9202,
+   "oneWayLightMinutes": 40.9,
+   "sunElongationDeg": 111.2
+  },
+  {
+   "date": "2027-04-17",
+   "distanceAU": 4.94,
+   "oneWayLightMinutes": 41.1,
+   "sunElongationDeg": 110.3
+  },
+  {
+   "date": "2027-04-18",
+   "distanceAU": 4.9492,
+   "oneWayLightMinutes": 41.2,
+   "sunElongationDeg": 109.3
+  },
+  {
+   "date": "2027-04-19",
+   "distanceAU": 4.9617,
+   "oneWayLightMinutes": 41.3,
+   "sunElongationDeg": 108.3
+  },
+  {
+   "date": "2027-04-20",
+   "distanceAU": 4.9837,
+   "oneWayLightMinutes": 41.4,
+   "sunElongationDeg": 107.3
+  },
+  {
+   "date": "2027-04-21",
+   "distanceAU": 4.9989,
+   "oneWayLightMinutes": 41.6,
+   "sunElongationDeg": 106.5
+  },
+  {
+   "date": "2027-04-22",
+   "distanceAU": 5.0074,
+   "oneWayLightMinutes": 41.6,
+   "sunElongationDeg": 105.5
+  },
+  {
+   "date": "2027-04-23",
+   "distanceAU": 5.0256,
+   "oneWayLightMinutes": 41.8,
+   "sunElongationDeg": 104.5
+  },
+  {
+   "date": "2027-04-24",
+   "distanceAU": 5.0467,
+   "oneWayLightMinutes": 42.0,
+   "sunElongationDeg": 103.6
+  },
+  {
+   "date": "2027-04-25",
+   "distanceAU": 5.0573,
+   "oneWayLightMinutes": 42.1,
+   "sunElongationDeg": 102.7
+  },
+  {
+   "date": "2027-04-26",
+   "distanceAU": 5.0691,
+   "oneWayLightMinutes": 42.2,
+   "sunElongationDeg": 101.7
+  },
+  {
+   "date": "2027-04-27",
+   "distanceAU": 5.0912,
+   "oneWayLightMinutes": 42.3,
+   "sunElongationDeg": 100.7
+  },
+  {
+   "date": "2027-04-28",
+   "distanceAU": 5.108,
+   "oneWayLightMinutes": 42.5,
+   "sunElongationDeg": 99.9
+  },
+  {
+   "date": "2027-04-29",
+   "distanceAU": 5.1169,
+   "oneWayLightMinutes": 42.6,
+   "sunElongationDeg": 98.9
+  },
+  {
+   "date": "2027-04-30",
+   "distanceAU": 5.1341,
+   "oneWayLightMinutes": 42.7,
+   "sunElongationDeg": 97.9
+  },
+  {
+   "date": "2027-05-01",
+   "distanceAU": 5.1563,
+   "oneWayLightMinutes": 42.9,
+   "sunElongationDeg": 97.1
+  },
+  {
+   "date": "2027-05-02",
+   "distanceAU": 5.1681,
+   "oneWayLightMinutes": 43.0,
+   "sunElongationDeg": 96.2
+  },
+  {
+   "date": "2027-05-03",
+   "distanceAU": 5.1792,
+   "oneWayLightMinutes": 43.1,
+   "sunElongationDeg": 95.2
+  },
+  {
+   "date": "2027-05-04",
+   "distanceAU": 5.2009,
+   "oneWayLightMinutes": 43.3,
+   "sunElongationDeg": 94.3
+  },
+  {
+   "date": "2027-05-05",
+   "distanceAU": 5.2193,
+   "oneWayLightMinutes": 43.4,
+   "sunElongationDeg": 93.5
+  },
+  {
+   "date": "2027-05-06",
+   "distanceAU": 5.2284,
+   "oneWayLightMinutes": 43.5,
+   "sunElongationDeg": 92.6
+  },
+  {
+   "date": "2027-05-07",
+   "distanceAU": 5.2445,
+   "oneWayLightMinutes": 43.6,
+   "sunElongationDeg": 91.6
+  },
+  {
+   "date": "2027-05-08",
+   "distanceAU": 5.2672,
+   "oneWayLightMinutes": 43.8,
+   "sunElongationDeg": 90.7
+  },
+  {
+   "date": "2027-05-09",
+   "distanceAU": 5.2802,
+   "oneWayLightMinutes": 43.9,
+   "sunElongationDeg": 89.9
+  },
+  {
+   "date": "2027-05-10",
+   "distanceAU": 5.2905,
+   "oneWayLightMinutes": 44.0,
+   "sunElongationDeg": 89.0
+  },
+  {
+   "date": "2027-05-11",
+   "distanceAU": 5.3115,
+   "oneWayLightMinutes": 44.2,
+   "sunElongationDeg": 88.0
+  },
+  {
+   "date": "2027-05-12",
+   "distanceAU": 5.3311,
+   "oneWayLightMinutes": 44.3,
+   "sunElongationDeg": 87.2
+  },
+  {
+   "date": "2027-05-13",
+   "distanceAU": 5.3405,
+   "oneWayLightMinutes": 44.4,
+   "sunElongationDeg": 86.3
+  },
+  {
+   "date": "2027-05-14",
+   "distanceAU": 5.3552,
+   "oneWayLightMinutes": 44.5,
+   "sunElongationDeg": 85.4
+  },
+  {
+   "date": "2027-05-15",
+   "distanceAU": 5.3781,
+   "oneWayLightMinutes": 44.7,
+   "sunElongationDeg": 84.5
+  },
+  {
+   "date": "2027-05-16",
+   "distanceAU": 5.3923,
+   "oneWayLightMinutes": 44.8,
+   "sunElongationDeg": 83.7
+  },
+  {
+   "date": "2027-05-17",
+   "distanceAU": 5.4018,
+   "oneWayLightMinutes": 44.9,
+   "sunElongationDeg": 82.8
+  },
+  {
+   "date": "2027-05-18",
+   "distanceAU": 5.4216,
+   "oneWayLightMinutes": 45.1,
+   "sunElongationDeg": 81.9
+  },
+  {
+   "date": "2027-05-19",
+   "distanceAU": 5.442,
+   "oneWayLightMinutes": 45.3,
+   "sunElongationDeg": 81.1
+  },
+  {
+   "date": "2027-05-20",
+   "distanceAU": 5.4519,
+   "oneWayLightMinutes": 45.3,
+   "sunElongationDeg": 80.3
+  },
+  {
+   "date": "2027-05-21",
+   "distanceAU": 5.4651,
+   "oneWayLightMinutes": 45.5,
+   "sunElongationDeg": 79.3
+  },
+  {
+   "date": "2027-05-22",
+   "distanceAU": 5.4876,
+   "oneWayLightMinutes": 45.6,
+   "sunElongationDeg": 78.5
+  },
+  {
+   "date": "2027-05-23",
+   "distanceAU": 5.5028,
+   "oneWayLightMinutes": 45.8,
+   "sunElongationDeg": 77.7
+  },
+  {
+   "date": "2027-05-24",
+   "distanceAU": 5.5116,
+   "oneWayLightMinutes": 45.8,
+   "sunElongationDeg": 76.8
+  },
+  {
+   "date": "2027-05-25",
+   "distanceAU": 5.53,
+   "oneWayLightMinutes": 46.0,
+   "sunElongationDeg": 75.9
+  },
+  {
+   "date": "2027-05-26",
+   "distanceAU": 5.551,
+   "oneWayLightMinutes": 46.2,
+   "sunElongationDeg": 75.1
+  },
+  {
+   "date": "2027-05-27",
+   "distanceAU": 5.5613,
+   "oneWayLightMinutes": 46.3,
+   "sunElongationDeg": 74.3
+  },
+  {
+   "date": "2027-05-28",
+   "distanceAU": 5.5729,
+   "oneWayLightMinutes": 46.3,
+   "sunElongationDeg": 73.4
+  },
+  {
+   "date": "2027-05-29",
+   "distanceAU": 5.5947,
+   "oneWayLightMinutes": 46.5,
+   "sunElongationDeg": 72.6
+  },
+  {
+   "date": "2027-05-30",
+   "distanceAU": 5.6109,
+   "oneWayLightMinutes": 46.7,
+   "sunElongationDeg": 71.8
+  },
+  {
+   "date": "2027-05-31",
+   "distanceAU": 5.6191,
+   "oneWayLightMinutes": 46.7,
+   "sunElongationDeg": 71.0
+  },
+  {
+   "date": "2027-06-01",
+   "distanceAU": 5.6356,
+   "oneWayLightMinutes": 46.9,
+   "sunElongationDeg": 70.1
+  },
+  {
+   "date": "2027-06-02",
+   "distanceAU": 5.6569,
+   "oneWayLightMinutes": 47.0,
+   "sunElongationDeg": 69.3
+  },
+  {
+   "date": "2027-06-03",
+   "distanceAU": 5.6677,
+   "oneWayLightMinutes": 47.1,
+   "sunElongationDeg": 68.5
+  },
+  {
+   "date": "2027-06-04",
+   "distanceAU": 5.6777,
+   "oneWayLightMinutes": 47.2,
+   "sunElongationDeg": 67.6
+  },
+  {
+   "date": "2027-06-05",
+   "distanceAU": 5.6983,
+   "oneWayLightMinutes": 47.4,
+   "sunElongationDeg": 66.8
+  },
+  {
+   "date": "2027-06-06",
+   "distanceAU": 5.7153,
+   "oneWayLightMinutes": 47.5,
+   "sunElongationDeg": 66.0
+  },
+  {
+   "date": "2027-06-07",
+   "distanceAU": 5.7229,
+   "oneWayLightMinutes": 47.6,
+   "sunElongationDeg": 65.2
+  },
+  {
+   "date": "2027-06-08",
+   "distanceAU": 5.7375,
+   "oneWayLightMinutes": 47.7,
+   "sunElongationDeg": 64.3
+  },
+  {
+   "date": "2027-06-09",
+   "distanceAU": 5.7586,
+   "oneWayLightMinutes": 47.9,
+   "sunElongationDeg": 63.5
+  },
+  {
+   "date": "2027-06-10",
+   "distanceAU": 5.7699,
+   "oneWayLightMinutes": 48.0,
+   "sunElongationDeg": 62.8
+  },
+  {
+   "date": "2027-06-11",
+   "distanceAU": 5.7783,
+   "oneWayLightMinutes": 48.1,
+   "sunElongationDeg": 61.9
+  },
+  {
+   "date": "2027-06-12",
+   "distanceAU": 5.7974,
+   "oneWayLightMinutes": 48.2,
+   "sunElongationDeg": 61.1
+  },
+  {
+   "date": "2027-06-13",
+   "distanceAU": 5.8149,
+   "oneWayLightMinutes": 48.4,
+   "sunElongationDeg": 60.3
+  },
+  {
+   "date": "2027-06-14",
+   "distanceAU": 5.8222,
+   "oneWayLightMinutes": 48.4,
+   "sunElongationDeg": 59.6
+  },
+  {
+   "date": "2027-06-15",
+   "distanceAU": 5.8347,
+   "oneWayLightMinutes": 48.5,
+   "sunElongationDeg": 58.7
+  },
+  {
+   "date": "2027-06-16",
+   "distanceAU": 5.8552,
+   "oneWayLightMinutes": 48.7,
+   "sunElongationDeg": 57.9
+  },
+  {
+   "date": "2027-06-17",
+   "distanceAU": 5.867,
+   "oneWayLightMinutes": 48.8,
+   "sunElongationDeg": 57.2
+  },
+  {
+   "date": "2027-06-18",
+   "distanceAU": 5.874,
+   "oneWayLightMinutes": 48.9,
+   "sunElongationDeg": 56.4
+  },
+  {
+   "date": "2027-06-19",
+   "distanceAU": 5.8912,
+   "oneWayLightMinutes": 49.0,
+   "sunElongationDeg": 55.5
+  },
+  {
+   "date": "2027-06-20",
+   "distanceAU": 5.9089,
+   "oneWayLightMinutes": 49.1,
+   "sunElongationDeg": 54.8
+  },
+  {
+   "date": "2027-06-21",
+   "distanceAU": 5.916,
+   "oneWayLightMinutes": 49.2,
+   "sunElongationDeg": 54.0
+  },
+  {
+   "date": "2027-06-22",
+   "distanceAU": 5.9263,
+   "oneWayLightMinutes": 49.3,
+   "sunElongationDeg": 53.2
+  },
+  {
+   "date": "2027-06-23",
+   "distanceAU": 5.9458,
+   "oneWayLightMinutes": 49.4,
+   "sunElongationDeg": 52.4
+  },
+  {
+   "date": "2027-06-24",
+   "distanceAU": 5.9581,
+   "oneWayLightMinutes": 49.6,
+   "sunElongationDeg": 51.6
+  },
+  {
+   "date": "2027-06-25",
+   "distanceAU": 5.9638,
+   "oneWayLightMinutes": 49.6,
+   "sunElongationDeg": 50.8
+  },
+  {
+   "date": "2027-06-26",
+   "distanceAU": 5.9788,
+   "oneWayLightMinutes": 49.7,
+   "sunElongationDeg": 50.0
+  },
+  {
+   "date": "2027-06-27",
+   "distanceAU": 5.9966,
+   "oneWayLightMinutes": 49.9,
+   "sunElongationDeg": 49.3
+  },
+  {
+   "date": "2027-06-28",
+   "distanceAU": 6.0036,
+   "oneWayLightMinutes": 49.9,
+   "sunElongationDeg": 48.5
+  },
+  {
+   "date": "2027-06-29",
+   "distanceAU": 6.0117,
+   "oneWayLightMinutes": 50.0,
+   "sunElongationDeg": 47.7
+  },
+  {
+   "date": "2027-06-30",
+   "distanceAU": 6.0299,
+   "oneWayLightMinutes": 50.1,
+   "sunElongationDeg": 46.9
+  },
+  {
+   "date": "2027-07-01",
+   "distanceAU": 6.0426,
+   "oneWayLightMinutes": 50.3,
+   "sunElongationDeg": 46.2
+  },
+  {
+   "date": "2027-07-02",
+   "distanceAU": 6.0471,
+   "oneWayLightMinutes": 50.3,
+   "sunElongationDeg": 45.4
+  },
+  {
+   "date": "2027-07-03",
+   "distanceAU": 6.0598,
+   "oneWayLightMinutes": 50.4,
+   "sunElongationDeg": 44.6
+  },
+  {
+   "date": "2027-07-04",
+   "distanceAU": 6.0772,
+   "oneWayLightMinutes": 50.5,
+   "sunElongationDeg": 43.8
+  },
+  {
+   "date": "2027-07-05",
+   "distanceAU": 6.0843,
+   "oneWayLightMinutes": 50.6,
+   "sunElongationDeg": 43.1
+  },
+  {
+   "date": "2027-07-06",
+   "distanceAU": 6.0902,
+   "oneWayLightMinutes": 50.7,
+   "sunElongationDeg": 42.3
+  },
+  {
+   "date": "2027-07-07",
+   "distanceAU": 6.1066,
+   "oneWayLightMinutes": 50.8,
+   "sunElongationDeg": 41.5
+  },
+  {
+   "date": "2027-07-08",
+   "distanceAU": 6.1196,
+   "oneWayLightMinutes": 50.9,
+   "sunElongationDeg": 40.8
+  },
+  {
+   "date": "2027-07-09",
+   "distanceAU": 6.1232,
+   "oneWayLightMinutes": 50.9,
+   "sunElongationDeg": 40.0
+  },
+  {
+   "date": "2027-07-10",
+   "distanceAU": 6.1333,
+   "oneWayLightMinutes": 51.0,
+   "sunElongationDeg": 39.2
+  },
+  {
+   "date": "2027-07-11",
+   "distanceAU": 6.1501,
+   "oneWayLightMinutes": 51.1,
+   "sunElongationDeg": 38.5
+  },
+  {
+   "date": "2027-07-12",
+   "distanceAU": 6.1572,
+   "oneWayLightMinutes": 51.2,
+   "sunElongationDeg": 37.8
+  },
+  {
+   "date": "2027-07-13",
+   "distanceAU": 6.1611,
+   "oneWayLightMinutes": 51.2,
+   "sunElongationDeg": 37.0
+  },
+  {
+   "date": "2027-07-14",
+   "distanceAU": 6.1755,
+   "oneWayLightMinutes": 51.4,
+   "sunElongationDeg": 36.2
+  },
+  {
+   "date": "2027-07-15",
+   "distanceAU": 6.1886,
+   "oneWayLightMinutes": 51.5,
+   "sunElongationDeg": 35.5
+  },
+  {
+   "date": "2027-07-16",
+   "distanceAU": 6.1913,
+   "oneWayLightMinutes": 51.5,
+   "sunElongationDeg": 34.7
+  },
+  {
+   "date": "2027-07-17",
+   "distanceAU": 6.1989,
+   "oneWayLightMinutes": 51.6,
+   "sunElongationDeg": 33.9
+  },
+  {
+   "date": "2027-07-18",
+   "distanceAU": 6.2146,
+   "oneWayLightMinutes": 51.7,
+   "sunElongationDeg": 33.1
+  },
+  {
+   "date": "2027-07-19",
+   "distanceAU": 6.2219,
+   "oneWayLightMinutes": 51.7,
+   "sunElongationDeg": 32.5
+  },
+  {
+   "date": "2027-07-20",
+   "distanceAU": 6.2239,
+   "oneWayLightMinutes": 51.8,
+   "sunElongationDeg": 31.7
+  },
+  {
+   "date": "2027-07-21",
+   "distanceAU": 6.2359,
+   "oneWayLightMinutes": 51.9,
+   "sunElongationDeg": 30.9
+  },
+  {
+   "date": "2027-07-22",
+   "distanceAU": 6.2489,
+   "oneWayLightMinutes": 52.0,
+   "sunElongationDeg": 30.2
+  },
+  {
+   "date": "2027-07-23",
+   "distanceAU": 6.2511,
+   "oneWayLightMinutes": 52.0,
+   "sunElongationDeg": 29.4
+  },
+  {
+   "date": "2027-07-24",
+   "distanceAU": 6.2561,
+   "oneWayLightMinutes": 52.0,
+   "sunElongationDeg": 28.6
+  },
+  {
+   "date": "2027-07-25",
+   "distanceAU": 6.2704,
+   "oneWayLightMinutes": 52.1,
+   "sunElongationDeg": 27.9
+  },
+  {
+   "date": "2027-07-26",
+   "distanceAU": 6.2778,
+   "oneWayLightMinutes": 52.2,
+   "sunElongationDeg": 27.2
+  },
+  {
+   "date": "2027-07-27",
+   "distanceAU": 6.2782,
+   "oneWayLightMinutes": 52.2,
+   "sunElongationDeg": 26.4
+  },
+  {
+   "date": "2027-07-28",
+   "distanceAU": 6.2877,
+   "oneWayLightMinutes": 52.3,
+   "sunElongationDeg": 25.6
+  },
+  {
+   "date": "2027-07-29",
+   "distanceAU": 6.3003,
+   "oneWayLightMinutes": 52.4,
+   "sunElongationDeg": 24.9
+  },
+  {
+   "date": "2027-07-30",
+   "distanceAU": 6.3021,
+   "oneWayLightMinutes": 52.4,
+   "sunElongationDeg": 24.2
+  },
+  {
+   "date": "2027-07-31",
+   "distanceAU": 6.3045,
+   "oneWayLightMinutes": 52.4,
+   "sunElongationDeg": 23.4
+  },
+  {
+   "date": "2027-08-01",
+   "distanceAU": 6.3171,
+   "oneWayLightMinutes": 52.5,
+   "sunElongationDeg": 22.6
+  },
+  {
+   "date": "2027-08-02",
+   "distanceAU": 6.3246,
+   "oneWayLightMinutes": 52.6,
+   "sunElongationDeg": 21.9
+  },
+  {
+   "date": "2027-08-03",
+   "distanceAU": 6.3235,
+   "oneWayLightMinutes": 52.6,
+   "sunElongationDeg": 21.2
+  },
+  {
+   "date": "2027-08-04",
+   "distanceAU": 6.3303,
+   "oneWayLightMinutes": 52.6,
+   "sunElongationDeg": 20.4
+  },
+  {
+   "date": "2027-08-05",
+   "distanceAU": 6.3422,
+   "oneWayLightMinutes": 52.7,
+   "sunElongationDeg": 19.7
+  },
+  {
+   "date": "2027-08-06",
+   "distanceAU": 6.3438,
+   "oneWayLightMinutes": 52.8,
+   "sunElongationDeg": 19.0
+  },
+  {
+   "date": "2027-08-07",
+   "distanceAU": 6.3437,
+   "oneWayLightMinutes": 52.8,
+   "sunElongationDeg": 18.2
+  },
+  {
+   "date": "2027-08-08",
+   "distanceAU": 6.3542,
+   "oneWayLightMinutes": 52.8,
+   "sunElongationDeg": 17.4
+  },
+  {
+   "date": "2027-08-09",
+   "distanceAU": 6.3617,
+   "oneWayLightMinutes": 52.9,
+   "sunElongationDeg": 16.7
+  },
+  {
+   "date": "2027-08-10",
+   "distanceAU": 6.3595,
+   "oneWayLightMinutes": 52.9,
+   "sunElongationDeg": 16.0
+  },
+  {
+   "date": "2027-08-11",
+   "distanceAU": 6.3634,
+   "oneWayLightMinutes": 52.9,
+   "sunElongationDeg": 15.2
+  },
+  {
+   "date": "2027-08-12",
+   "distanceAU": 6.3743,
+   "oneWayLightMinutes": 53.0,
+   "sunElongationDeg": 14.4
+  },
+  {
+   "date": "2027-08-13",
+   "distanceAU": 6.3758,
+   "oneWayLightMinutes": 53.0,
+   "sunElongationDeg": 13.7
+  },
+  {
+   "date": "2027-08-14",
+   "distanceAU": 6.3735,
+   "oneWayLightMinutes": 53.0,
+   "sunElongationDeg": 13.0
+  },
+  {
+   "date": "2027-08-15",
+   "distanceAU": 6.3816,
+   "oneWayLightMinutes": 53.1,
+   "sunElongationDeg": 12.2
+  },
+  {
+   "date": "2027-08-16",
+   "distanceAU": 6.3889,
+   "oneWayLightMinutes": 53.1,
+   "sunElongationDeg": 11.5
+  },
+  {
+   "date": "2027-08-17",
+   "distanceAU": 6.3858,
+   "oneWayLightMinutes": 53.1,
+   "sunElongationDeg": 10.8
+  },
+  {
+   "date": "2027-08-18",
+   "distanceAU": 6.3869,
+   "oneWayLightMinutes": 53.1,
+   "sunElongationDeg": 10.0
+  },
+  {
+   "date": "2027-08-19",
+   "distanceAU": 6.3964,
+   "oneWayLightMinutes": 53.2,
+   "sunElongationDeg": 9.2
+  },
+  {
+   "date": "2027-08-20",
+   "distanceAU": 6.3979,
+   "oneWayLightMinutes": 53.2,
+   "sunElongationDeg": 8.5
+  },
+  {
+   "date": "2027-08-21",
+   "distanceAU": 6.3935,
+   "oneWayLightMinutes": 53.2,
+   "sunElongationDeg": 7.8
+  },
+  {
+   "date": "2027-08-22",
+   "distanceAU": 6.3991,
+   "oneWayLightMinutes": 53.2,
+   "sunElongationDeg": 7.0
+  },
+  {
+   "date": "2027-08-23",
+   "distanceAU": 6.4061,
+   "oneWayLightMinutes": 53.3,
+   "sunElongationDeg": 6.3
+  },
+  {
+   "date": "2027-08-24",
+   "distanceAU": 6.4022,
+   "oneWayLightMinutes": 53.2,
+   "sunElongationDeg": 5.6
+  },
+  {
+   "date": "2027-08-25",
+   "distanceAU": 6.4005,
+   "oneWayLightMinutes": 53.2,
+   "sunElongationDeg": 4.8
+  },
+  {
+   "date": "2027-08-26",
+   "distanceAU": 6.4084,
+   "oneWayLightMinutes": 53.3,
+   "sunElongationDeg": 4.1
+  },
+  {
+   "date": "2027-08-27",
+   "distanceAU": 6.4099,
+   "oneWayLightMinutes": 53.3,
+   "sunElongationDeg": 3.4
+  },
+  {
+   "date": "2027-08-28",
+   "distanceAU": 6.4038,
+   "oneWayLightMinutes": 53.3,
+   "sunElongationDeg": 2.7
+  },
+  {
+   "date": "2027-08-29",
+   "distanceAU": 6.4066,
+   "oneWayLightMinutes": 53.3,
+   "sunElongationDeg": 1.9
+  },
+  {
+   "date": "2027-08-30",
+   "distanceAU": 6.4129,
+   "oneWayLightMinutes": 53.3,
+   "sunElongationDeg": 1.3
+  },
+  {
+   "date": "2027-08-31",
+   "distanceAU": 6.4086,
+   "oneWayLightMinutes": 53.3,
+   "sunElongationDeg": 1.0
+  },
+  {
+   "date": "2027-09-01",
+   "distanceAU": 6.4043,
+   "oneWayLightMinutes": 53.3,
+   "sunElongationDeg": 1.1
+  },
+  {
+   "date": "2027-09-02",
+   "distanceAU": 6.4102,
+   "oneWayLightMinutes": 53.3,
+   "sunElongationDeg": 1.6
+  },
+  {
+   "date": "2027-09-03",
+   "distanceAU": 6.4116,
+   "oneWayLightMinutes": 53.3,
+   "sunElongationDeg": 2.2
+  },
+  {
+   "date": "2027-09-04",
+   "distanceAU": 6.404,
+   "oneWayLightMinutes": 53.3,
+   "sunElongationDeg": 2.9
+  },
+  {
+   "date": "2027-09-05",
+   "distanceAU": 6.4039,
+   "oneWayLightMinutes": 53.3,
+   "sunElongationDeg": 3.7
+  },
+  {
+   "date": "2027-09-06",
+   "distanceAU": 6.4094,
+   "oneWayLightMinutes": 53.3,
+   "sunElongationDeg": 4.4
+  },
+  {
+   "date": "2027-09-07",
+   "distanceAU": 6.4048,
+   "oneWayLightMinutes": 53.3,
+   "sunElongationDeg": 5.1
+  },
+  {
+   "date": "2027-09-08",
+   "distanceAU": 6.3979,
+   "oneWayLightMinutes": 53.2,
+   "sunElongationDeg": 5.9
+  },
+  {
+   "date": "2027-09-09",
+   "distanceAU": 6.4016,
+   "oneWayLightMinutes": 53.2,
+   "sunElongationDeg": 6.6
+  },
+  {
+   "date": "2027-09-10",
+   "distanceAU": 6.4028,
+   "oneWayLightMinutes": 53.3,
+   "sunElongationDeg": 7.3
+  },
+  {
+   "date": "2027-09-11",
+   "distanceAU": 6.3941,
+   "oneWayLightMinutes": 53.2,
+   "sunElongationDeg": 8.1
+  },
+  {
+   "date": "2027-09-12",
+   "distanceAU": 6.3911,
+   "oneWayLightMinutes": 53.2,
+   "sunElongationDeg": 8.9
+  },
+  {
+   "date": "2027-09-13",
+   "distanceAU": 6.3954,
+   "oneWayLightMinutes": 53.2,
+   "sunElongationDeg": 9.6
+  },
+  {
+   "date": "2027-09-14",
+   "distanceAU": 6.3906,
+   "oneWayLightMinutes": 53.1,
+   "sunElongationDeg": 10.3
+  },
+  {
+   "date": "2027-09-15",
+   "distanceAU": 6.3815,
+   "oneWayLightMinutes": 53.1,
+   "sunElongationDeg": 11.1
+  },
+  {
+   "date": "2027-09-16",
+   "distanceAU": 6.3828,
+   "oneWayLightMinutes": 53.1,
+   "sunElongationDeg": 11.9
+  },
+  {
+   "date": "2027-09-17",
+   "distanceAU": 6.3838,
+   "oneWayLightMinutes": 53.1,
+   "sunElongationDeg": 12.6
+  },
+  {
+   "date": "2027-09-18",
+   "distanceAU": 6.3741,
+   "oneWayLightMinutes": 53.0,
+   "sunElongationDeg": 13.3
+  },
+  {
+   "date": "2027-09-19",
+   "distanceAU": 6.3683,
+   "oneWayLightMinutes": 53.0,
+   "sunElongationDeg": 14.2
+  },
+  {
+   "date": "2027-09-20",
+   "distanceAU": 6.3711,
+   "oneWayLightMinutes": 53.0,
+   "sunElongationDeg": 14.9
+  },
+  {
+   "date": "2027-09-21",
+   "distanceAU": 6.3663,
+   "oneWayLightMinutes": 52.9,
+   "sunElongationDeg": 15.6
+  },
+  {
+   "date": "2027-09-22",
+   "distanceAU": 6.3552,
+   "oneWayLightMinutes": 52.9,
+   "sunElongationDeg": 16.4
+  },
+  {
+   "date": "2027-09-23",
+   "distanceAU": 6.3539,
+   "oneWayLightMinutes": 52.8,
+   "sunElongationDeg": 17.2
+  },
+  {
+   "date": "2027-09-24",
+   "distanceAU": 6.3544,
+   "oneWayLightMinutes": 52.8,
+   "sunElongationDeg": 18.0
+  },
+  {
+   "date": "2027-09-25",
+   "distanceAU": 6.3441,
+   "oneWayLightMinutes": 52.8,
+   "sunElongationDeg": 18.7
+  },
+  {
+   "date": "2027-09-26",
+   "distanceAU": 6.3355,
+   "oneWayLightMinutes": 52.7,
+   "sunElongationDeg": 19.5
+  },
+  {
+   "date": "2027-09-27",
+   "distanceAU": 6.3367,
+   "oneWayLightMinutes": 52.7,
+   "sunElongationDeg": 20.3
+  },
+  {
+   "date": "2027-09-28",
+   "distanceAU": 6.3319,
+   "oneWayLightMinutes": 52.7,
+   "sunElongationDeg": 21.0
+  },
+  {
+   "date": "2027-09-29",
+   "distanceAU": 6.3191,
+   "oneWayLightMinutes": 52.6,
+   "sunElongationDeg": 21.8
+  },
+  {
+   "date": "2027-09-30",
+   "distanceAU": 6.315,
+   "oneWayLightMinutes": 52.5,
+   "sunElongationDeg": 22.6
+  },
+  {
+   "date": "2027-10-01",
+   "distanceAU": 6.3149,
+   "oneWayLightMinutes": 52.5,
+   "sunElongationDeg": 23.4
+  },
+  {
+   "date": "2027-10-02",
+   "distanceAU": 6.3043,
+   "oneWayLightMinutes": 52.4,
+   "sunElongationDeg": 24.1
+  },
+  {
+   "date": "2027-10-03",
+   "distanceAU": 6.2931,
+   "oneWayLightMinutes": 52.3,
+   "sunElongationDeg": 24.9
+  },
+  {
+   "date": "2027-10-04",
+   "distanceAU": 6.2923,
+   "oneWayLightMinutes": 52.3,
+   "sunElongationDeg": 25.7
+  },
+  {
+   "date": "2027-10-05",
+   "distanceAU": 6.2875,
+   "oneWayLightMinutes": 52.3,
+   "sunElongationDeg": 26.4
+  },
+  {
+   "date": "2027-10-06",
+   "distanceAU": 6.2734,
+   "oneWayLightMinutes": 52.2,
+   "sunElongationDeg": 27.2
+  },
+  {
+   "date": "2027-10-07",
+   "distanceAU": 6.2664,
+   "oneWayLightMinutes": 52.1,
+   "sunElongationDeg": 28.1
+  },
+  {
+   "date": "2027-10-08",
+   "distanceAU": 6.2655,
+   "oneWayLightMinutes": 52.1,
+   "sunElongationDeg": 28.8
+  },
+  {
+   "date": "2027-10-09",
+   "distanceAU": 6.2547,
+   "oneWayLightMinutes": 52.0,
+   "sunElongationDeg": 29.6
+  },
+  {
+   "date": "2027-10-10",
+   "distanceAU": 6.2412,
+   "oneWayLightMinutes": 51.9,
+   "sunElongationDeg": 30.4
+  },
+  {
+   "date": "2027-10-11",
+   "distanceAU": 6.2382,
+   "oneWayLightMinutes": 51.9,
+   "sunElongationDeg": 31.2
+  },
+  {
+   "date": "2027-10-12",
+   "distanceAU": 6.2333,
+   "oneWayLightMinutes": 51.8,
+   "sunElongationDeg": 31.9
+  },
+  {
+   "date": "2027-10-13",
+   "distanceAU": 6.2182,
+   "oneWayLightMinutes": 51.7,
+   "sunElongationDeg": 32.7
+  },
+  {
+   "date": "2027-10-14",
+   "distanceAU": 6.2086,
+   "oneWayLightMinutes": 51.6,
+   "sunElongationDeg": 33.6
+  },
+  {
+   "date": "2027-10-15",
+   "distanceAU": 6.2066,
+   "oneWayLightMinutes": 51.6,
+   "sunElongationDeg": 34.3
+  },
+  {
+   "date": "2027-10-16",
+   "distanceAU": 6.1958,
+   "oneWayLightMinutes": 51.5,
+   "sunElongationDeg": 35.1
+  },
+  {
+   "date": "2027-10-17",
+   "distanceAU": 6.1802,
+   "oneWayLightMinutes": 51.4,
+   "sunElongationDeg": 35.9
+  },
+  {
+   "date": "2027-10-18",
+   "distanceAU": 6.175,
+   "oneWayLightMinutes": 51.4,
+   "sunElongationDeg": 36.8
+  },
+  {
+   "date": "2027-10-19",
+   "distanceAU": 6.17,
+   "oneWayLightMinutes": 51.3,
+   "sunElongationDeg": 37.5
+  },
+  {
+   "date": "2027-10-20",
+   "distanceAU": 6.1542,
+   "oneWayLightMinutes": 51.2,
+   "sunElongationDeg": 38.3
+  },
+  {
+   "date": "2027-10-21",
+   "distanceAU": 6.1419,
+   "oneWayLightMinutes": 51.1,
+   "sunElongationDeg": 39.1
+  },
+  {
+   "date": "2027-10-22",
+   "distanceAU": 6.1386,
+   "oneWayLightMinutes": 51.1,
+   "sunElongationDeg": 39.9
+  },
+  {
+   "date": "2027-10-23",
+   "distanceAU": 6.128,
+   "oneWayLightMinutes": 51.0,
+   "sunElongationDeg": 40.7
+  },
+  {
+   "date": "2027-10-24",
+   "distanceAU": 6.1107,
+   "oneWayLightMinutes": 50.8,
+   "sunElongationDeg": 41.5
+  },
+  {
+   "date": "2027-10-25",
+   "distanceAU": 6.103,
+   "oneWayLightMinutes": 50.8,
+   "sunElongationDeg": 42.4
+  },
+  {
+   "date": "2027-10-26",
+   "distanceAU": 6.0977,
+   "oneWayLightMinutes": 50.7,
+   "sunElongationDeg": 43.2
+  },
+  {
+   "date": "2027-10-27",
+   "distanceAU": 6.0816,
+   "oneWayLightMinutes": 50.6,
+   "sunElongationDeg": 43.9
+  },
+  {
+   "date": "2027-10-28",
+   "distanceAU": 6.0669,
+   "oneWayLightMinutes": 50.5,
+   "sunElongationDeg": 44.8
+  },
+  {
+   "date": "2027-10-29",
+   "distanceAU": 6.062,
+   "oneWayLightMinutes": 50.4,
+   "sunElongationDeg": 45.6
+  },
+  {
+   "date": "2027-10-30",
+   "distanceAU": 6.0516,
+   "oneWayLightMinutes": 50.3,
+   "sunElongationDeg": 46.4
+  },
+  {
+   "date": "2027-10-31",
+   "distanceAU": 6.033,
+   "oneWayLightMinutes": 50.2,
+   "sunElongationDeg": 47.2
+  },
+  {
+   "date": "2027-11-01",
+   "distanceAU": 6.0229,
+   "oneWayLightMinutes": 50.1,
+   "sunElongationDeg": 48.1
+  },
+  {
+   "date": "2027-11-02",
+   "distanceAU": 6.0172,
+   "oneWayLightMinutes": 50.0,
+   "sunElongationDeg": 48.9
+  },
+  {
+   "date": "2027-11-03",
+   "distanceAU": 6.001,
+   "oneWayLightMinutes": 49.9,
+   "sunElongationDeg": 49.7
+  },
+  {
+   "date": "2027-11-04",
+   "distanceAU": 5.984,
+   "oneWayLightMinutes": 49.8,
+   "sunElongationDeg": 50.5
+  },
+  {
+   "date": "2027-11-05",
+   "distanceAU": 5.9775,
+   "oneWayLightMinutes": 49.7,
+   "sunElongationDeg": 51.4
+  },
+  {
+   "date": "2027-11-06",
+   "distanceAU": 5.9674,
+   "oneWayLightMinutes": 49.6,
+   "sunElongationDeg": 52.2
+  },
+  {
+   "date": "2027-11-07",
+   "distanceAU": 5.9478,
+   "oneWayLightMinutes": 49.5,
+   "sunElongationDeg": 53.0
+  },
+  {
+   "date": "2027-11-08",
+   "distanceAU": 5.9353,
+   "oneWayLightMinutes": 49.4,
+   "sunElongationDeg": 53.9
+  },
+  {
+   "date": "2027-11-09",
+   "distanceAU": 5.929,
+   "oneWayLightMinutes": 49.3,
+   "sunElongationDeg": 54.7
+  },
+  {
+   "date": "2027-11-10",
+   "distanceAU": 5.9131,
+   "oneWayLightMinutes": 49.2,
+   "sunElongationDeg": 55.5
+  },
+  {
+   "date": "2027-11-11",
+   "distanceAU": 5.8942,
+   "oneWayLightMinutes": 49.0,
+   "sunElongationDeg": 56.4
+  },
+  {
+   "date": "2027-11-12",
+   "distanceAU": 5.8859,
+   "oneWayLightMinutes": 49.0,
+   "sunElongationDeg": 57.3
+  },
+  {
+   "date": "2027-11-13",
+   "distanceAU": 5.8761,
+   "oneWayLightMinutes": 48.9,
+   "sunElongationDeg": 58.1
+  },
+  {
+   "date": "2027-11-14",
+   "distanceAU": 5.8559,
+   "oneWayLightMinutes": 48.7,
+   "sunElongationDeg": 58.9
+  },
+  {
+   "date": "2027-11-15",
+   "distanceAU": 5.8411,
+   "oneWayLightMinutes": 48.6,
+   "sunElongationDeg": 59.8
+  },
+  {
+   "date": "2027-11-16",
+   "distanceAU": 5.8341,
+   "oneWayLightMinutes": 48.5,
+   "sunElongationDeg": 60.7
+  },
+  {
+   "date": "2027-11-17",
+   "distanceAU": 5.8186,
+   "oneWayLightMinutes": 48.4,
+   "sunElongationDeg": 61.5
+  },
+  {
+   "date": "2027-11-18",
+   "distanceAU": 5.7982,
+   "oneWayLightMinutes": 48.2,
+   "sunElongationDeg": 62.3
+  },
+  {
+   "date": "2027-11-19",
+   "distanceAU": 5.788,
+   "oneWayLightMinutes": 48.1,
+   "sunElongationDeg": 63.3
+  },
+  {
+   "date": "2027-11-20",
+   "distanceAU": 5.7785,
+   "oneWayLightMinutes": 48.1,
+   "sunElongationDeg": 64.1
+  },
+  {
+   "date": "2027-11-21",
+   "distanceAU": 5.7582,
+   "oneWayLightMinutes": 47.9,
+   "sunElongationDeg": 64.9
+  },
+  {
+   "date": "2027-11-22",
+   "distanceAU": 5.7412,
+   "oneWayLightMinutes": 47.7,
+   "sunElongationDeg": 65.8
+  },
+  {
+   "date": "2027-11-23",
+   "distanceAU": 5.7334,
+   "oneWayLightMinutes": 47.7,
+   "sunElongationDeg": 66.7
+  },
+  {
+   "date": "2027-11-24",
+   "distanceAU": 5.7185,
+   "oneWayLightMinutes": 47.6,
+   "sunElongationDeg": 67.5
+  },
+  {
+   "date": "2027-11-25",
+   "distanceAU": 5.6969,
+   "oneWayLightMinutes": 47.4,
+   "sunElongationDeg": 68.4
+  },
+  {
+   "date": "2027-11-26",
+   "distanceAU": 5.6848,
+   "oneWayLightMinutes": 47.3,
+   "sunElongationDeg": 69.4
+  },
+  {
+   "date": "2027-11-27",
+   "distanceAU": 5.6755,
+   "oneWayLightMinutes": 47.2,
+   "sunElongationDeg": 70.2
+  },
+  {
+   "date": "2027-11-28",
+   "distanceAU": 5.6553,
+   "oneWayLightMinutes": 47.0,
+   "sunElongationDeg": 71.0
+  },
+  {
+   "date": "2027-11-29",
+   "distanceAU": 5.6365,
+   "oneWayLightMinutes": 46.9,
+   "sunElongationDeg": 72.0
+  },
+  {
+   "date": "2027-11-30",
+   "distanceAU": 5.6277,
+   "oneWayLightMinutes": 46.8,
+   "sunElongationDeg": 72.9
+  },
+  {
+   "date": "2027-12-01",
+   "distanceAU": 5.6136,
+   "oneWayLightMinutes": 46.7,
+   "sunElongationDeg": 73.7
+  },
+  {
+   "date": "2027-12-02",
+   "distanceAU": 5.5912,
+   "oneWayLightMinutes": 46.5,
+   "sunElongationDeg": 74.6
+  },
+  {
+   "date": "2027-12-03",
+   "distanceAU": 5.5774,
+   "oneWayLightMinutes": 46.4,
+   "sunElongationDeg": 75.6
+  },
+  {
+   "date": "2027-12-04",
+   "distanceAU": 5.5682,
+   "oneWayLightMinutes": 46.3,
+   "sunElongationDeg": 76.4
+  },
+  {
+   "date": "2027-12-05",
+   "distanceAU": 5.5486,
+   "oneWayLightMinutes": 46.1,
+   "sunElongationDeg": 77.3
+  },
+  {
+   "date": "2027-12-06",
+   "distanceAU": 5.5282,
+   "oneWayLightMinutes": 46.0,
+   "sunElongationDeg": 78.2
+  },
+  {
+   "date": "2027-12-07",
+   "distanceAU": 5.5184,
+   "oneWayLightMinutes": 45.9,
+   "sunElongationDeg": 79.2
+  },
+  {
+   "date": "2027-12-08",
+   "distanceAU": 5.5052,
+   "oneWayLightMinutes": 45.8,
+   "sunElongationDeg": 80.0
+  },
+  {
+   "date": "2027-12-09",
+   "distanceAU": 5.4825,
+   "oneWayLightMinutes": 45.6,
+   "sunElongationDeg": 80.9
+  },
+  {
+   "date": "2027-12-10",
+   "distanceAU": 5.467,
+   "oneWayLightMinutes": 45.5,
+   "sunElongationDeg": 81.9
+  },
+  {
+   "date": "2027-12-11",
+   "distanceAU": 5.4579,
+   "oneWayLightMinutes": 45.4,
+   "sunElongationDeg": 82.8
+  },
+  {
+   "date": "2027-12-12",
+   "distanceAU": 5.4391,
+   "oneWayLightMinutes": 45.2,
+   "sunElongationDeg": 83.7
+  },
+  {
+   "date": "2027-12-13",
+   "distanceAU": 5.4176,
+   "oneWayLightMinutes": 45.1,
+   "sunElongationDeg": 84.6
+  },
+  {
+   "date": "2027-12-14",
+   "distanceAU": 5.4067,
+   "oneWayLightMinutes": 45.0,
+   "sunElongationDeg": 85.6
+  },
+  {
+   "date": "2027-12-15",
+   "distanceAU": 5.3945,
+   "oneWayLightMinutes": 44.9,
+   "sunElongationDeg": 86.5
+  },
+  {
+   "date": "2027-12-16",
+   "distanceAU": 5.372,
+   "oneWayLightMinutes": 44.7,
+   "sunElongationDeg": 87.4
+  },
+  {
+   "date": "2027-12-17",
+   "distanceAU": 5.3549,
+   "oneWayLightMinutes": 44.5,
+   "sunElongationDeg": 88.4
+  },
+  {
+   "date": "2027-12-18",
+   "distanceAU": 5.3459,
+   "oneWayLightMinutes": 44.5,
+   "sunElongationDeg": 89.3
+  },
+  {
+   "date": "2027-12-19",
+   "distanceAU": 5.3283,
+   "oneWayLightMinutes": 44.3,
+   "sunElongationDeg": 90.2
+  },
+  {
+   "date": "2027-12-20",
+   "distanceAU": 5.306,
+   "oneWayLightMinutes": 44.1,
+   "sunElongationDeg": 91.2
+  },
+  {
+   "date": "2027-12-21",
+   "distanceAU": 5.2941,
+   "oneWayLightMinutes": 44.0,
+   "sunElongationDeg": 92.2
+  },
+  {
+   "date": "2027-12-22",
+   "distanceAU": 5.2828,
+   "oneWayLightMinutes": 43.9,
+   "sunElongationDeg": 93.1
+  },
+  {
+   "date": "2027-12-23",
+   "distanceAU": 5.2609,
+   "oneWayLightMinutes": 43.8,
+   "sunElongationDeg": 94.0
+  },
+  {
+   "date": "2027-12-24",
+   "distanceAU": 5.2426,
+   "oneWayLightMinutes": 43.6,
+   "sunElongationDeg": 95.0
+  },
+  {
+   "date": "2027-12-25",
+   "distanceAU": 5.2335,
+   "oneWayLightMinutes": 43.5,
+   "sunElongationDeg": 96.0
+  },
+  {
+   "date": "2027-12-26",
+   "distanceAU": 5.2173,
+   "oneWayLightMinutes": 43.4,
+   "sunElongationDeg": 96.9
+  },
+  {
+   "date": "2027-12-27",
+   "distanceAU": 5.1947,
+   "oneWayLightMinutes": 43.2,
+   "sunElongationDeg": 97.9
+  },
+  {
+   "date": "2027-12-28",
+   "distanceAU": 5.1818,
+   "oneWayLightMinutes": 43.1,
+   "sunElongationDeg": 98.9
+  },
+  {
+   "date": "2027-12-29",
+   "distanceAU": 5.1716,
+   "oneWayLightMinutes": 43.0,
+   "sunElongationDeg": 99.8
+  },
+  {
+   "date": "2027-12-30",
+   "distanceAU": 5.1507,
+   "oneWayLightMinutes": 42.8,
+   "sunElongationDeg": 100.8
+  },
+  {
+   "date": "2027-12-31",
+   "distanceAU": 5.1315,
+   "oneWayLightMinutes": 42.7,
+   "sunElongationDeg": 101.8
+  }
+ ]
+}
