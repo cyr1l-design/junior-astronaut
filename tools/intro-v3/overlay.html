@@ -1,0 +1,56 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: "Barlow Condensed"; font-weight: 800; src: url(../../assets/fonts/barlow-condensed-latin-800-normal.woff2) format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 600; src: url(../../assets/fonts/inter-latin-600-normal.woff2) format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 400; src: url(../../assets/fonts/inter-latin-400-normal.woff2) format("woff2"); }
+html, body { margin: 0; width: 1920px; height: 1080px; background: transparent; overflow: hidden; }
+#black { position: absolute; inset: 0; background: #000; }
+#vignette { position: absolute; inset: 0; background: radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,.45) 100%); }
+#label, #ai { position: absolute; left: 56px; font-family: Inter; color: #fff; text-shadow: 0 1px 6px rgba(0,0,0,.8); letter-spacing: .06em; }
+#label { bottom: 64px; font-weight: 600; font-size: 19px; opacity: .78; text-transform: uppercase; }
+#ai { bottom: 38px; font-weight: 400; font-size: 16px; opacity: .55; }
+#title { position: absolute; left: 0; right: 0; top: 23%; text-align: center;
+  font-family: "Barlow Condensed"; font-weight: 800; font-size: 190px; letter-spacing: .04em; color: #f4f8ff;
+  text-shadow: 0 0 40px rgba(150,200,255,.35), 0 4px 24px rgba(0,0,0,.7); white-space: nowrap; }
+#title span { display: inline-block; margin: 0 .12em; }
+#credit { position: absolute; left: 0; right: 0; bottom: 64px; text-align: center; font-family: Inter; font-weight: 400;
+  font-size: 17px; color: #fff; opacity: 0; letter-spacing: .04em; }
+</style></head>
+<body>
+<div id="vignette"></div>
+<div id="title"><span>ARE</span><span>WE</span><span>ALONE?</span></div>
+<div id="label"></div>
+<div id="ai">AI narrator voice</div>
+<div id="credit">Music: "Superior", Silver Maple (Epidemic Sound) · Footage: NASA, NASA/JPL-Caltech, SpaceX</div>
+<div id="black"></div>
+<script>
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const win = (t, a, b, fi = 0.3, fo = 0.3) => Math.min(clamp((t - a) / fi), clamp((b - t) / fo));
+// Labels: what each shot is and who made it (cuts are on the music's beats).
+const LABELS = [
+  [0.6, 5.40, "Earth, seen from the International Space Station · NASA"],
+  [5.60, 15.10, "Animation · NASA/JPL-Caltech"],
+  [15.30, 18.17, "Real footage: Europa Clipper's launch · NASA, SpaceX"],
+  [18.37, 26.35, "Animation · NASA/JPL-Caltech"],
+];
+const WORDS = [27.50, 27.68, 27.82]; // "Are" "we" "alone?" land on the narrator's words
+const $ = (s) => document.querySelector(s);
+const spans = [...document.querySelectorAll("#title span")];
+window.render = (t) => {
+  $("#black").style.opacity = 1 - clamp((t - 0.05) / 0.9);
+  const L = LABELS.find(([a, b]) => t >= a - 0.3 && t <= b + 0.3);
+  $("#label").textContent = L ? L[2] : "";
+  $("#label").style.opacity = L ? 0.78 * win(t, L[0], L[1], 0.3, 0.2) : 0;
+  $("#ai").style.opacity = 0.55 * Math.min(clamp((t - 0.6) / 0.4), clamp((26.3 - t) / 0.3));
+  spans.forEach((s, i) => {
+    const k = clamp((t - WORDS[i]) / 0.22);
+    s.style.opacity = k;
+    s.style.transform = `scale(${1.25 - 0.25 * (1 - Math.pow(1 - k, 3))})`;
+    s.style.filter = `blur(${(1 - k) * 8}px)`;
+  });
+  $("#credit").style.opacity = 0.6 * clamp((t - 28.3) / 0.4);
+};
+window.ready = Promise.all(["800 10px 'Barlow Condensed'", "600 10px Inter", "400 10px Inter"].map((f) => document.fonts.load(f))).then(() => true);
+</script>
+</body></html>

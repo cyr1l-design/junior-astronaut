@@ -1,0 +1,12 @@
+# shot	source	in (s)	from frame	to frame	what	NASA Image and Video Library id
+01	earth	1846.0	0	165	Earth from the ISS, solar array in frame	jsc2021m000138_4K_Earth_Views_Extended_Cut_for_Earth_Day_ 2021_210422-4KMP4
+02	overview	0.6	165	241	Jupiter, a moon passing (animation)	JPL-20240916-CLIPPRf-0001-Europa Clipper Mission Overview
+03	overview	15.0	241	287	Europa rising in front of Jupiter (animation)	JPL-20240916-CLIPPRf-0001-Europa Clipper Mission Overview
+04	overview	17.0	287	379	Europa's surface, Jupiter in the sky (animation)	JPL-20240916-CLIPPRf-0001-Europa Clipper Mission Overview
+05	overview	80.0	379	456	Europa cut open: ice shell over the ocean (animation)	JPL-20240916-CLIPPRf-0001-Europa Clipper Mission Overview
+06	launch	1328.0	456	502	Falcon Heavy climbing with Europa Clipper (real)	KSC-20241014-MH-AJN01-0001-SpaceX_Europa_Clipper_Isolated_Launch_Views-M9336
+07	launch	1905.5	502	548	Clipper leaves the rocket's upper stage (real, SpaceX rocket cam)	KSC-20241014-MH-AJN01-0001-SpaceX_Europa_Clipper_Isolated_Launch_Views-M9336
+08	anim	459.0	548	609	Clipper skims over Europa (animation)	JPL-20220310-CLIPPRf-0001-Europa Clipper Mission Animations
+09	overview	247.0	609	671	Europa's icy ground, Jupiter rising (animation)	JPL-20240916-CLIPPRf-0001-Europa Clipper Mission Overview
+10	overview	67.5	671	793	Down through the ice into the ocean (animation)	JPL-20240916-CLIPPRf-0001-Europa Clipper Mission Overview
+11	anim	597.0	793	894	Europa's crescent going dark (animation)	JPL-20220310-CLIPPRf-0001-Europa Clipper Mission Animations

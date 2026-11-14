@@ -57,3 +57,59 @@ tools/build-intro-audio.sh <vo_dir> <sfx_dir> <holst.ogg> <out_dir>
 python3 -m http.server 8123 &
 node tools/record-intro.cjs <out_dir>/intro-audio.wav intro.mp4
 ```
+
+## Version 3: "Are we alone?" (2026-11-14, replaces the slideshow)
+
+Cyril on version 2: "feels like a slide show"; wants it "much more minimalistic,
+with more videos and less talk", "not to name every event"; "the sounds effects
+are also horrible". Then: "it's okay to tell… it's weird to tell like year and
+what happened in that year"; "present it in epic way… a really important mission
+for humanity… kind of philosophical question whether we alone or not, and your
+goal is to find that out". It is both the game's intro and the ≤30 s demo video.
+
+**File:** `assets/intro/europa-intro-v3.mp4` (29.8 s, 1080p30, −14 LUFS).
+No years, no captions per event, no sound effects. The question opens and
+closes the video.
+
+| Time | Shot (real NASA footage or NASA animation) | Narrator |
+|---|---|---|
+| 0–5.5 s | Earth from the ISS, solar array in frame (real) | "For as long as people have looked up at the stars... we've asked one question." |
+| 5.5–9.6 s | Jupiter with a moon passing; Europa rising in front of Jupiter (animation) | "Around Jupiter circles a frozen moon. Europa." |
+| 9.6–15.2 s | Europa's ice with Jupiter in the sky; Europa cut open, ice over ocean (animation) | "Beneath its ice, almost certainly... lies an ocean." |
+| 15.2–20.3 s | Europa Clipper's launch and separation (real); Clipper skimming Europa (animation) | music only, the swell |
+| 20.3–26.4 s | Europa's icy ground, Jupiter rising; down through the ice into the ocean (animation) | "Your mission: dig down through the ice, reach that ocean... and find out." |
+| 26.4–29.8 s | Europa's crescent going dark; **ARE WE ALONE?** word by word | "Are we alone?" |
+
+**Science checks.** "Almost certainly" keeps the ocean honest: NASA has not
+confirmed it. Every shot carries a small label, "Animation · NASA/JPL-Caltech"
+or "Real footage", and NASA's own animations also carry their "ANIMATION" tag.
+The ocean-floor vents in the cut-open shot are NASA's illustration of an idea,
+not something seen.
+
+**Sound.** Narrator: AI voice "Nathaniel C." (ElevenLabs, eleven_v4), labelled
+"AI narrator voice" on screen. Music: "Superior" by Silver Maple, Epidemic
+Sound, from Cyril's licence (his Nila downloads), starting 1:12.04 so its swell
+lands on the launch. Every cut sits on a beat (117.5 bpm). The music dips about
+11 dB under the narrator, measured. Before uploading to YouTube, connect the
+channel to Epidemic Sound so the music isn't flagged.
+
+**Footage** (NASA Image and Video Library, images.nasa.gov; shot list with
+in-points in `tools/intro-v3/shots.tsv`):
+- *4K Earth Views: Extended Cut for Earth Day 2021*, NASA JSC (jsc2021m000138).
+- *Europa Clipper: Exploring Jupiter's Ocean Moon (Mission Overview)*, NASA/JPL-Caltech, 2024.
+- *NASA's Europa Clipper Mission Animations*, NASA/JPL-Caltech, 2024.
+- *NASA's SpaceX Europa Clipper Isolated Launch Views*, NASA KSC, 14 Oct 2024
+  (includes SpaceX's rocket camera at separation).
+
+### How to rebuild version 3
+
+```bash
+tools/intro-v3/fetch-footage.sh <footage_dir>
+tools/intro-v3/cut.sh <footage_dir> <work_dir>
+python3 tools/intro-v3/mix.py assets/intro/v3 <superior.wav> <work_dir>/soundtrack.wav
+node tools/intro-v3/render.cjs <work_dir>/picture.mp4 <work_dir>/soundtrack.wav assets/intro/europa-intro-v3.mp4
+```
+
+The narrator's takes are kept in `assets/intro/v3/`. `tools/intro-v3/voice.py`
+records them again, which spends ElevenLabs credits. The words on screen
+(labels, title, credit) are `tools/intro-v3/overlay.html`.
