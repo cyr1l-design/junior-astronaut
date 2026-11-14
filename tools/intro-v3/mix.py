@@ -30,7 +30,14 @@ ap = argparse.ArgumentParser()
 ap.add_argument("vo_dir"); ap.add_argument("music"); ap.add_argument("start", type=float); ap.add_argument("out")
 ap.add_argument("--ending", choices=["smooth", "drop"], default="smooth")
 ap.add_argument("--roar")
+ap.add_argument("--line", action="append", default=[], metavar="K=FILE@TIME",
+                help="use another take for line K, starting at TIME (s); FILE=none drops the line")
 a = ap.parse_args()
+FILES = {k: f"{a.vo_dir}/vo{k}.wav" for k in VO}
+for spec in a.line:
+    k, rest = spec.split("=", 1); f, at = rest.rsplit("@", 1); k = int(k)
+    if f == "none": VO.pop(k); FILES.pop(k)
+    else: FILES[k] = f; VO[k] = float(at)
 
 
 def load(path, ss=None, t=None):
@@ -48,7 +55,7 @@ n = int(END * SR); t = np.arange(n) / SR
 voice = np.zeros((n, 2))
 spans = []
 for k, s in VO.items():
-    clip = load(f"{a.vo_dir}/vo{k}.wav")
+    clip = load(FILES[k])
     i = int(s * SR); j = min(n, i + len(clip)); voice[i:j] += clip[: j - i]
     spans.append([s - 0.5, s + len(clip) / SR + 0.15, DEPTH[k]])
 
@@ -63,7 +70,7 @@ dip = np.zeros(n)
 for s, e, d in joined:
     dip[int(max(0, s) * SR): int(min(END + 1, e) * SR)] = d
 if a.ending == "smooth":
-    dip[int(VO[4] * SR):] = np.maximum(dip[int(VO[4] * SR):], DEPTH[4])   # stay low to the end
+    dip[int(VO[4] * SR):] = np.maximum(dip[int(VO[4] * SR):], DEPTH[4])  # line 4 is always there   # stay low to the end
 dip = smooth(dip, 0.6)                                                    # slow, gentle ramps
 
 music = load(a.music, a.start, END + 0.5)[:n]

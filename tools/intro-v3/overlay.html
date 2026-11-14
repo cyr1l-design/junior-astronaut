@@ -27,7 +27,8 @@ const win = (t, a, b, fi = 0.3, fo = 0.3) => Math.min(clamp((t - a) / fi), clamp
 const MUSIC = new URLSearchParams(location.search).get("music") || "";
 document.querySelector("#credit").textContent =
   "Footage: NASA, NASA/JPL-Caltech, SpaceX" + (MUSIC ? " · Music: " + MUSIC : "") + " · Narrator: AI voice";
-const WORDS = [27.50, 27.68, 27.82]; // "Are" "we" "alone?" land on the narrator's words
+const Q = new URLSearchParams(location.search).get("words");
+const WORDS = Q ? Q.split(",").map(Number) : [27.50, 27.68, 27.82]; // "Are" "we" "alone?" land on the narrator's words
 const $ = (s) => document.querySelector(s);
 const spans = [...document.querySelectorAll("#title span")];
 window.render = (t) => {
