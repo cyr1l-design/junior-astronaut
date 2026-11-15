@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Europa Mission Trainer</title>
+    <!-- The page's look is loaded here, before anything is shown, and the
+         start screen stays hidden until the world has drawn its first
+         picture. Otherwise the bare text flashes up, black on white, for
+         the seconds the game takes to load. -->
+    <style>html, body { background: #000; } body.loading > * { visibility: hidden; }</style>
+    <script type="module" crossorigin src="./assets/index-B0Ycbbdy.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-B0cZIiLV.css">
+  </head>
+  <body class="loading">
+    <div id="app"></div>
+    <div id="start">
+      <div>
+        <h1>EUROPA</h1>
+        <p>Your base is set up. Time to step outside.</p>
+        <div class="cta">Click to step outside</div>
+        <p class="keys">Move: W A S D · Look: mouse · Run: Shift · Jump: Space · Sound on/off: M · Pause: Esc</p>
+      </div>
+    </div>
+    <div id="crosshair"></div>
+    <div id="caption"></div>
+    <div id="credit">Jupiter map: NASA/JPL/Space Science Institute (Cassini, PIA07782) · Surface textures: ambientCG, Poly Haven, TextureCan (CC0) · Narrator: AI voice (ElevenLabs)</div>
+  </body>
+</html>
