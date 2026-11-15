@@ -34,7 +34,7 @@ export function createSky(sunLight) {
     stars.material.uniforms.uScale.value = pixelRatio;
   };
 
-  return { group, update, jupiter, aurora };
+  return { group, update, jupiter, io, sun, aurora };
 }
 
 function createStars() {
@@ -114,6 +114,7 @@ function planetMaterial(map, brightness, atmosphere) {
       uBrightness: { value: brightness },
       uAtmosphere: { value: atmosphere }, // Jupiter has deep air, Io almost none
       uCamPos: { value: new THREE.Vector3() },
+      uBehind: { value: 0 }, // 1 while the Sun is hidden behind this planet (an eclipse)
     },
     vertexShader: /* glsl */ `
       varying vec2 vUv; varying vec3 vN; varying vec3 vW;
@@ -121,7 +122,7 @@ function planetMaterial(map, brightness, atmosphere) {
         vec4 wp = modelMatrix * vec4(position,1.0); vW = wp.xyz;
         gl_Position = projectionMatrix * viewMatrix * wp; }`,
     fragmentShader: /* glsl */ `
-      uniform sampler2D uMap; uniform vec3 uSunDir; uniform float uBrightness; uniform float uAtmosphere; uniform vec3 uCamPos;
+      uniform sampler2D uMap; uniform vec3 uSunDir; uniform float uBrightness; uniform float uAtmosphere; uniform vec3 uCamPos; uniform float uBehind;
       varying vec2 vUv; varying vec3 vN; varying vec3 vW;
       void main(){
         vec3 tex = texture2D(uMap, vUv).rgb;
@@ -132,13 +133,17 @@ function planetMaterial(map, brightness, atmosphere) {
         // blurs it on Jupiter).
         float lit = smoothstep(-0.08, 0.32, l) * (0.62 + 0.38 * max(l, 0.0));
         // The edge of a gas planet looks darker: you look through more air.
-        float mu = max(dot(N, normalize(uCamPos - vW)), 0.0);
+        float mu = clamp(dot(N, normalize(uCamPos - vW)), 0.0, 1.0); // never above 1: pow(1.0 - mu, ...) below must not go negative
         float limb = mix(1.0, pow(mu, 0.45), uAtmosphere);
         vec3 col = tex * lit * limb * uBrightness;
         // Sunlit haze right at the edge of the day side.
         col += uAtmosphere * vec3(1.0, 0.82, 0.60) * pow(1.0 - mu, 4.0) * smoothstep(-0.02, 0.35, l) * 0.9;
         // Night side: almost black, a touch of deep blue so the disc reads.
         col += tex * vec3(0.010, 0.014, 0.030) * (1.0 - lit);
+        // Eclipse: with the Sun right behind it, sunlight bends through the
+        // planet's air and outlines it with a thin bright ring (spacecraft in
+        // Jupiter's shadow have photographed this).
+        col += uAtmosphere * uBehind * vec3(1.0, 0.72, 0.42) * (pow(1.0 - mu, 9.0) * 5.0 + pow(1.0 - mu, 3.0) * 0.12);
         gl_FragColor = vec4(col, 1.0);
       }`,
   });

@@ -1,0 +1,38 @@
+/* What plays before the game: the intro video, then the dangers briefing
+   (prelude.js). Same colours as the game's own display (hud.css). */
+.prelude {
+  --power: #ffc04d; --heat: #ff8552; --dose: #c08bff; --ice: #6fdcff; --warn: #ff5a4d;
+  position: fixed; inset: 0; z-index: 5; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #f4f1ea;
+}
+.prelude.hidden { display: none; }
+.pre-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #000; display: none; }
+.prelude.on-video .pre-video { display: block; }
+.pre-brief { position: absolute; inset: 0; display: none; pointer-events: none; }
+.prelude.on-brief .pre-brief { display: block; }
+/* Dark edges top and bottom so the words read over bright ice. */
+.pre-brief::before {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(2, 5, 12, 0.72), rgba(2, 5, 12, 0) 34%, rgba(2, 5, 12, 0) 58%, rgba(2, 5, 12, 0.82));
+}
+.pre-fade { position: absolute; inset: 0; background: #000; opacity: 1; }
+.pre-head { position: absolute; left: clamp(16px, 4vw, 56px); top: clamp(16px, 4vh, 44px); width: min(440px, 80vw); }
+.pre-count { font-size: 13px; letter-spacing: 0.16em; opacity: 0.7; }
+.pre-title { font-size: clamp(30px, 5vw, 56px); font-weight: 700; letter-spacing: 0.02em; margin: 2px 0 14px; text-shadow: 0 2px 18px rgba(0, 0, 0, 0.8); }
+.pre-meter { margin: 0 0 10px; }
+.pre-meter span { display: block; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px; text-shadow: 0 1px 8px rgba(0, 0, 0, 0.9); }
+.pre-bar { height: 14px; border-radius: 8px; background: rgba(255, 255, 255, 0.16); overflow: hidden; }
+.pre-bar i { display: block; height: 100%; width: 0; border-radius: 8px; background: var(--ice); box-shadow: 0 0 14px var(--ice); }
+.pre-meter.dose span { color: var(--dose); } .pre-meter.dose i { background: var(--dose); box-shadow: 0 0 14px var(--dose); }
+.pre-meter.heat span { color: var(--heat); } .pre-meter.heat i { background: var(--heat); box-shadow: 0 0 14px var(--heat); }
+.pre-meter.power span { color: var(--power); } .pre-meter.power i { background: var(--power); box-shadow: 0 0 14px var(--power); }
+.pre-meter.ice span { color: var(--ice); }
+.pre-meter.warn span { color: var(--warn); } .pre-meter.warn i { background: var(--warn); box-shadow: 0 0 14px var(--warn); }
+.pre-foot { position: absolute; left: 50%; bottom: clamp(56px, 9vh, 90px); transform: translateX(-50%); width: min(820px, 90vw); text-align: center; }
+.pre-say { font-size: clamp(16px, 2.1vw, 22px); line-height: 1.4; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.95); }
+.pre-note { font-size: 13px; opacity: 0.8; margin-bottom: 8px; font-style: italic; }
+.pre-skip {
+  position: absolute; right: clamp(14px, 3vw, 36px); bottom: clamp(14px, 3vh, 28px); padding: 9px 18px; border-radius: 999px; cursor: pointer;
+  font: inherit; font-size: 15px; color: #f4f1ea; background: rgba(8, 14, 26, 0.6); border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.pre-skip:hover { background: rgba(255, 255, 255, 0.16); }
+.pre-keys { position: absolute; left: clamp(14px, 3vw, 36px); bottom: clamp(18px, 3.4vh, 34px); font-size: 13px; opacity: 0.6; }

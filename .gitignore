@@ -6,3 +6,8 @@ dist/
 
 # Style reference screenshots from published games: copyrighted, local only
 design/style-refs-local/
+
+# AI-made reference pictures: reference only, never published (no watermark)
+design/reference/*.webp
+design/reference/*.png
+design/reference/*.jpg

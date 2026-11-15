@@ -1,0 +1,20 @@
+/* The words and frame over the ocean ending. */
+.ocean-ui { position: fixed; inset: 0; z-index: 1; pointer-events: none; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #eaf6ff; }
+.ocean-ui.hidden { display: none; }
+.ocean-fade { position: absolute; inset: 0; background: #000; opacity: 0; }
+/* The submersible's window: a soft dark rim, so you feel you are inside something. */
+.ocean-frame { position: absolute; inset: 0; box-shadow: inset 0 0 140px 50px rgba(0, 0, 0, 0.85), inset 0 0 0 10px #05080d; border-radius: 34px; }
+.ocean-depth { position: absolute; left: 50%; top: 26px; transform: translateX(-50%); font-size: clamp(18px, 3vw, 28px); font-weight: 700; letter-spacing: 0.06em; font-variant-numeric: tabular-nums; text-shadow: 0 2px 14px #000; }
+.ocean-caption { position: absolute; left: 50%; bottom: 13vh; transform: translateX(-50%); max-width: min(760px, calc(100vw - 32px)); text-align: center; font-size: clamp(17px, 2.4vw, 24px); text-shadow: 0 2px 14px #000, 0 0 30px #000; opacity: 0; transition: opacity 0.7s; }
+.ocean-caption.show { opacity: 1; }
+.ocean-prompt { position: absolute; left: 50%; top: calc(50% + 36px); transform: translateX(-50%); white-space: nowrap; }
+.ocean-prompt.hidden { display: none; }
+.ocean-label { position: absolute; left: 50%; bottom: 20px; transform: translateX(-50%); width: min(720px, calc(100vw - 32px)); text-align: center; font-size: 13px; line-height: 1.4; opacity: 0; transition: opacity 2s 6s; text-shadow: 0 1px 8px #000; }
+.ocean-ui.revealed .ocean-label { opacity: 0.8; }
+.ocean-skip { position: absolute; right: 22px; top: 22px; font-size: 12px; opacity: 0.45; }
+.ocean-ui.revealed .ocean-skip { display: none; }
+/* Once the win card is up, the words step back. */
+.ocean-ui.done .ocean-caption { opacity: 0; }
+
+/* The surface's own corner credit, captions and aiming dot don't belong under the ice. */
+body.diving #credit, body.diving #caption, body.diving #crosshair { display: none; }

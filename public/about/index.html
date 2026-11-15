@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Europa Mission Trainer: about the project</title>
+<meta name="description" content="A browser game for ages 7 to 12: run a base on Jupiter's moon Europa, melt through 29 km of ice, and make trade-offs with no safe choice. Built on NASA data for the NASA Space Apps Challenge 2026.">
+<meta property="og:title" content="Europa Mission Trainer">
+<meta property="og:description" content="Melt through 29 km of ice. Keep your crew going. Every choice costs something.">
+<meta property="og:image" content="img/first-view.jpg">
+<!--
+  The project's presentation page (Cyril, 2026-11-15: "make it beautiful ... it
+  should be a website"). One file, no build step: Vite copies public/ as it is.
+  The look follows the GAME's own direction, which Cyril named himself (black
+  sky, pale ice, amber lamps, purple aurora, the habitat's round window), and
+  uses the game display's colours (src/game/hud.css).
+  Every picture on this page is a real, unedited frame of the game.
+  The wording is an AI-written draft for Cyril to rewrite (see AI-USE.md).
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sky: #04060c;
+  --panel: rgba(13, 19, 33, 0.72);
+  --line: rgba(255, 255, 255, 0.13);
+  --text: #f4f1ea;
+  --soft: rgba(244, 241, 234, 0.72);
+  --power: #ffc04d;
+  --heat: #ff8552;
+  --dose: #c08bff;
+  --ice: #6fdcff;
+  --warn: #ff5a4d;
+  --lamp: #cf8a3c;
+  --life: #7dffb5;
+  --display: "Space Grotesk", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --wide: 1120px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; color: var(--text); font: 17px/1.6 var(--body); background: var(--sky);
+  background-image:
+    radial-gradient(1px 1px at 12% 18%, rgba(255,255,255,.7) 50%, transparent 51%),
+    radial-gradient(1px 1px at 78% 9%, rgba(255,255,255,.55) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 41% 64%, rgba(255,255,255,.5) 50%, transparent 51%),
+    radial-gradient(1px 1px at 90% 47%, rgba(255,255,255,.6) 50%, transparent 51%),
+    radial-gradient(1px 1px at 23% 83%, rgba(255,255,255,.45) 50%, transparent 51%),
+    radial-gradient(1.5px 1.5px at 63% 31%, rgba(255,255,255,.4) 50%, transparent 51%);
+  background-size: 900px 900px; -webkit-font-smoothing: antialiased;
+}
+a { color: var(--ice); text-underline-offset: 3px; }
+a:hover { color: #fff; }
+img { display: block; max-width: 100%; }
+.wrap { width: min(var(--wide), calc(100% - 40px)); margin: 0 auto; }
+section { padding: clamp(64px, 9vw, 120px) 0; position: relative; }
+h1, h2, h3 { font-family: var(--display); margin: 0; line-height: 1.08; font-weight: 700; }
+h2 { font-size: clamp(30px, 4.6vw, 52px); letter-spacing: -0.01em; max-width: 18ch; }
+h3 { font-size: 20px; letter-spacing: 0.01em; }
+p { margin: 0; }
+.eyebrow { font: 700 12px/1 var(--display); letter-spacing: 0.22em; text-transform: uppercase; color: var(--ice); margin-bottom: 18px; }
+.lede { font-size: clamp(18px, 2vw, 21px); color: var(--soft); max-width: 58ch; margin-top: 20px; }
+.tag { display: inline-block; padding: 3px 9px; border-radius: 999px; font: 700 11px/1.4 var(--display); letter-spacing: 0.1em; text-transform: uppercase; border: 1px solid currentColor; }
+.tag.real { color: #ffe2b8; }
+.tag.imagined { color: var(--dose); }
+
+/* --- Top bar --- */
+.bar { position: fixed; inset: 0 0 auto 0; z-index: 10; display: flex; justify-content: space-between; align-items: center; padding: 14px clamp(16px, 3vw, 32px); transition: background .3s, border-color .3s; border-bottom: 1px solid transparent; }
+.bar.solid { background: rgba(4, 6, 12, 0.86); border-color: var(--line); backdrop-filter: blur(10px); }
+.bar .name { font: 700 14px/1 var(--display); letter-spacing: 0.3em; text-transform: uppercase; color: var(--text); text-decoration: none; }
+.bar nav { display: flex; gap: 22px; align-items: center; font-size: 14px; }
+.bar nav a { color: var(--soft); text-decoration: none; }
+.bar nav a:hover { color: #fff; }
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 13px 24px; border-radius: 999px; font: 700 15px/1 var(--display); letter-spacing: 0.04em; text-decoration: none; transition: transform .2s, box-shadow .2s, background .2s; }
+.btn.play { background: var(--ice); color: #04121c !important; box-shadow: 0 0 0 0 rgba(111, 220, 255, 0.5), 0 10px 40px rgba(111, 220, 255, 0.25); }
+.btn.play:hover { transform: translateY(-2px); box-shadow: 0 0 0 6px rgba(111, 220, 255, 0.18), 0 14px 50px rgba(111, 220, 255, 0.4); }
+.btn.ghost { color: var(--text) !important; border: 1px solid rgba(255, 255, 255, 0.4); }
+.btn.ghost:hover { background: rgba(255, 255, 255, 0.08); }
+.btn.small { padding: 9px 16px; font-size: 13px; }
+@media (max-width: 760px) { .bar nav a:not(.btn) { display: none; } }
+
+/* --- Hero --- */
+.hero { min-height: 100svh; padding: 0; display: grid; align-items: end; overflow: hidden; }
+.hero .shot { position: absolute; inset: 0; background: url(img/first-view.jpg) center 38% / cover no-repeat; transform: scale(1.04); animation: drift 26s ease-in-out infinite alternate; }
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(4,6,12,.55) 0%, rgba(4,6,12,0) 26%, rgba(4,6,12,.1) 52%, rgba(4,6,12,.9) 86%, var(--sky) 100%); }
+@keyframes drift { to { transform: scale(1.1) translateY(-1.5%); } }
+.hero .wrap { position: relative; z-index: 1; padding: 0 0 clamp(48px, 8vh, 96px); }
+.hero h1 { font-size: clamp(56px, 11.5vw, 150px); letter-spacing: 0.16em; margin-left: -0.04em; text-shadow: 0 6px 60px rgba(0, 0, 0, 0.6); }
+.hero .sub { font: 500 clamp(19px, 2.5vw, 28px)/1.3 var(--display); max-width: 30ch; margin-top: 10px; }
+.hero .cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
+.hero .note { margin-top: 18px; font-size: 13px; color: var(--soft); }
+.shotcredit { position: absolute; right: 16px; bottom: 12px; z-index: 1; font-size: 11px; color: rgba(255,255,255,.5); }
+
+/* --- Four real numbers --- */
+.facts { padding: 0; margin-top: -8px; }
+.facts .grid { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; background: var(--panel); }
+.fact { padding: 28px 24px; border-left: 1px solid var(--line); }
+.fact:first-child { border-left: 0; }
+.fact b { display: block; font: 700 clamp(30px, 4vw, 46px)/1 var(--display); color: #fff; }
+.fact b small { font-size: 0.45em; font-weight: 500; margin-left: 4px; color: var(--soft); }
+.fact span { display: block; margin-top: 10px; font-size: 14px; color: var(--soft); }
+.fact em { display: block; margin-top: 8px; font: normal 700 11px/1.3 var(--display); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ice); }
+@media (max-width: 860px) { .facts .grid { grid-template-columns: 1fr 1fr; } .fact:nth-child(3) { border-left: 0; } .fact:nth-child(n+3) { border-top: 1px solid var(--line); } }
+
+/* --- The mission: text beside the habitat's round window --- */
+.split { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(32px, 6vw, 88px); align-items: center; }
+.split.flip > :first-child { order: 2; }
+@media (max-width: 860px) { .split { grid-template-columns: 1fr; } .split.flip > :first-child { order: 0; } }
+/* The picture: a square frame of the game, with the dig's depth running down beside it */
+.scene-wrap { display: grid; grid-template-columns: 1fr 52px; gap: 14px 18px; }
+.scene { position: relative; margin: 0; aspect-ratio: 1; width: 100%; border-radius: 28px; overflow: hidden; border: 1px solid var(--line);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.65), 0 0 140px rgba(111, 220, 255, 0.14); }
+.scene img { width: 100%; height: 100%; object-fit: cover; object-position: 22% 50%; aspect-ratio: auto; }
+.scene-cap { grid-column: 1 / -1; font-size: 14.5px; color: var(--soft); }
+.scene-cap b { color: var(--text); font-family: var(--display); }
+.depth { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 6px 0 12px; font: 700 10px/1.2 var(--display); letter-spacing: 0.12em; text-transform: uppercase; text-align: center; color: var(--soft); }
+.depth .shaft { position: relative; flex: 1; width: 6px; border-radius: 3px; background: linear-gradient(180deg, rgba(233,244,251,.9), rgba(111,159,196,.8) 78%, #1a66c8 96%); box-shadow: 0 0 0 1px rgba(0,0,0,.35); }
+.depth .shaft::after { content: ""; position: absolute; left: -8px; right: -8px; bottom: -3px; height: 10px; border-radius: 5px; background: linear-gradient(#2a7fe6, #082a66); box-shadow: 0 0 16px rgba(40, 130, 255, 0.9); }
+.depth .probe { position: absolute; left: 50%; width: 14px; height: 14px; margin: -7px 0 0 -7px; border-radius: 50%; background: var(--ice); box-shadow: 0 0 14px 2px var(--ice); animation: sink 11s cubic-bezier(.4,0,.6,1) infinite; }
+@keyframes sink { 0% { top: 0; opacity: 0; } 6% { opacity: 1; } 88% { top: 100%; opacity: 1; } 100% { top: 100%; opacity: 0; } }
+.depth span:last-child { color: #9fd0ff; }
+.steps { list-style: none; padding: 0; margin: 30px 0 0; display: grid; gap: 16px; counter-reset: n; }
+.steps li { position: relative; padding-left: 52px; color: var(--soft); counter-increment: n; }
+.steps li::before { content: counter(n); position: absolute; left: 0; top: 0; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--ice); color: var(--ice); font: 700 14px var(--display); }
+.steps b { color: var(--text); }
+
+/* --- Three meters --- */
+.meters { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 44px; }
+@media (max-width: 860px) { .meters { grid-template-columns: 1fr; } }
+.card { padding: 26px; border-radius: 20px; background: var(--panel); border: 1px solid var(--line); }
+.meter .head { display: flex; justify-content: space-between; align-items: baseline; font: 700 14px/1 var(--display); letter-spacing: 0.12em; text-transform: uppercase; color: var(--c); }
+.meter .bar2 { height: 12px; margin: 14px 0 18px; border-radius: 7px; background: rgba(255,255,255,.1); overflow: hidden; }
+.meter .bar2 i { display: block; height: 100%; border-radius: 7px; background: var(--c); box-shadow: 0 0 14px var(--c); animation: var(--move) 7s ease-in-out infinite alternate; }
+@keyframes drain { from { width: 84%; } to { width: 22%; } }
+@keyframes fill { from { width: 12%; } to { width: 88%; } }
+@keyframes cool { from { width: 92%; } to { width: 38%; } }
+.meter p { color: var(--soft); font-size: 15.5px; }
+.meter p + p { margin-top: 10px; }
+
+/* --- The power lever --- */
+.lever { margin-top: 40px; padding: 30px clamp(20px, 4vw, 44px) 34px; border-radius: 24px; background: linear-gradient(180deg, rgba(40, 28, 17, 0.9), rgba(22, 16, 10, 0.9)); border: 1px solid rgba(207, 138, 60, 0.45); }
+.lever .ends { display: flex; justify-content: space-between; font: 700 12px/1 var(--display); letter-spacing: 0.16em; text-transform: uppercase; color: #ffcf9a; }
+.lever .rail { position: relative; height: 14px; margin: 26px 20px 0; border-radius: 7px; background: linear-gradient(90deg, rgba(111,220,255,.6), rgba(255,133,82,.6)); box-shadow: inset 0 2px 4px rgba(0,0,0,.6); }
+.lever .knob { position: absolute; top: -15px; left: 0; width: 44px; height: 44px; margin-left: -22px; border-radius: 12px; background: linear-gradient(#fff6e6, #d9c7a8); border: 2px solid var(--lamp); box-shadow: 0 6px 16px rgba(0,0,0,.6); animation: slide 9s ease-in-out infinite; }
+@keyframes slide { 0%, 22% { left: 0; } 33%, 55% { left: 50%; } 66%, 88% { left: 100%; } 100% { left: 0; } }
+.lever .stops { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 34px; }
+.lever .stops div:nth-child(2) { text-align: center; }
+.lever .stops div:nth-child(3) { text-align: right; }
+.lever .stops b { display: block; font: 700 18px/1.2 var(--display); }
+.lever .stops span { display: block; margin-top: 6px; font-size: 14.5px; color: var(--soft); }
+@media (max-width: 640px) { .lever .stops { grid-template-columns: 1fr; } .lever .stops div { text-align: left !important; } }
+
+/* --- Seven situations --- */
+.sits { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px; margin-top: 44px; }
+.sit { display: flex; flex-direction: column; gap: 12px; transition: transform .25s, border-color .25s; }
+.sit:hover { transform: translateY(-4px); border-color: rgba(111, 220, 255, 0.5); }
+.sit .n { font: 700 12px/1 var(--display); letter-spacing: 0.2em; color: var(--ice); }
+.sit ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.sit li { padding: 10px 12px; border-radius: 12px; background: rgba(255,255,255,.05); border: 1px solid var(--line); font-size: 14.5px; line-height: 1.45; color: var(--soft); }
+.sit li b { color: var(--text); }
+.sit .real { margin-top: auto; font-size: 13.5px; color: #ffe2b8; }
+.sit.last { background: linear-gradient(160deg, rgba(111,220,255,.14), rgba(192,139,255,.12)); display: grid; place-content: center; text-align: center; }
+.sit.last b { font: 700 26px/1.15 var(--display); }
+.sit.last span { color: var(--soft); margin-top: 10px; font-size: 15px; }
+
+/* --- Gallery --- */
+.gallery { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; margin-top: 44px; }
+figure { margin: 0; position: relative; border-radius: 18px; overflow: hidden; border: 1px solid var(--line); background: #000; }
+figure img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 16 / 9; transition: transform .8s ease; }
+figure:hover img { transform: scale(1.04); }
+figcaption { position: absolute; inset: auto 0 0 0; padding: 40px 18px 14px; font-size: 14px; background: linear-gradient(transparent, rgba(0,0,0,.85)); }
+figcaption .tag { margin-right: 8px; }
+.g-wide { grid-column: span 6; } .g-half { grid-column: span 3; } .g-third { grid-column: span 2; }
+.g-wide img { aspect-ratio: 21 / 9; }
+@media (max-width: 860px) { .g-half, .g-third { grid-column: span 6; } .g-wide img { aspect-ratio: 16 / 9; } }
+
+/* --- NASA data --- */
+.data { margin-top: 44px; border: 1px solid var(--line); border-radius: 20px; overflow: hidden; background: var(--panel); }
+.row { display: grid; grid-template-columns: 0.9fr 1.3fr 1fr; gap: 20px; padding: 18px 24px; border-top: 1px solid var(--line); font-size: 15.5px; align-items: start; }
+.row:first-child { border-top: 0; font: 700 12px/1 var(--display); letter-spacing: 0.16em; text-transform: uppercase; color: var(--ice); background: rgba(255,255,255,.03); }
+.row b { font-family: var(--display); font-size: 17px; }
+.row span { color: var(--soft); }
+@media (max-width: 760px) { .row { grid-template-columns: 1fr; gap: 6px; } .row:first-child { display: none; } }
+
+/* --- Real / imagined --- */
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 44px; }
+@media (max-width: 760px) { .two { grid-template-columns: 1fr; } }
+.two ul { margin: 16px 0 0; padding: 0; list-style: none; display: grid; gap: 12px; color: var(--soft); font-size: 15.5px; }
+.two li { padding-left: 22px; position: relative; }
+.two li::before { content: ""; position: absolute; left: 0; top: 10px; width: 8px; height: 8px; border-radius: 50%; background: var(--c); box-shadow: 0 0 10px var(--c); }
+
+/* --- Ocean band --- */
+.ocean { padding: 0; }
+.ocean .band { position: relative; min-height: 78vh; display: grid; align-items: center; background: url(img/ocean.jpg) center / cover no-repeat; }
+.ocean .band::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, var(--sky) 0%, rgba(4,6,12,.25) 22%, rgba(4,6,12,.3) 70%, var(--sky) 100%); }
+.ocean .wrap { position: relative; }
+.ocean h2 { max-width: 14ch; text-shadow: 0 4px 40px rgba(0,0,0,.8); }
+.ocean .lede { color: #e6f6ff; text-shadow: 0 2px 20px rgba(0,0,0,.9); }
+
+/* --- Made with / credits --- */
+.cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 44px; }
+@media (max-width: 860px) { .cols { grid-template-columns: 1fr; } }
+.cols p, .cols li { color: var(--soft); font-size: 15px; }
+.cols ul { margin: 12px 0 0; padding-left: 18px; display: grid; gap: 6px; }
+.cols p { margin-top: 12px; }
+footer { padding: 70px 0 60px; text-align: center; border-top: 1px solid var(--line); }
+footer h2 { margin: 0 auto; max-width: none; }
+footer .cta { margin-top: 28px; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+footer small { display: block; margin-top: 34px; color: rgba(244,241,234,.5); font-size: 13px; line-height: 1.7; }
+
+/* --- Things arrive as you scroll --- */
+.rise { opacity: 0; transform: translateY(26px); transition: opacity .8s ease, transform .8s ease; }
+.rise.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .rise { opacity: 1; transform: none; transition: none; } .hero .shot, .lever .knob, .meter .bar2 i, .depth .probe { animation: none; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<header class="bar" id="bar">
+  <a class="name" href="#top">Europa</a>
+  <nav>
+    <a href="#mission">The mission</a>
+    <a href="#choices">The choices</a>
+    <a href="#data">NASA data</a>
+    <a href="#real">What’s real</a>
+    <a class="btn play small" href="../">Play ▸</a>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <div class="shot" role="img" aria-label="The game's first view: an outpost on Europa's ice, with Jupiter half lit in a black sky"></div>
+  <div class="wrap">
+    <p class="eyebrow">NASA Space Apps Challenge 2026 · Junior Astronaut Mission Trainer</p>
+    <h1>EUROPA</h1>
+    <p class="sub">Melt through 29 km of ice. Keep your crew going. Every choice costs something.</p>
+    <div class="cta">
+      <a class="btn play" href="../">Play the game ▸</a>
+      <a class="btn ghost" href="#mission">How it works</a>
+    </div>
+    <p class="note">Plays in the browser. No download, no account. Keyboard and mouse. Ages 7 to 12.</p>
+  </div>
+  <span class="shotcredit">Every picture on this page is a real frame of the game</span>
+</section>
+
+<section class="facts">
+  <div class="wrap">
+    <div class="grid rise">
+      <div class="fact"><b>29<small>km</small></b><span>of ice between your base and Europa’s ocean</span><em>Measured by NASA’s Juno</em></div>
+      <div class="fact"><b>85<small>hours</small></b><span>in one Europa day: long light, longer dark</span><em>NASA NSSDC fact sheet</em></div>
+      <div class="fact"><b>13<small>%</small></b><span>of Earth’s gravity: a running jump carries you 30 metres</span><em>From NASA’s mass and radius</em></div>
+      <div class="fact"><b>25<small>×</small></b><span>weaker sunlight than at Earth, so solar power is a trickle</span><em>NASA JPL, Juno</em></div>
+    </div>
+  </div>
+</section>
+
+<section id="mission">
+  <div class="wrap split">
+    <div class="rise">
+      <p class="eyebrow">The mission</p>
+      <h2>Is anything alive under the ice?</h2>
+      <p class="lede">You are the astronaut. You walk around a small base on Jupiter’s moon Europa, in first person. Under your boots, scientists are almost certain, is an ocean with about twice the water of all Earth’s seas. Your cryobot can melt a hole down to it, if you can keep it going.</p>
+      <ol class="steps">
+        <li><b>Switch on the cryobot.</b> It starts melting its way down.</li>
+        <li><b>Share one supply of power</b> between the dig and keeping your crew warm.</li>
+        <li><b>Meet seven situations</b> on the way down. Each one stops the clock and asks you to choose.</li>
+        <li><b>Break through</b> before your radiation dose reaches the limit, and ride a submersible into the ocean.</li>
+      </ol>
+    </div>
+    <div class="scene-wrap rise">
+      <figure class="scene"><img src="img/cryobot.jpg" alt="The cryobot, a tall tripod glowing blue over its hole in the ice, with the habitat's lit windows beside it and Jupiter in the black sky" loading="lazy"></figure>
+      <div class="depth" aria-hidden="true"><span>Ice</span><i class="shaft"><b class="probe"></b></i><span>Ocean 29 km</span></div>
+      <p class="scene-cap"><b>The cryobot</b> melts its way down through the ice. A real one would need about three years; ours is sped up.</p>
+    </div>
+  </div>
+</section>
+
+<section id="meters">
+  <div class="wrap">
+    <div class="rise">
+      <p class="eyebrow">Three things to watch</p>
+      <h2>Power, heat and radiation.</h2>
+      <p class="lede">The challenge asks for two or three core resources, not six. These three pull against each other, so helping one always costs another.</p>
+    </div>
+    <div class="meters">
+      <div class="card meter rise" style="--c: var(--power); --move: drain;">
+        <div class="head"><span>Battery</span><span>spare power</span></div>
+        <div class="bar2"><i></i></div>
+        <p>Sunlight fills it, slowly. The dark drains it, and most of a mission is night.</p>
+        <p>Several problems can be solved by spending it. There is not enough for all of them.</p>
+      </div>
+      <div class="card meter rise" style="--c: var(--heat); --move: cool;">
+        <div class="head"><span>Heat</span><span>the crew</span></div>
+        <div class="bar2"><i></i></div>
+        <p>Outside you get cold. Inside you warm up, but only if the reactor’s power goes to the heaters and not to the dig.</p>
+      </div>
+      <div class="card meter rise" style="--c: var(--dose); --move: fill;">
+        <div class="head"><span>Radiation dose</span><span>the mission clock</span></div>
+        <div class="bar2"><i></i></div>
+        <p>It only goes up: fastest outside, slower behind the habitat’s walls, slowest in the ice cave. When it is full, the crew is called home.</p>
+        <p>So waiting is never free.</p>
+      </div>
+    </div>
+
+    <div class="lever rise">
+      <div class="ends"><span>◀ More to the cryobot</span><span>More to the crew ▶</span></div>
+      <div class="rail"><i class="knob"></i></div>
+      <div class="stops">
+        <div><b>Dig first</b><span>The fastest dig. The crew gets cold, quickly in the dark.</span></div>
+        <div><b>Share</b><span>A half-speed dig. Warm by day, slowly cooling at night.</span></div>
+        <div><b>Warm first</b><span>The crew warms up. The cryobot gets no heat, and its hole starts to freeze shut.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="choices">
+  <div class="wrap">
+    <div class="rise">
+      <p class="eyebrow">Seven situations</p>
+      <h2>There is no safe choice.</h2>
+      <p class="lede">Each situation has two or three ways out, and every one of them has a price. Which is right depends on the state of your base at that moment, so children work it out instead of remembering an answer.</p>
+    </div>
+    <div class="sits">
+      <article class="card sit rise"><span class="n">01</span><h3>A pocket of salty water</h3>
+        <ul><li><b>Take a sample.</b> A clue about life, but the dig stops and the hole partly freezes.</li><li><b>Steer round it.</b> Costs a fifth of the battery. No clue.</li></ul>
+        <p class="real">Real: scientists think salty water may sit in pockets inside the ice.</p></article>
+      <article class="card sit rise"><span class="n">02</span><h3>Jupiter hides the Sun</h3>
+        <ul><li><b>Three hours of dark at noon.</b> Every power plan runs colder and the battery drains: a rehearsal for the long night.</li></ul>
+        <p class="real">Real: Jupiter is 12 degrees wide in Europa’s sky, and the Sun takes about 3 hours to pass behind it.</p></article>
+      <article class="card sit rise"><span class="n">03</span><h3>Ocean chemicals at the crack</h3>
+        <ul><li><b>Walk out and collect them.</b> A second clue about life, paid for in radiation and cold.</li><li><b>Leave them.</b> Safer. They are gone in ten hours.</li></ul>
+        <p class="real">Real: NASA’s Galileo data point to ammonia near Europa’s cracks.</p></article>
+      <article class="card sit rise"><span class="n">04</span><h3>A clouded camera</h3>
+        <ul><li><b>Bake it clear.</b> The habitat’s heaters go to the camera for four hours.</li><li><b>Dig on half-blind.</b> Warm crew, half the speed.</li></ul>
+        <p class="real">Real: NASA’s Juno team rescued a radiation-damaged camera near Jupiter by heating it.</p></article>
+      <article class="card sit rise"><span class="n">05</span><h3>The Purple Aurora Storm</h3>
+        <ul><li><b>Stay in the habitat.</b> A big dose of radiation.</li><li><b>Fill the walls with water.</b> Costs a quarter of the battery.</li><li><b>Shelter in the ice cave.</b> Safe from radiation, bitterly cold, a long walk.</li></ul>
+        <p class="real">Real: Europa crosses Jupiter’s plasma sheet about every 5.6 hours. The glow is ultraviolet; the game shows it in false colour and says so.</p></article>
+      <article class="card sit rise"><span class="n">06</span><h3>The sideways tide</h3>
+        <ul><li><b>Pay out slack by hand.</b> Three trips outside, at night.</li><li><b>Lock the spool.</b> The cable can’t snap, but the dig is slower for good.</li></ul>
+        <p class="real">Real: Europa’s tide grinds its faults sideways, slowly, every day.</p></article>
+      <article class="card sit rise"><span class="n">07</span><h3>A layer of salt</h3>
+        <ul><li><b>Cutting jets.</b> A quarter of the battery.</li><li><b>Crawl through.</b> Free, while the radiation dose keeps climbing.</li></ul>
+        <p class="real">Real: salt layers slow a cryobot; real designs carry water jets and cutters.</p></article>
+      <article class="card sit last rise"><b>Nobody dies.</b><span>When a mission fails, Mission Control calls the crew home, and a debrief shows the chain of choices that led there. Then you try again.</span></article>
+    </div>
+  </div>
+</section>
+
+<section id="look">
+  <div class="wrap">
+    <div class="rise">
+      <p class="eyebrow">The world</p>
+      <h2>Beautiful, inside the limits of the science.</h2>
+      <p class="lede">A black sky with no haze, because Europa has no air. Hard shadows. Jupiter at its true size and phase, fixed in the sky. Europa’s own whitish ice and red-brown salt lines, pushed brighter but not replaced.</p>
+    </div>
+    <div class="gallery">
+      <figure class="g-wide rise"><img src="img/aurora.jpg" alt="A purple glow over the ice mountains during a plasma crossing" loading="lazy"><figcaption><span class="tag imagined">False colour</span>A plasma crossing. The real glow is ultraviolet, invisible to the eye.</figcaption></figure>
+      <figure class="g-half rise"><img src="img/base.jpg" alt="The habitat, solar panels and reactor on the ice" loading="lazy"><figcaption>The base: habitat, solar panels, reactor.</figcaption></figure>
+      <figure class="g-half rise"><img src="img/eclipse.jpg" alt="The base in darkness while Jupiter hides the Sun" loading="lazy"><figcaption><span class="tag real">Real</span>Jupiter’s eclipse: about three hours of dark at noon.</figcaption></figure>
+      <figure class="g-half rise"><img src="img/mountain.jpg" alt="An ice massif behind the base" loading="lazy"><figcaption>The ice massif behind the base, kept to a few hundred metres: Europa has no true mountains.</figcaption></figure>
+      <figure class="g-half rise"><img src="img/under-ice.jpg" alt="The underside of the ice, lit by the submersible's lamps" loading="lazy"><figcaption>Under the ice, the lamps still on.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="ocean">
+  <div class="band">
+    <div class="wrap rise">
+      <p class="eyebrow">The ending</p>
+      <h2>Switch off the lamps.</h2>
+      <p class="lede">Break through, and a submersible rides down the hole. The more clues about life you risked collecting on the way, the more there is to find.</p>
+      <p class="lede" style="font-size: 15px;"><span class="tag imagined">Imagined</span> &nbsp;No life has been found on Europa. The creatures are modelled on real deep-sea animals that make their own light, and the game says so on screen.</p>
+    </div>
+  </div>
+</section>
+
+<section id="data">
+  <div class="wrap">
+    <div class="rise">
+      <p class="eyebrow">NASA data</p>
+      <h2>The rules of the game are NASA’s measurements.</h2>
+      <p class="lede">The data is not decoration. It sets the goal, the clock, the power you get and the dangers you meet. Each source is credited inside the game.</p>
+    </div>
+    <div class="data rise">
+      <div class="row"><span>In the game</span><span>What it does</span><span>Where it comes from</span></div>
+      <div class="row"><b>29 km of ice</b><span>The whole goal: how far the cryobot must dig, and the scale every failed mission is measured against.</span><span><a href="https://www.jpl.nasa.gov/news/nasas-juno-measures-thickness-of-europas-ice-shell">NASA JPL: Juno measures the thickness of Europa’s ice shell</a></span></div>
+      <div class="row"><b>The radiation budget</b><span>The mission clock. It is modelled on the real career limit NASA sets for an astronaut, 600 millisieverts.</span><span><a href="https://www.nasa.gov/wp-content/uploads/2023/03/radiation-protection-technical-brief-ochmo.pdf">NASA OCHMO radiation protection brief</a>; <a href="https://www.jpl.nasa.gov/news/radiation-maps-of-jupiters-moon-europa-key-to-future-missions/">NASA JPL radiation maps of Europa</a></span></div>
+      <div class="row"><b>The 85-hour day, the gravity</b><span>Day, night and the eclipse are worked out from Europa’s real orbit. Walking and jumping use its real gravity.</span><span><a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/joviansatfact.html">NASA NSSDC Jovian satellite fact sheet</a>; <a href="https://science.nasa.gov/jupiter/jupiter-moons/europa/europa-facts">NASA Europa facts</a></span></div>
+      <div class="row"><b>Weak sunlight</b><span>Why the solar panels are only a small bonus and the battery matters: sunlight is 25 times weaker than at Earth.</span><span><a href="https://www.jpl.nasa.gov/news/nasas-juno-spacecraft-breaks-solar-power-distance-record">NASA JPL: Juno’s solar power record</a></span></div>
+      <div class="row"><b>The freezing hole, the salt, the cable</b><span>Three of the cryobot’s troubles come from NASA’s own research into melting probes for ocean worlds.</span><span><a href="https://science.nasa.gov/science-research/science-enabling-technology/digging-deeper-to-find-life-on-ocean-worlds/">NASA: Digging deeper to find life on ocean worlds</a></span></div>
+      <div class="row"><b>Clues about life</b><span>What the player can collect is what scientists really look for.</span><span><a href="https://science.nasa.gov/blogs/science-news/2026/01/29/nasas-galileo-mission-points-to-ammonia-at-europa-recent-study-shows">NASA: Galileo points to ammonia at Europa</a></span></div>
+      <div class="row"><b>Jupiter in the sky</b><span>The planet is drawn from a real NASA map, at its true size as seen from Europa.</span><span><a href="https://photojournal.jpl.nasa.gov/catalog/PIA07782">NASA/JPL/Space Science Institute: Cassini, PIA07782</a></span></div>
+      <div class="row"><b>How missions end</b><span>Each way of losing tells a true story: Opportunity (2018) for power, Spirit (2010) for heat.</span><span>NASA: <a href="https://science.nasa.gov/mission/mer-opportunity/">Opportunity</a> and <a href="https://science.nasa.gov/mission/mer-spirit/">Spirit</a></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="real">
+  <div class="wrap">
+    <div class="rise">
+      <p class="eyebrow">Honest about the science</p>
+      <h2>What’s real, and what we made up.</h2>
+      <p class="lede">A game for children must not teach something false about a real place. So everything imagined is labelled: here, and in the game’s own “What’s real?” panel (press I while playing).</p>
+    </div>
+    <div class="two">
+      <div class="card rise" style="--c: #ffe2b8;">
+        <span class="tag real">Real</span>
+        <ul>
+          <li>The ocean under the ice (scientists are almost certain of it), and how thick the ice is.</li>
+          <li>The radiation, and that ice and water shield against it.</li>
+          <li>The 85-hour day, Jupiter fixed in the sky, the eclipse.</li>
+          <li>No air: a black sky, no sound through “air”, no steering in a jump.</li>
+          <li>Meltwater freezing shut behind a cryobot.</li>
+          <li>The order of the dangers: outside is worst, thick ice is the best shield.</li>
+        </ul>
+      </div>
+      <div class="card rise" style="--c: var(--dose);">
+        <span class="tag imagined">Imagined or simplified</span>
+        <ul>
+          <li>The dig is sped up enormously: a real cryobot would need about three years.</li>
+          <li>The meters run in game units. Only their order is real.</li>
+          <li>A crewed base on Europa, and a submersible down a 29 km hole.</li>
+          <li>The big ice arch near the base: nothing like it has been seen there.</li>
+          <li>The aurora’s colour, and how bright the night is.</li>
+          <li>Every living thing in the ocean.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="made">
+  <div class="wrap">
+    <div class="rise">
+      <p class="eyebrow">How it was made</p>
+      <h2>One weekend, one browser tab.</h2>
+    </div>
+    <div class="cols">
+      <div class="card rise">
+        <h3>Tools</h3>
+        <ul>
+          <li>Three.js for the 3D world</li>
+          <li>Vite to build it</li>
+          <li>GitHub Pages to host it</li>
+          <li>Plain JavaScript, no game engine</li>
+        </ul>
+        <p>The terrain, the ice, the sky, the ocean creatures, the suit’s sounds and the music are all generated in code.</p>
+      </div>
+      <div class="card rise">
+        <h3>Use of AI</h3>
+        <p>The idea, the setting, the mechanics and the story are the author’s own.</p>
+        <p>Claude (Anthropic) wrote the code under his direction, gathered and summarised the NASA sources, and drafted the on-screen wording and this page.</p>
+        <p>The narrator is an AI voice (ElevenLabs), noted in each audio file. No AI-made images, 3D models or textures are in the game.</p>
+      </div>
+      <div class="card rise">
+        <h3>Credits</h3>
+        <ul>
+          <li>Jupiter map: NASA/JPL/Space Science Institute</li>
+          <li>Intro footage: NASA Image and Video Library</li>
+          <li>Intro music: “Vestige”, Lennon Hutton (Epidemic Sound, licensed)</li>
+          <li>Surface textures: ambientCG, Poly Haven, TextureCan (CC0)</li>
+          <li>Typeface: Space Grotesk (Open Font License)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap rise">
+    <h2>Your base is set up.</h2>
+    <div class="cta">
+      <a class="btn play" href="../">Play the game ▸</a>
+      <a class="btn ghost" href="https://github.com/cyr1l-design/junior-astronaut">The code on GitHub</a>
+    </div>
+    <small>An entry for the NASA Space Apps Challenge 2026, challenge “Build a Junior Astronaut Mission Trainer”.<br>
+    Not affiliated with or endorsed by NASA. NASA data and imagery are used under NASA’s media guidelines.</small>
+  </div>
+</footer>
+
+<script>
+  // The top bar turns solid once the hero is behind you; sections rise in as they arrive.
+  const bar = document.getElementById('bar');
+  const onScroll = () => bar.classList.toggle('solid', scrollY > innerHeight * 0.6);
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  const seen = new IntersectionObserver((list) => {
+    for (const e of list) if (e.isIntersecting) { e.target.classList.add('in'); seen.unobserve(e.target); }
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.rise').forEach((n, i) => { n.style.transitionDelay = `${(i % 4) * 70}ms`; seen.observe(n); });
+</script>
+</body>
+</html>

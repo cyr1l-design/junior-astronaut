@@ -13,6 +13,15 @@ html, body { margin: 0; height: 100%; background: #000; color: #f4f1ea; font-fam
 #start .cta { margin-top: 20px; font-size: 18px; padding: 10px 22px; border: 1px solid rgba(255, 255, 255, 0.6); border-radius: 999px; display: inline-block; }
 #start .keys { font-size: 14px; opacity: 0.7; }
 
+/* A small dot in the middle of the view, only while playing. The dark ring
+   keeps it visible against white frost. */
+#crosshair {
+  position: fixed; left: 50%; top: 50%; width: 6px; height: 6px; margin: -3px 0 0 -3px; border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9); box-shadow: 0 0 0 1.5px rgba(0, 0, 0, 0.45), 0 0 8px rgba(160, 220, 255, 0.5);
+  opacity: 0; transition: opacity 0.3s; z-index: 1; pointer-events: none;
+}
+#crosshair.show { opacity: 1; }
+
 #caption {
   position: fixed; left: 50%; bottom: 12vh; transform: translateX(-50%);
   max-width: min(720px, calc(100vw - 32px)); text-align: center; font-size: clamp(16px, 2.2vw, 22px);

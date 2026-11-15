@@ -127,17 +127,33 @@ breakage risk (§13).
 - Code library: **Three.js 0.170** (MIT licence), including its bundled
   add-ons used here: bloom, FXAA edge smoothing, pointer-lock controls and
   geometry merging. Built with **Vite 5** (MIT licence).
-- **No other outside assets** (checked 2026-11-14, after the final graphics
-  pass): every model, texture and effect apart from the Jupiter map is
-  generated in code. Text uses the computer's own system font, so no font
-  file is shipped.
+- **Surface textures (added 2026-11-14, evening), all CC0 public domain,**
+  in `public/textures/`. Used in the game since 2026-11-14 (night); the
+  on-screen credit names the three sources:
+  - `frost/`: Snow 014, ambientCG.com (CC0), shown as Europa's ice powder.
+  - `ice-bare/`: Ice 002, ambientCG.com (CC0).
+  - `ice-cracked/`: Ice 0002, TextureCan.com (CC0).
+  - `salt/`: Rock 056, ambientCG.com (CC0), for the red-brown salt streaks
+    and the salt crusts along the red lines.
+  - `cliff/`: Cliff Side, polyhaven.com (CC0). Only its bump and height maps
+    are used, never its colour: they give the ice faces, slabs and boulders
+    their ledges, chips and hollows.
+  - `metal/` (the base), all ambientCG.com (CC0): `hull-panels/` Metal
+    Plates 017A, `brushed-steel/` Metal Plates 001, `dark-coated/` Metal
+    027, `gold-foil/` Foil 002, `solar-cells/` Solar Panel 002,
+    `floor-plate/` Diamond Plate 007A.
+- Apart from the Jupiter map and the textures above, every model, texture
+  and effect is generated in code. Text uses the computer's own system font,
+  so no font file is shipped.
 
 ## Final look: what was built (2026-11-14)
 
 Science-relevant choices made while building, for "What's real?" and for
 anyone checking the scene:
 
-- **Light on the ice is stylised.** The Sun is ~10° above the horizon, so
+- **Light on the ice is stylised.** The Sun is ~17° above the horizon
+  (raised from ~10° on 2026-11-14, night: at 10° the far crest's shadow
+  covered most of the base and the scene looked dim and flat), so
   real flat ice would be dim; the ice shader brightens low-angle light and
   tints shadows soft blue. The sky, the shadows' direction and length, and
   Jupiter's phase are untouched.
