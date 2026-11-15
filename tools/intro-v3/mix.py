@@ -6,6 +6,7 @@ Usage:
 
 - vo_dir: vo1.wav ... vo5.wav (assets/intro/v3).
 - music_start_s: where in the track to start, chosen so the track's swell lands on the launch (15.2 s).
+  Final (Cyril, 2026-11-15): "Vestige" from 21.25 s, --ending smooth.
 - The music dips under the narrator. Dips closer than 2 s apart are joined into one, so the music
   never jumps up between two lines (Cyril, 2026-11-14: "it's getting loud, and then it once again
   getting quieter. It feels really awkward").
@@ -21,8 +22,8 @@ import numpy as np
 
 SR = 48000
 END = 29.8                                          # demo limit is 30 s
-VO = {1: 0.6, 2: 5.9, 3: 10.2, 4: 20.6, 5: 27.4}    # line -> start (s)
-DEPTH = {1: 3, 2: 3, 3: 5, 4: 11, 5: 11}            # dB the music dips under each line
+VO = {1: 0.6, 2: 5.9, 3: 10.2, 4: 21.04}           # line -> start (s); line 4 ends "...and find out: are we alone?"
+DEPTH = {1: 3, 2: 3, 3: 5, 4: 11, 5: 11}            # dB the music dips under each line (5: a separate last line, if used)
 LAUNCH = (15.2, 18.27)                              # the two launch shots
 DARK = 26.44                                        # cut to Europa going dark
 
@@ -99,6 +100,7 @@ for k, s in VO.items():
     i = int(s * SR); j = min(n, i + int(4 * SR))
     rms = lambda x: 20 * np.log10(np.sqrt((x[i:j] ** 2).mean()) + 1e-9)
     print(f"line {k}: voice {rms(voice):.1f} dB, music {rms(music):.1f} dB")
+
 
 subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "f32le", "-ar", str(SR), "-ac", "2", "-i", "-",
                 "-af", "loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000", "-c:a", "pcm_s16le", a.out],

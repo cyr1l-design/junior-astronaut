@@ -77,8 +77,8 @@ closes the video.
 | 5.5–9.6 s | Jupiter with a moon passing; Europa rising in front of Jupiter (animation) | "Around Jupiter circles a frozen moon. Europa." |
 | 9.6–15.2 s | Europa's ice with Jupiter in the sky; Europa cut open, ice over ocean (animation) | "Beneath its ice, almost certainly... lies an ocean." |
 | 15.2–20.3 s | Europa Clipper's launch and separation (real); Clipper skimming Europa (animation) | music only, the swell |
-| 20.3–26.4 s | Europa's icy ground, Jupiter rising; down through the ice into the ocean (animation) | "Your mission: dig down through the ice, reach that ocean... and find out." |
-| 26.4–29.8 s | Europa's crescent going dark; **ARE WE ALONE?** word by word | "Are we alone?" |
+| 20.3–26.4 s | Europa's icy ground, Jupiter rising; down through the ice into the ocean (animation) | "Your mission: dig down through the ice, reach that ocean... and find out:" |
+| 26.4–29.8 s | Europa's crescent going dark (the cut lands on "find out"); **ARE WE ALONE?** word by word | "...are we alone?" (same breath) |
 
 **Science checks.** "Almost certainly" keeps the ocean honest: NASA has not
 confirmed it. NASA's own animations carry their built-in "ANIMATION" tag.
@@ -92,16 +92,25 @@ and metadata (`JUDGING.md`, hard rules). So the video has one small credits
 line in its last 1.5 s (footage, music, "Narrator: AI voice"), and the same
 note is written into the file's metadata.
 
-**Sound.** Narrator: AI voice "Nathaniel C." (ElevenLabs, eleven_v4), labelled
-"AI narrator voice" on screen. Music: "Superior" by Silver Maple, Epidemic
-Sound, from Cyril's licence (his Nila downloads), starting 1:12.04 so its swell
-lands on the launch. Every cut sits on a beat (117.5 bpm). The music dips about
+**Sound (final, Cyril 2026-11-15).** Narrator: AI voice "Nathaniel C."
+(ElevenLabs, eleven_v4), noted in the end credits line and the file's
+metadata. The last two lines are **one take**: "...and find out: are we
+alone?" Cyril on the separate take: "he says it as a completely separate
+phrase, not like as a continuation of something". Five deliveries were
+compared (A–E); he chose D.
+
+Music: "Vestige" by Lennon Hutton, Epidemic Sound, from Cyril's licence (his
+Nila downloads), starting 0:21.25 so its swell (0:36.45) lands on the launch
+at 15.2 s. Cyril picked it over "Superior" (with and without the real rocket
+sound and a trailer-style drop), "Mindscape", and the first "Superior" cut. The
+cuts were set on Superior's beats (117.5 bpm) and kept: Cyril liked them with
+Vestige as they are. The music dips about
 11 dB under the narrator, measured. Dips less than 2 s apart are joined, so the
 music never jumps up between two lines (Cyril, 2026-11-14, on the first cut:
 "there is a gap between words, and it's like getting loud, and then it once
-again getting quieter. It feels really awkward"). `mix.py --ending drop` and
-`--roar` (the real rocket sound from NASA's launch footage) are options being
-compared. Before uploading to YouTube, connect the
+again getting quieter. It feels really awkward"). `mix.py --ending drop`,
+`--roar` (the real rocket sound from NASA's launch footage) and `--line`
+(another take of a line) stay as options. Before uploading to YouTube, connect the
 channel to Epidemic Sound so the music isn't flagged.
 
 **Footage** (NASA Image and Video Library, images.nasa.gov; shot list with
@@ -117,8 +126,8 @@ in-points in `tools/intro-v3/shots.tsv`):
 ```bash
 tools/intro-v3/fetch-footage.sh <footage_dir>
 tools/intro-v3/cut.sh <footage_dir> <work_dir>
-python3 tools/intro-v3/mix.py assets/intro/v3 <superior.wav> 72.04 <work_dir>/soundtrack.wav [--ending smooth|drop] [--roar <footage_dir>/launch-large.mp4]
-node tools/intro-v3/render.cjs <work_dir>/picture.mp4 <work_dir>/soundtrack.wav assets/intro/europa-intro-v3.mp4 '"Superior", Silver Maple (Epidemic Sound)'
+python3 tools/intro-v3/mix.py assets/intro/v3 <vestige.wav> 21.25 <work_dir>/soundtrack.wav --ending smooth
+node tools/intro-v3/render.cjs <work_dir>/picture.mp4 <work_dir>/soundtrack.wav assets/intro/europa-intro-v3.mp4 '"Vestige", Lennon Hutton (Epidemic Sound)'
 ```
 
 The narrator's takes are kept in `assets/intro/v3/`. `tools/intro-v3/voice.py`
