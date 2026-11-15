@@ -224,11 +224,18 @@ let elapsed = 0;
 let shownOnce = false;
 renderer.setAnimationLoop(() => {
   const rawDt = clock.getDelta();
-  const dt = Math.min(rawDt, 0.05);
+  tick(Math.min(rawDt, 0.05));
+  watchPerformance(rawDt);
+});
+// One frame of the game: everything moves on by `dt` seconds and is drawn.
+// `aim` (filming only) may then place the camera and the light itself, and
+// returns true if it moved the light.
+function tick(dt, aim) {
   elapsed += dt;
   applyPendingChanges();
   if (!game.frozen) player.update(dt);
-  const lightMoved = game.update(dt);
+  let lightMoved = game.update(dt);
+  if (aim && aim()) lightMoved = true;
   watchWindow(dt);
   showRightScene();
   if (!game.dive) {
@@ -241,11 +248,10 @@ renderer.setAnimationLoop(() => {
   composer.render();
   perf.drawCalls = renderer.info.render.calls;
   perf.triangles = renderer.info.render.triangles;
-  watchPerformance(rawDt);
   // The first picture is on screen: let the start screen appear (index.html
   // keeps everything hidden until now, so nothing half-loaded is ever seen).
   if (!shownOnce) { shownOnce = true; document.body.classList.remove('loading'); }
-});
+}
 
 // For debugging and screenshots from the browser console.
 window.__game = {
@@ -279,6 +285,14 @@ window.__game = {
     }
     composer.render();
   },
+  // Filming (the demo video): stop the clock-driven loop, fix the
+  // sharpness, then move the game on one exact frame at a time.
+  film(ratio = 1) {
+    renderer.setAnimationLoop(null);
+    pendingRatio = ratio;
+    applyPendingChanges();
+  },
+  step(dt = 1 / 30, aim) { tick(dt, aim); },
   get pixelRatio() { return drawnRatio(); },
   get windowOnly() { return windowOnly; },
   // Stand at (x, z), eyes `lift` metres up, looking at a point.

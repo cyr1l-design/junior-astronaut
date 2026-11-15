@@ -614,6 +614,7 @@ export function createOcean({ camera, audio }) {
 
   return {
     scene, start, stop, update, uniforms: U,
+    life, // the creatures (filming the demo hides them until the reveal)
     get finished() { return finished; },
     get phase() { return phase; },
     // For tests: jump to a moment of the sequence.

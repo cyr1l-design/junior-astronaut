@@ -229,14 +229,16 @@ Cyril's idea, in his words as given (2026-11-14):
 - **How to work with him here:** show ONE screenshot at a checkpoint before
   building on; he is watching token use.
 
-**TEMPORARY reference images are in this branch (Cyril's call, 2026-11-14):**
-the AI pictures in `design/reference/` and the No Man's Sky screenshots in
-`design/style-refs-local/` were pushed in ONE separate commit ("TEMP reference
-images") so he can work from another PC. **They must be removed before
-submission, and that commit must not reach `main`:** drop the commit (or
-rebuild the branch without it) rather than just deleting the files, because
-deleted files stay in git history. Rules at stake: no copyrighted material
-without permission; AI images need a visible watermark.
+**The reference images are local only (cleaned up 2026-11-15, at Cyril's
+word).** The AI pictures in `design/reference/` and the No Man's Sky
+screenshots in `design/style-refs-local/` were once pushed in a "TEMP
+reference images" commit. That commit was dropped from the history, both
+folders' pictures are git-ignored, and `main` and `first-scene-graphics` on
+GitHub now hold the game without them. The pictures are still on this Mac,
+but no longer on any other PC. **Never commit them again.** Rules at stake:
+no copyrighted material without permission; AI images need a visible
+watermark. (GitHub can still show the dropped commit to someone who has its
+exact ID, until GitHub clears it; only GitHub Support can speed that up.)
 
 **Where the code stands (all in `src/world/terrain.js` unless noted):**
 - Layout re-done in `layout.js` (spawn south of base, door faces SE, massif,
@@ -651,8 +653,9 @@ on at Cyril's word, "Yes, publish it").
   and replaces what is on `gh-pages`; the link stays the same. GitHub takes
   about a minute to show it. **Only when Cyril says to publish.**
 - The published game is built from the working copy, so it can be ahead of
-  what is committed. The code itself still has to be committed and reach
-  `main` (without the TEMP commit) before submission.
+  what is committed. The code reached `main` on 2026-11-15 (commit
+  "Europa Mission Trainer: the playable game"); later changes need
+  committing and pushing again, on Cyril's word.
 
 ## "What's real?" (2026-11-15, afternoon)
 

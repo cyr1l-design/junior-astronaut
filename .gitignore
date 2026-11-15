@@ -11,3 +11,6 @@ design/style-refs-local/
 design/reference/*.webp
 design/reference/*.png
 design/reference/*.jpg
+
+# Demo video renders (uploaded to YouTube, not kept in git)
+demo/*.mp4
